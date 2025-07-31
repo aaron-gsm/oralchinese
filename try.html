@@ -1,0 +1,2027 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>口试对话 with Ruby Text</title>
+    <style>
+        ruby { font-size: 20px; margin: 10px 0; line-height: 2; }
+        rt { font-size: 12px; color: #666; }
+        body { font-family: Arial, sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; }
+        h1 { color: #2c3e50; border-bottom: 1px solid #eee; padding-bottom: 10px; }
+        .qa { background: #f9f9f9; padding: 15px; border-radius: 5px; margin-bottom: 20px; }
+    </style>
+</head>
+<body>
+	<script>
+    let currentAudio = null; // Declare a global variable to hold the currently playing audio
+
+    function playAudio(audioSrc, speed = 1.2) {
+        // Stop any currently playing audio before starting a new one
+        if (currentAudio) {
+            currentAudio.pause();
+            currentAudio.currentTime = 0; // Rewind to start
+        }
+
+        currentAudio = new Audio(audioSrc);
+        currentAudio.playbackRate = speed;
+        currentAudio.play();
+    }
+
+    function stopAudio() {
+        if (currentAudio) {
+            currentAudio.pause();
+            currentAudio.currentTime = 0; // Rewind to start
+        }
+    }
+</script>
+
+    <h1><ruby>口<rt>kǒu</rt>试<rt>shì</rt>对<rt>duì</rt>话<rt>huà</rt>题<rt>tí</rt>目<rt>mù</rt>及<rt>jí</rt>答<rt>dá</rt>案<rt>àn</rt>（10）不<rt>bù</rt>浪<rt>làng</rt>费<rt>fèi</rt>食<rt>shí</rt>物<rt>wù</rt></ruby></h1>
+
+    <div class="qa">
+        <p>1. <ruby>同<rt>tóng</rt>学<rt>xué</rt>，请<rt>qǐng</rt>你<rt>nǐ</rt>描<rt>miáo</rt>述<rt>shù</rt>录<rt>lù</rt>像<rt>xiàng</rt>中<rt>zhōng</rt>你<rt>nǐ</rt>认<rt>rèn</rt>为<rt>wéi</rt>做<rt>zuò</rt>的<rt>de</rt>不<rt>bú</rt>对<rt>duì</rt>的<rt>de</rt>行<rt>xíng</rt>为<rt>wéi</rt>，以<rt>yǐ</rt>及<rt>jí</rt>你<rt>nǐ</rt>的<rt>de</rt>感<rt>gǎn</rt>受<rt>shòu</rt>。</ruby></p>
+        
+        <blockquote>
+            T：<ruby>在<rt>zài</rt>刚<rt>gāng</rt>才<rt>cái</rt>的<rt>de</rt>录<rt>lù</rt>像<rt>xiàng</rt>中<rt>zhōng</rt>，我<rt>wǒ</rt>看<rt>kàn</rt>到<rt>dào</rt>一<rt>yī</rt>位<rt>wèi</rt>小<rt>xiǎo</rt>女<rt>nǚ</rt>孩<rt>hái</rt>，她<rt>tā</rt>坐<rt>zuò</rt>在<rt>zài</rt>家<rt>jiā</rt>里<rt>lǐ</rt>的<rt>de</rt>沙<rt>shā</rt>发<rt>fā</rt>上<rt>shàng</rt>，一<rt>yī</rt>边<rt>biān</rt>看<rt>kàn</rt>电<rt>diàn</rt>视<rt>shì</rt>，一<rt>yī</rt>边<rt>biān</rt>吃<rt>chī</rt>零<rt>líng</rt>食<rt>shí</rt>。</ruby><br><br>
+            <ruby>她<rt>tā</rt>吃<rt>chī</rt>了<rt>le</rt>饼<rt>bǐng</rt>干<rt>gān</rt>、蛋<rt>dàn</rt>糕<rt>gāo</rt>和<rt>hé</rt>苹<rt>píng</rt>果<rt>guǒ</rt>等<rt>děng</rt>很<rt>hěn</rt>多<rt>duō</rt>东<rt>dōng</rt>西<rt>xī</rt>。</ruby><br><br>
+            <ruby>但<rt>dàn</rt>是<rt>shì</rt>，每<rt>měi</rt>一<rt>yī</rt>样<rt>yàng</rt>她<rt>tā</rt>没<rt>méi</rt>吃<rt>chī</rt>完<rt>wán</rt>就<rt>jiù</rt>丢<rt>diū</rt>到<rt>dào</rt>垃<rt>lā</rt>圾<rt>jī</rt>桶<rt>tǒng</rt>里<rt>lǐ</rt>。</ruby><br><br>
+            <ruby>虽<rt>suī</rt>然<rt>rán</rt>，这<rt>zhè</rt>些<rt>xiē</rt>食<rt>shí</rt>物<rt>wù</rt>都<rt>dōu</rt>没<rt>méi</rt>有<rt>yǒu</rt>腐<rt>fǔ</rt>烂<rt>làn</rt>或<rt>huò</rt>不<rt>bù</rt>可<rt>kě</rt>以<rt>yǐ</rt>吃<rt>chī</rt>，但<rt>dàn</rt>是<rt>shì</rt>她<rt>tā</rt>却<rt>què</rt>丢<rt>diū</rt>掉<rt>diào</rt>它<rt>tā</rt>们<rt>men</rt>。</ruby><br><br>
+            <ruby>我<rt>wǒ</rt>看<rt>kàn</rt>到<rt>dào</rt>了<rt>le</rt>后<rt>hòu</rt>，感<rt>gǎn</rt>到<rt>dào</rt>很<rt>hěn</rt>失<rt>shī</rt>望<rt>wàng</rt>，我<rt>wǒ</rt>觉<rt>jué</rt>得<rt>dé</rt>这<rt>zhè</rt>个<rt>gè</rt>行<rt>xíng</rt>为<rt>wéi</rt>是<rt>shì</rt>不<rt>bú</rt>对<rt>duì</rt>的<rt>de</rt>。</ruby><br><br>
+            <ruby>因<rt>yīn</rt>为<rt>wèi</rt>她<rt>tā</rt>浪<rt>làng</rt>费<rt>fèi</rt>了<rt>le</rt>食<rt>shí</rt>物<rt>wù</rt>，根<rt>gēn</rt>本<rt>běn</rt>不<rt>bù</rt>珍<rt>zhēn</rt>惜<rt>xī</rt>食<rt>shí</rt>物<rt>wù</rt>。</ruby>
+
+                <button onclick="playAudio('1.mp3')">播放录音</button>
+				<button onclick="stopAudio()">停止播放</button>
+				<audio id="audio_answer_1" src="1.mp3"></audio>
+		</blockquote>
+    </div>
+
+    <div class="qa">
+        <p>2. <ruby>你<rt>nǐ</rt>在<rt>zài</rt>日<rt>rì</rt>常<rt>cháng</rt>生<rt>shēng</rt>活<rt>huó</rt>中<rt>zhōng</rt>是<rt>shì</rt>怎<rt>zěn</rt>样<rt>yàng</rt>避<rt>bì</rt>免<rt>miǎn</rt>浪<rt>làng</rt>费<rt>fèi</rt>食<rt>shí</rt>物<rt>wù</rt>的<rt>de</rt>？</ruby></p>
+        
+        <blockquote>
+            T:<ruby>我<rt>wǒ</rt>在<rt>zài</rt>日<rt>rì</rt>常<rt>cháng</rt>生<rt>shēng</rt>活<rt>huó</rt>中<rt>zhōng</rt>，第<rt>dì</rt>一<rt>yī</rt>，我<rt>wǒ</rt>会<rt>huì</rt>吃<rt>chī</rt>完<rt>wán</rt>我<rt>wǒ</rt>买<rt>mǎi</rt>的<rt>de</rt>食<rt>shí</rt>物<rt>wù</rt>，如<rt>rú</rt>果<rt>guǒ</rt>我<rt>wǒ</rt>吃<rt>chī</rt>不<rt>bù</rt>完<rt>wán</rt>，我<rt>wǒ</rt>就<rt>jiù</rt>会<rt>huì</rt>把<rt>bǎ</rt>食<rt>shí</rt>物<rt>wù</rt>收<rt>shōu</rt>在<rt>zài</rt>一<rt>yī</rt>个<rt>gè</rt>小<rt>xiǎo</rt>盘<rt>pán</rt>子<rt>zǐ</rt>里<rt>lǐ</rt>，等<rt>děng</rt>一<rt>yī</rt>下<rt>xià</rt>我<rt>wǒ</rt>饿<rt>è</rt>了<rt>le</rt>，会<rt>huì</rt>继<rt>jì</rt>续<rt>xù</rt>吃<rt>chī</rt>。</ruby><br><br>
+            <ruby>如<rt>rú</rt>果<rt>guǒ</rt>我<rt>wǒ</rt>还<rt>hái</rt>吃<rt>chī</rt>不<rt>bù</rt>完<rt>wán</rt>，我<rt>wǒ</rt>会<rt>huì</rt>把<rt>bǎ</rt>它<rt>tā</rt>给<rt>gěi</rt>我<rt>wǒ</rt>的<rt>de</rt>小<rt>xiǎo</rt>狗<rt>gǒu</rt>吃<rt>chī</rt>。</ruby><br><br>
+            <ruby>第<rt>dì</rt>二<rt>èr</rt>，我<rt>wǒ</rt>可<rt>kě</rt>以<rt>yǐ</rt>把<rt>bǎ</rt>我<rt>wǒ</rt>的<rt>de</rt>多<rt>duō</rt>余<rt>yú</rt>的<rt>de</rt>食<rt>shí</rt>物<rt>wù</rt>捐<rt>juān</rt>给<rt>gěi</rt>有<rt>yǒu</rt>需<rt>xū</rt>要<rt>yào</rt>的<rt>de</rt>人<rt>rén</rt>，比<rt>bǐ</rt>如<rt>rú</rt>我<rt>wǒ</rt>多<rt>duō</rt>买<rt>mǎi</rt>的<rt>de</rt>还<rt>hái</rt>没<rt>méi</rt>吃<rt>chī</rt>的<rt>de</rt>饼<rt>bǐng</rt>干<rt>gān</rt>，或<rt>huò</rt>我<rt>wǒ</rt>多<rt>duō</rt>买<rt>mǎi</rt>的<rt>de</rt>还<rt>hái</rt>没<rt>méi</rt>吃<rt>chī</rt>的<rt>de</rt>蛋<rt>dàn</rt>糕<rt>gāo</rt>，捐<rt>juān</rt>给<rt>gěi</rt>有<rt>yǒu</rt>需<rt>xū</rt>要<rt>yào</rt>的<rt>de</rt>人<rt>rén</rt>。</ruby>
+			    <button onclick="playAudio('2.mp3')">播放录音</button>
+				<button onclick="stopAudio()">停止播放</button>
+				<audio id="audio_answer_2" src="2.mp3"></audio>
+        </blockquote>
+    </div>
+	
+	<div class="qa">
+        <p>3. <ruby>如<rt>rú</rt>果<rt>guǒ</rt>你<rt>nǐ</rt>是<rt>shì</rt>录<rt>lù</rt>像<rt>xiàng</rt>中<rt>zhōng</rt>的<rt>de</rt>人<rt>rén</rt>物<rt>wù</rt>，你<rt>nǐ</rt>看<rt>kàn</rt>到<rt>dào</rt>录<rt>lù</rt>像<rt>xiàng</rt>中<rt>zhōng</rt>的<rt>de</rt>小<rt>xiǎo</rt>女<rt>nǚ</rt>孩<rt>hái</rt>将<rt>jiāng</rt>没<rt>méi</rt>有<rt>yǒu</rt>吃<rt>chī</rt>完<rt>wán</rt>的<rt>de</rt>食<rt>shí</rt>物<rt>wù</rt>丢<rt>diū</rt>掉<rt>diào</rt>，你<rt>nǐ</rt>会<rt>huì</rt>怎<rt>zěn</rt>么<rt>me</rt>做<rt>zuò</rt>？</ruby></p>
+        
+        <blockquote>
+            T:<ruby>如<rt>rú</rt>果<rt>guǒ</rt>我<rt>wǒ</rt>是<rt>shì</rt>录<rt>lù</rt>像<rt>xiàng</rt>中<rt>zhōng</rt>的<rt>de</rt>人<rt>rén</rt>物<rt>wù</rt>，我<rt>wǒ</rt>看<rt>kàn</rt>到<rt>dào</rt>小<rt>xiǎo</rt>女<rt>nǚ</rt>孩<rt>hái</rt>那<rt>nà</rt>么<rt>me</rt>做<rt>zuò</rt>，会<rt>huì</rt>走<rt>zǒu</rt>上<rt>shàng</rt>去<rt>qù</rt>阻<rt>zǔ</rt>止<rt>zhǐ</rt>她<rt>tā</rt>那<rt>nà</rt>么<rt>me</rt>做<rt>zuò</rt>。</ruby><br><br>
+            <ruby>接<rt>jiē</rt>着<rt>zhe</rt>，我<rt>wǒ</rt>要<rt>yào</rt>提<rt>tí</rt>醒<rt>xǐng</rt>她<rt>tā</rt>要<rt>yào</rt>吃<rt>chī</rt>完<rt>wán</rt>东<rt>dōng</rt>西<rt>xī</rt>，不<rt>bù</rt>可<rt>kě</rt>以<rt>yǐ</rt>浪<rt>làng</rt>费<rt>fèi</rt>食<rt>shí</rt>物<rt>wù</rt>，我<rt>wǒ</rt>们<rt>men</rt>应<rt>yīng</rt>该<rt>gāi</rt>珍<rt>zhēn</rt>惜<rt>xī</rt>食<rt>shí</rt>物<rt>wù</rt>。</ruby><br><br>
+            <ruby>如<rt>rú</rt>果<rt>guǒ</rt>她<rt>tā</rt>不<rt>bù</rt>要<rt>yào</rt>听<rt>tīng</rt>我<rt>wǒ</rt>的<rt>de</rt>劝<rt>quàn</rt>告<rt>gào</rt>，我<rt>wǒ</rt>会<rt>huì</rt>把<rt>bǎ</rt>这<rt>zhè</rt>件<rt>jiàn</rt>事<rt>shì</rt>告<rt>gào</rt>诉<rt>sù</rt>她<rt>tā</rt>的<rt>de</rt>家<rt>jiā</rt>长<rt>zhǎng</rt>，让<rt>ràng</rt>她<rt>tā</rt>的<rt>de</rt>家<rt>jiā</rt>长<rt>zhǎng</rt>教<rt>jiào</rt>育<rt>yù</rt>或<rt>huò</rt>者<rt>zhě</rt>批<rt>pī</rt>评<rt>píng</rt>她<rt>tā</rt>，让<rt>ràng</rt>她<rt>tā</rt>改<rt>gǎi</rt>掉<rt>diào</rt>浪<rt>làng</rt>费<rt>fèi</rt>食<rt>shí</rt>物<rt>wù</rt>的<rt>de</rt>坏<rt>huài</rt>习<rt>xí</rt>惯<rt>guàn</rt>。</ruby>
+			<button onclick="playAudio('3.mp3')">播放录音</button>
+			<button onclick="stopAudio()">停止播放</button>
+			<audio id="audio_answer_3" src="3.mp3"></audio>
+        </blockquote>
+    </div>
+
+    <div class="qa">
+        <p>4. <ruby>你<rt>nǐ</rt>觉<rt>jué</rt>得<rt>de</rt>浪<rt>làng</rt>费<rt>fèi</rt>食<rt>shí</rt>物<rt>wù</rt>会<rt>huì</rt>带<rt>dài</rt>来<rt>lái</rt>什<rt>shén</rt>么<rt>me</rt>后<rt>hòu</rt>果<rt>guǒ</rt>？</ruby></p>
+        
+        <blockquote>
+            T:<ruby>
+			我<rt>wǒ</rt>觉<rt>jué</rt>得<rt>de</rt>浪<rt>làng</rt>费<rt>fèi</rt>食<rt>shí</rt>物<rt>wù</rt>会<rt>huì</rt>浪<rt>làng</rt>费<rt>fèi</rt>很<rt>hěn</rt>多<rt>duō</rt>资<rt>zī</rt>源<rt>yuán</rt>。
+			</ruby><br><br>
+			<ruby>
+			因<rt>yīn</rt>为<rt>wèi</rt>准<rt>zhǔn</rt>备<rt>bèi</rt>食<rt>shí</rt>物<rt>wù</rt>需<rt>xū</rt>要<rt>yào</rt>很<rt>hěn</rt>多<rt>duō</rt>材<rt>cái</rt>料<rt>liào</rt>和<rt>hé</rt>资<rt>zī</rt>源<rt>yuán</rt>。
+			</ruby><br><br>
+			<ruby>
+			还<rt>hái</rt>有<rt>yǒu</rt>准<rt>zhǔn</rt>备<rt>bèi</rt>食<rt>shí</rt>物<rt>wù</rt>的<rt>de</rt>人<rt>rén</rt>，都<rt>dōu</rt>很<rt>hěn</rt>辛<rt>xīn</rt>苦<rt>kǔ</rt>地<rt>de</rt>准<rt>zhǔn</rt>备<rt>bèi</rt>食<rt>shí</rt>物<rt>wù</rt>。
+			</ruby><br><br>
+			<ruby>
+			但<rt>dàn</rt>我<rt>wǒ</rt>们<rt>men</rt>浪<rt>làng</rt>费<rt>fèi</rt>食<rt>shí</rt>物<rt>wù</rt>就<rt>jiù</rt>是<rt>shì</rt>浪<rt>làng</rt>费<rt>fèi</rt>他<rt>tā</rt>的<rt>de</rt>时<rt>shí</rt>间<rt>jiān</rt>和<rt>hé</rt>努<rt>nǔ</rt>力<rt>lì</rt>。
+			</ruby><br><br>
+			<ruby>
+			另<rt>lìng</rt>外<rt>wài</rt>，浪<rt>làng</rt>费<rt>fèi</rt>食<rt>shí</rt>物<rt>wù</rt>会<rt>huì</rt>让<rt>ràng</rt>我<rt>wǒ</rt>们<rt>men</rt>形<rt>xíng</rt>成<rt>chéng</rt>浪<rt>làng</rt>费<rt>fèi</rt>的<rt>de</rt>坏<rt>huài</rt>习<rt>xí</rt>惯<rt>guàn</rt>，不<rt>bù</rt>会<rt>huì</rt>懂<rt>dǒng</rt>得<rt>de</rt>珍<rt>zhēn</rt>惜<rt>xī</rt>。
+			</ruby><br><br>
+			<ruby>
+			如<rt>rú</rt>果<rt>guǒ</rt>我<rt>wǒ</rt>们<rt>men</rt>不<rt>bù</rt>懂<rt>dǒng</rt>得<rt>de</rt>珍<rt>zhēn</rt>惜<rt>xī</rt>食<rt>shí</rt>物<rt>wù</rt>，我<rt>wǒ</rt>们<rt>men</rt>就<rt>jiù</rt>不<rt>bù</rt>会<rt>huì</rt>在<rt>zài</rt>日<rt>rì</rt>常<rt>cháng</rt>生<rt>shēng</rt>活<rt>huó</rt>里<rt>lǐ</rt>珍<rt>zhēn</rt>惜<rt>xī</rt>其<rt>qí</rt>他<rt>tā</rt>的<rt>de</rt>事<rt>shì</rt>情<rt>qing</rt>。
+			</ruby><br><br>
+			<ruby>
+			比<rt>bǐ</rt>如<rt>rú</rt>，家<rt>jiā</rt>长<rt>zhǎng</rt>的<rt>de</rt>关<rt>guān</rt>爱<rt>ài</rt>还<rt>hái</rt>有<rt>yǒu</rt>其<rt>qí</rt>他<rt>tā</rt>重<rt>zhòng</rt>要<rt>yào</rt>的<rt>de</rt>东<rt>dōng</rt>西<rt>xi</rt>，我<rt>wǒ</rt>们<rt>men</rt>就<rt>jiù</rt>不<rt>bù</rt>懂<rt>dǒng</rt>得<rt>de</rt>珍<rt>zhēn</rt>惜<rt>xī</rt>了<rt>le</rt>。
+			</ruby><br><br>
+			<ruby>
+			这<rt>zhè</rt>就<rt>jiù</rt>是<rt>shì</rt>浪<rt>làng</rt>费<rt>fèi</rt>食<rt>shí</rt>物<rt>wù</rt>带<rt>dài</rt>来<rt>lái</rt>的<rt>de</rt>严<rt>yán</rt>重<rt>zhòng</rt>后<rt>hòu</rt>果<rt>guǒ</rt>。
+			</ruby>
+			<button onclick="playAudio('4.mp3')">播放录音</button>
+			<button onclick="stopAudio()">停止播放</button>
+			<audio id="audio_answer_4" src="4.mp3"></audio>
+        </blockquote>
+    </div>
+	
+    <div class="qa">
+        <p>5. <ruby>你<rt>nǐ</rt>觉<rt>jué</rt>得<rt>de</rt>家<rt>jiā</rt>长<rt>zhǎng</rt>应<rt>yīng</rt>该<rt>gāi</rt>怎<rt>zěn</rt>样<rt>yàng</rt>鼓<rt>gǔ</rt>励<rt>lì</rt>同<rt>tóng</rt>学<rt>xué</rt>们<rt>men</rt>不<rt>bù</rt>要<rt>yào</rt>浪<rt>làng</rt>费<rt>fèi</rt>食<rt>shí</rt>物<rt>wù</rt>？</ruby></p>
+        
+        <blockquote>
+            T:<ruby>我<rt>wǒ</rt>觉<rt>jué</rt>得<rt>de</rt>家<rt>jiā</rt>长<rt>zhǎng</rt>可<rt>kě</rt>以<rt>yǐ</rt>教<rt>jiào</rt>育<rt>yù</rt>我<rt>wǒ</rt>们<rt>men</rt>怎<rt>zěn</rt>样<rt>yàng</rt>保<rt>bǎo</rt>存<rt>cún</rt>吃<rt>chī</rt>不<rt>bù</rt>完<rt>wán</rt>的<rt>de</rt>食<rt>shí</rt>物<rt>wù</rt>，他<rt>tā</rt>们<rt>men</rt>也<rt>yě</rt>应<rt>yīng</rt>该<rt>gāi</rt>教<rt>jiào</rt>我<rt>wǒ</rt>们<rt>men</rt>不<rt>bù</rt>要<rt>yào</rt>买<rt>mǎi</rt>自<rt>zì</rt>己<rt>jǐ</rt>吃<rt>chī</rt>不<rt>bù</rt>了<rt>liǎo</rt>的<rt>de</rt>食<rt>shí</rt>物<rt>wù</rt>，和<rt>hé</rt>不<rt>bù</rt>浪<rt>làng</rt>费<rt>fèi</rt>食<rt>shí</rt>物<rt>wù</rt>的<rt>de</rt>重<rt>zhòng</rt>要<rt>yào</rt>性<rt>xìng</rt>。</ruby><br><br>
+            <ruby>如<rt>rú</rt>果<rt>guǒ</rt>我<rt>wǒ</rt>们<rt>men</rt>浪<rt>làng</rt>费<rt>fèi</rt>食<rt>shí</rt>物<rt>wù</rt>他<rt>tā</rt>们<rt>men</rt>可<rt>kě</rt>以<rt>yǐ</rt>批<rt>pī</rt>评<rt>píng</rt>我<rt>wǒ</rt>们<rt>men</rt>。</ruby><br><br>
+            <ruby>另<rt>lìng</rt>外<rt>wài</rt>，他<rt>tā</rt>们<rt>men</rt>也<rt>yě</rt>可<rt>kě</rt>以<rt>yǐ</rt>以<rt>yǐ</rt>身<rt>shēn</rt>作<rt>zuò</rt>则<rt>zé</rt>，为<rt>wèi</rt>我<rt>wǒ</rt>们<rt>men</rt>做<rt>zuò</rt>个<rt>gè</rt>好<rt>hǎo</rt>榜<rt>bǎng</rt>样<rt>yàng</rt>，他<rt>tā</rt>们<rt>men</rt>自<rt>zì</rt>己<rt>jǐ</rt>就<rt>jiù</rt>不<rt>bù</rt>应<rt>yīng</rt>该<rt>gāi</rt>浪<rt>làng</rt>费<rt>fèi</rt>食<rt>shí</rt>物<rt>wù</rt>，要<rt>yào</rt>珍<rt>zhēn</rt>惜<rt>xī</rt>食<rt>shí</rt>物<rt>wù</rt>。</ruby><br><br>
+            <ruby>我<rt>wǒ</rt>们<rt>men</rt>看<rt>kàn</rt>到<rt>dào</rt>后<rt>hòu</rt>，也<rt>yě</rt>会<rt>huì</rt>学<rt>xué</rt>习<rt>xí</rt>他<rt>tā</rt>们<rt>men</rt>，做<rt>zuò</rt>一<rt>yī</rt>个<rt>gè</rt>不<rt>bù</rt>浪<rt>làng</rt>费<rt>fèi</rt>食<rt>shí</rt>物<rt>wù</rt>的<rt>de</rt>人<rt>rén</rt>。</ruby>
+			<button onclick="playAudio('5.mp3')">播放录音</button>
+			<button onclick="stopAudio()">停止播放</button>
+			<audio id="audio_answer_5" src="5.mp3"></audio>			
+        </blockquote>
+    </div>	
+	
+	    <h1><ruby>口<rt>kǒu</rt>试<rt>shì</rt>对<rt>duì</rt>话<rt>huà</rt>考<rt>kǎo</rt>题<rt>tí</rt>及<rt>jí</rt>答<rt>dá</rt>案<rt>àn</rt>（1）环<rt>huán</rt>境<rt>jìng</rt>保<rt>bǎo</rt>护<rt>hù</rt></ruby></h1>
+
+    <div class="qa">
+        <p>1. <ruby>请<rt>qǐng</rt>你<rt>nǐ</rt>讲<rt>jiǎng</rt>一<rt>yī</rt>讲<rt>jiǎng</rt>录<rt>lù</rt>像<rt>xiàng</rt>中<rt>zhōng</rt>令<rt>lìng</rt>你<rt>nǐ</rt>印<rt>yìn</rt>象<rt>xiàng</rt>深<rt>shēn</rt>刻<rt>kè</rt>的<rt>de</rt>一<rt>yī</rt>件<rt>jiàn</rt>事<rt>shì</rt>。</ruby></p>
+        
+        <blockquote>
+            T:<ruby>在<rt>zài</rt>刚<rt>gāng</rt>才<rt>cái</rt>的<rt>de</rt>录<rt>lù</rt>像<rt>xiàng</rt>中<rt>zhōng</rt>，我<rt>wǒ</rt>看<rt>kàn</rt>到<rt>dào</rt>一<rt>yī</rt>位<rt>wèi</rt>妈<rt>mā</rt>妈<rt>ma</rt>和<rt>hé</rt>她<rt>tā</rt>的<rt>de</rt>女<rt>nǚ</rt>儿<rt>ér</rt>，在<rt>zài</rt>巴<rt>bā</rt>刹<rt>shā</rt>买<rt>mǎi</rt>东<rt>dōng</rt>西<rt>xī</rt>。</ruby><br><br>
+            <ruby>买<rt>mǎi</rt>完<rt>wán</rt>东<rt>dōng</rt>西<rt>xī</rt>后<rt>hòu</rt>，卖<rt>mài</rt>东<rt>dōng</rt>西<rt>xī</rt>的<rt>de</rt>小<rt>xiǎo</rt>贩<rt>fàn</rt>阿<rt>ā</rt>姨<rt>yí</rt>要<rt>yào</rt>拿<rt>ná</rt>塑<rt>sù</rt>料<rt>liào</rt>袋<rt>dài</rt>给<rt>gěi</rt>她<rt>tā</rt>们<rt>men</rt>装<rt>zhuāng</rt>东<rt>dōng</rt>西<rt>xī</rt>，那<rt>nà</rt>位<rt>wèi</rt>妈<rt>mā</rt>妈<rt>ma</rt>拒<rt>jù</rt>绝<rt>jué</rt>了<rt>le</rt>。</ruby><br><br>
+            <ruby>她<rt>tā</rt>要<rt>yào</rt>用<rt>yòng</rt>自<rt>zì</rt>己<rt>jǐ</rt>的<rt>de</rt>环<rt>huán</rt>保<rt>bǎo</rt>袋<rt>dài</rt>装<rt>zhuāng</rt>东<rt>dōng</rt>西<rt>xī</rt>。</ruby><br><br>
+            <ruby>最<rt>zuì</rt>后<rt>hòu</rt>，卖<rt>mài</rt>东<rt>dōng</rt>西<rt>xī</rt>的<rt>de</rt>小<rt>xiǎo</rt>贩<rt>fàn</rt>阿<rt>ā</rt>姨<rt>yí</rt>，把<rt>bǎ</rt>她<rt>tā</rt>们<rt>men</rt>买<rt>mǎi</rt>好<rt>hǎo</rt>的<rt>de</rt>东<rt>dōng</rt>西<rt>xī</rt>装<rt>zhuāng</rt>在<rt>zài</rt>她<rt>tā</rt>们<rt>men</rt>的<rt>de</rt>环<rt>huán</rt>保<rt>bǎo</rt>袋<rt>dài</rt>里<rt>lǐ</rt>，并<rt>bìng</rt>且<rt>qiě</rt>笑<rt>xiào</rt>眯<rt>mī</rt>眯<rt>mī</rt>地<rt>de</rt>对<rt>duì</rt>她<rt>tā</rt>们<rt>men</rt>说<rt>shuō</rt>再<rt>zài</rt>见<rt>jiàn</rt>。</ruby><br><br>
+            <ruby>我<rt>wǒ</rt>看<rt>kàn</rt>到<rt>dào</rt>后<rt>hòu</rt>，觉<rt>jué</rt>得<rt>de</rt>很<rt>hěn</rt>开<rt>kāi</rt>心<rt>xīn</rt>。</ruby><br><br>
+            <ruby>我<rt>wǒ</rt>认<rt>rèn</rt>为<rt>wéi</rt>她<rt>tā</rt>们<rt>men</rt>节<rt>jié</rt>省<rt>shěng</rt>资<rt>zī</rt>源<rt>yuán</rt>，保<rt>bǎo</rt>护<rt>hù</rt>环<rt>huán</rt>境<rt>jìng</rt>，是<rt>shì</rt>很<rt>hěn</rt>好<rt>hǎo</rt>的<rt>de</rt>，给<rt>gěi</rt>我<rt>wǒ</rt>留<rt>liú</rt>下<rt>xià</rt>很<rt>hěn</rt>深<rt>shēn</rt>的<rt>de</rt>印<rt>yìn</rt>象<rt>xiàng</rt>。</ruby>
+			<button onclick="playAudio('6.mp3')">播放录音</button>
+			<button onclick="stopAudio()">停止播放</button>
+			<audio id="audio_answer_6" src="6.mp3"></audio>			
+        </blockquote>
+    </div>
+    <div class="qa">
+        <p>2. <ruby>请<rt>qǐng</rt>讲<rt>jiǎng</rt>一<rt>yī</rt>讲<rt>jiǎng</rt>在<rt>zài</rt>日<rt>rì</rt>常<rt>cháng</rt>生<rt>shēng</rt>活<rt>huó</rt>中<rt>zhōng</rt>，你<rt>nǐ</rt>是<rt>shì</rt>怎<rt>zěn</rt>样<rt>yàng</rt>节<rt>jié</rt>省<rt>shěng</rt>资<rt>zī</rt>源<rt>yuán</rt>，保<rt>bǎo</rt>护<rt>hù</rt>环<rt>huán</rt>境<rt>jìng</rt>的<rt>de</rt>？</ruby></p>
+        
+        <blockquote>
+            T:<ruby>在<rt>zài</rt>日<rt>rì</rt>常<rt>cháng</rt>生<rt>shēng</rt>活<rt>huó</rt>中<rt>zhōng</rt>，我<rt>wǒ</rt>常<rt>cháng</rt>常<rt>cháng</rt>节<rt>jié</rt>省<rt>shěng</rt>资<rt>zī</rt>源<rt>yuán</rt>。</ruby><br><br>
+            <ruby>比<rt>bǐ</rt>如<rt>rú</rt>我<rt>wǒ</rt>在<rt>zài</rt>学<rt>xué</rt>校<rt>xiào</rt>里<rt>lǐ</rt>，我<rt>wǒ</rt>离<rt>lí</rt>开<rt>kāi</rt>课<rt>kè</rt>室<rt>shì</rt>时<rt>shí</rt>，一<rt>yī</rt>定<rt>dìng</rt>关<rt>guān</rt>灯<rt>dēng</rt>和<rt>hé</rt>电<rt>diàn</rt>扇<rt>shàn</rt>，才<rt>cái</rt>离<rt>lí</rt>开<rt>kāi</rt>，不<rt>bù</rt>会<rt>huì</rt>浪<rt>làng</rt>费<rt>fèi</rt>电<rt>diàn</rt>。</ruby><br><br>
+            <ruby>我<rt>wǒ</rt>洗<rt>xǐ</rt>完<rt>wán</rt>手<rt>shǒu</rt>后<rt>hòu</rt>，也<rt>yě</rt>会<rt>huì</rt>关<rt>guān</rt>水<rt>shuǐ</rt>龙<rt>lóng</rt>头<rt>tóu</rt>，不<rt>bù</rt>会<rt>huì</rt>浪<rt>làng</rt>费<rt>fèi</rt>水<rt>shuǐ</rt>。</ruby><br><br>
+            <ruby>我<rt>wǒ</rt>吃<rt>chī</rt>不<rt>bù</rt>完<rt>wán</rt>的<rt>de</rt>食<rt>shí</rt>物<rt>wù</rt>，我<rt>wǒ</rt>会<rt>huì</rt>装<rt>zhuāng</rt>在<rt>zài</rt>小<rt>xiǎo</rt>饭<rt>fàn</rt>盒<rt>hé</rt>里<rt>lǐ</rt>，不<rt>bù</rt>会<rt>huì</rt>浪<rt>làng</rt>费<rt>fèi</rt>食<rt>shí</rt>物<rt>wù</rt>。</ruby><br><br>
+            <ruby>在<rt>zài</rt>家<rt>jiā</rt>里<rt>lǐ</rt>，我<rt>wǒ</rt>会<rt>huì</rt>关<rt>guān</rt>掉<rt>diào</rt>冷<rt>lěng</rt>气<rt>qì</rt>，用<rt>yòng</rt>风<rt>fēng</rt>扇<rt>shàn</rt>。</ruby><br><br>
+            <ruby>节<rt>jié</rt>省<rt>shěng</rt>电<rt>diàn</rt>。</ruby><br><br>
+            <ruby>我<rt>wǒ</rt>还<rt>hái</rt>会<rt>huì</rt>把<rt>bǎ</rt>洗<rt>xǐ</rt>完<rt>wán</rt>菜<rt>cài</rt>的<rt>de</rt>水<rt>shuǐ</rt>用<rt>yòng</rt>来<rt>lái</rt>浇<rt>jiāo</rt>花<rt>huā</rt>，不<rt>bù</rt>浪<rt>làng</rt>费<rt>fèi</rt>水<rt>shuǐ</rt>。</ruby><br><br>
+            <ruby>这<rt>zhè</rt>样<rt>yàng</rt>做<rt>zuò</rt>，我<rt>wǒ</rt>就<rt>jiù</rt>不<rt>bù</rt>会<rt>huì</rt>浪<rt>làng</rt>费<rt>fèi</rt>宝<rt>bǎo</rt>贵<rt>guì</rt>的<rt>de</rt>资<rt>zī</rt>源<rt>yuán</rt>。</ruby>
+			<button onclick="playAudio('7.mp3')">播放录音</button>
+			<button onclick="stopAudio()">停止播放</button>
+			<audio id="audio_answer_7" src="7.mp3"></audio>			
+        </blockquote>
+    </div>
+
+    <div class="qa">
+        <p>3. <ruby>你<rt>nǐ</rt>认<rt>rèn</rt>为<rt>wéi</rt>垃<rt>lā</rt>圾<rt>jī</rt>分<rt>fēn</rt>类<rt>lèi</rt>重<rt>zhòng</rt>要<rt>yào</rt>吗<rt>ma</rt>？为<rt>wèi</rt>什<rt>shén</rt>么<rt>me</rt>？</ruby></p>
+        
+        <blockquote>
+            T:<ruby>我<rt>wǒ</rt>认<rt>rèn</rt>为<rt>wéi</rt>垃<rt>lā</rt>圾<rt>jī</rt>分<rt>fēn</rt>类<rt>lèi</rt>非<rt>fēi</rt>常<rt>cháng</rt>重<rt>zhòng</rt>要<rt>yào</rt>。</ruby><br><br>
+            <ruby>因<rt>yīn</rt>为<rt>wèi</rt>，如<rt>rú</rt>果<rt>guǒ</rt>我<rt>wǒ</rt>们<rt>men</rt>把<rt>bǎ</rt>能<rt>néng</rt>再<rt>zài</rt>循<rt>xún</rt>环<rt>huán</rt>使<rt>shǐ</rt>用<rt>yòng</rt>的<rt>de</rt>东<rt>dōng</rt>西<rt>xī</rt>丢<rt>diū</rt>掉<rt>diào</rt>，我<rt>wǒ</rt>们<rt>men</rt>不<rt>bù</rt>但<rt>dàn</rt>浪<rt>làng</rt>费<rt>fèi</rt>钱<rt>qián</rt>，还<rt>hái</rt>会<rt>huì</rt>浪<rt>làng</rt>费<rt>fèi</rt>资<rt>zī</rt>源<rt>yuán</rt>。</ruby><br><br>
+            <ruby>比<rt>bǐ</rt>如<rt>rú</rt>旧<rt>jiù</rt>报<rt>bào</rt>纸<rt>zhǐ</rt>可<rt>kě</rt>以<rt>yǐ</rt>用<rt>yòng</rt>来<rt>lái</rt>做<rt>zuò</rt>新<rt>xīn</rt>的<rt>de</rt>纸<rt>zhǐ</rt>张<rt>zhāng</rt>，旧<rt>jiù</rt>塑<rt>sù</rt>料<rt>liào</rt>瓶<rt>píng</rt>可<rt>kě</rt>以<rt>yǐ</rt>用<rt>yòng</rt>来<rt>lái</rt>做<rt>zuò</rt>成<rt>chéng</rt>小<rt>xiǎo</rt>花<rt>huā</rt>瓶<rt>píng</rt>。</ruby><br><br>
+            <ruby>如<rt>rú</rt>果<rt>guǒ</rt>我<rt>wǒ</rt>们<rt>men</rt>把<rt>bǎ</rt>它<rt>tā</rt>们<rt>men</rt>丢<rt>diū</rt>掉<rt>diào</rt>，就<rt>jiù</rt>没<rt>méi</rt>有<rt>yǒu</rt>机<rt>jī</rt>会<rt>huì</rt>再<rt>zài</rt>利<rt>lì</rt>用<rt>yòng</rt>了<rt>le</rt>，就<rt>jiù</rt>浪<rt>làng</rt>费<rt>fèi</rt>了<rt>le</rt>资<rt>zī</rt>源<rt>yuán</rt>。</ruby><br><br>
+            <ruby>另<rt>lìng</rt>外<rt>wài</rt>，我<rt>wǒ</rt>们<rt>men</rt>的<rt>de</rt>有<rt>yǒu</rt>些<rt>xiē</rt>资<rt>zī</rt>源<rt>yuán</rt>是<rt>shì</rt>可<rt>kě</rt>以<rt>yǐ</rt>用<rt>yòng</rt>完<rt>wán</rt>的<rt>de</rt>，如<rt>rú</rt>果<rt>guǒ</rt>我<rt>wǒ</rt>们<rt>men</rt>可<rt>kě</rt>以<rt>yǐ</rt>再<rt>zài</rt>循<rt>xún</rt>环<rt>huán</rt>使<rt>shǐ</rt>用<rt>yòng</rt>，就<rt>jiù</rt>可<rt>kě</rt>以<rt>yǐ</rt>使<rt>shǐ</rt>我<rt>wǒ</rt>们<rt>men</rt>的<rt>de</rt>后<rt>hòu</rt>代<rt>dài</rt>也<rt>yě</rt>用<rt>yòng</rt>到<rt>dào</rt>这<rt>zhè</rt>些<rt>xiē</rt>资<rt>zī</rt>源<rt>yuán</rt>，而<rt>ér</rt>不<rt>bù</rt>是<rt>shì</rt>没<rt>méi</rt>有<rt>yǒu</rt>资<rt>zī</rt>源<rt>yuán</rt>可<rt>kě</rt>用<rt>yòng</rt>。</ruby>
+			<button onclick="playAudio('8.mp3')">播放录音</button>
+			<button onclick="stopAudio()">停止播放</button>
+			<audio id="audio_answer_8" src="8.mp3"></audio>			
+        </blockquote>
+    </div>
+    <div class="qa">
+        <p>4. <ruby>你<rt>nǐ</rt>觉<rt>jué</rt>得<rt>de</rt>我<rt>wǒ</rt>们<rt>men</rt>应<rt>yīng</rt>该<rt>gāi</rt>怎<rt>zěn</rt>样<rt>yàng</rt>鼓<rt>gǔ</rt>励<rt>lì</rt>同<rt>tóng</rt>学<rt>xué</rt>们<rt>men</rt>节<rt>jié</rt>省<rt>shěng</rt>资<rt>zī</rt>源<rt>yuán</rt>，保<rt>bǎo</rt>护<rt>hù</rt>环<rt>huán</rt>境<rt>jìng</rt>？</ruby></p>
+        
+        <blockquote>
+            T:<ruby>我<rt>wǒ</rt>认<rt>rèn</rt>为<rt>wéi</rt>我<rt>wǒ</rt>们<rt>men</rt>应<rt>yīng</rt>该<rt>gāi</rt>首<rt>shǒu</rt>先<rt>xiān</rt>从<rt>cóng</rt>自<rt>zì</rt>己<rt>jǐ</rt>做<rt>zuò</rt>起<rt>qǐ</rt>。</ruby><br><br>
+            <ruby>我<rt>wǒ</rt>们<rt>men</rt>自<rt>zì</rt>己<rt>jǐ</rt>可<rt>kě</rt>以<rt>yǐ</rt>做<rt>zuò</rt>个<rt>gè</rt>节<rt>jié</rt>省<rt>shěng</rt>资<rt>zī</rt>源<rt>yuán</rt>、爱<rt>ài</rt>护<rt>hù</rt>环<rt>huán</rt>境<rt>jìng</rt>的<rt>de</rt>人<rt>rén</rt>，为<rt>wèi</rt>环<rt>huán</rt>境<rt>jìng</rt>保<rt>bǎo</rt>护<rt>hù</rt>尽<rt>jìn</rt>一<rt>yī</rt>份<rt>fèn</rt>力<rt>lì</rt>。</ruby><br><br>
+            <ruby>我<rt>wǒ</rt>们<rt>men</rt>还<rt>hái</rt>可<rt>kě</rt>以<rt>yǐ</rt>提<rt>tí</rt>醒<rt>xǐng</rt>朋<rt>péng</rt>友<rt>yǒu</rt>们<rt>men</rt>不<rt>bù</rt>要<rt>yào</rt>浪<rt>làng</rt>费<rt>fèi</rt>资<rt>zī</rt>源<rt>yuán</rt>，要<rt>yào</rt>爱<rt>ài</rt>护<rt>hù</rt>环<rt>huán</rt>境<rt>jìng</rt>。</ruby><br><br>
+            <ruby>我<rt>wǒ</rt>们<rt>men</rt>的<rt>de</rt>家<rt>jiā</rt>长<rt>zhǎng</rt>是<rt>shì</rt>我<rt>wǒ</rt>们<rt>men</rt>的<rt>de</rt>第<rt>dì</rt>一<rt>yī</rt>位<rt>wèi</rt>老<rt>lǎo</rt>师<rt>shī</rt>，所<rt>suǒ</rt>以<rt>yǐ</rt>他<rt>tā</rt>们<rt>men</rt>应<rt>yīng</rt>该<rt>gāi</rt>教<rt>jiào</rt>育<rt>yù</rt>我<rt>wǒ</rt>们<rt>men</rt>怎<rt>zěn</rt>样<rt>yàng</rt>做<rt>zuò</rt>才<rt>cái</rt>可<rt>kě</rt>以<rt>yǐ</rt>节<rt>jié</rt>省<rt>shěng</rt>资<rt>zī</rt>源<rt>yuán</rt>，保<rt>bǎo</rt>护<rt>hù</rt>环<rt>huán</rt>境<rt>jìng</rt>。</ruby><br><br>
+            <ruby>另<rt>lìng</rt>外<rt>wài</rt>，他<rt>tā</rt>们<rt>men</rt>可<rt>kě</rt>以<rt>yǐ</rt>以<rt>yǐ</rt>身<rt>shēn</rt>作<rt>zuò</rt>则<rt>zé</rt>，在<rt>zài</rt>日<rt>rì</rt>常<rt>cháng</rt>生<rt>shēng</rt>活<rt>huó</rt>中<rt>zhōng</rt>，节<rt>jié</rt>省<rt>shěng</rt>资<rt>zī</rt>源<rt>yuán</rt>，爱<rt>ài</rt>护<rt>hù</rt>环<rt>huán</rt>境<rt>jìng</rt>，为<rt>wèi</rt>我<rt>wǒ</rt>们<rt>men</rt>做<rt>zuò</rt>个<rt>gè</rt>好<rt>hǎo</rt>榜<rt>bǎng</rt>样<rt>yàng</rt>。</ruby><br><br>
+            <ruby>学<rt>xué</rt>校<rt>xiào</rt>里<rt>lǐ</rt>首<rt>shǒu</rt>先<rt>xiān</rt>要<rt>yào</rt>做<rt>zuò</rt>好<rt>hǎo</rt>宣<rt>xuān</rt>传<rt>chuán</rt>，可<rt>kě</rt>以<rt>yǐ</rt>举<rt>jǔ</rt>办<rt>bàn</rt>爱<rt>ài</rt>护<rt>hù</rt>环<rt>huán</rt>境<rt>jìng</rt>周<rt>zhōu</rt>的<rt>de</rt>活<rt>huó</rt>动<rt>dòng</rt>，还<rt>hái</rt>可<rt>kě</rt>以<rt>yǐ</rt>张<rt>zhāng</rt>贴<rt>tiē</rt>海<rt>hǎi</rt>报<rt>bào</rt>，把<rt>bǎ</rt>爱<rt>ài</rt>护<rt>hù</rt>环<rt>huán</rt>境<rt>jìng</rt>的<rt>de</rt>观<rt>guān</rt>念<rt>niàn</rt>传<rt>chuán</rt>递<rt>dì</rt>给<rt>gěi</rt>同<rt>tóng</rt>学<rt>xué</rt>们<rt>men</rt>。</ruby><br><br>
+            <ruby>学<rt>xué</rt>校<rt>xiào</rt>在<rt>zài</rt>利<rt>lì</rt>用<rt>yòng</rt>好<rt>hǎo</rt>品<rt>pǐn</rt>德<rt>dé</rt>课<rt>kè</rt>时<rt>shí</rt>，教<rt>jiào</rt>育<rt>yù</rt>同<rt>tóng</rt>学<rt>xué</rt>们<rt>men</rt>怎<rt>zěn</rt>样<rt>yàng</rt>做<rt>zuò</rt>才<rt>cái</rt>是<rt>shì</rt>节<rt>jié</rt>省<rt>shěng</rt>资<rt>zī</rt>源<rt>yuán</rt>的<rt>de</rt>。</ruby><br><br>
+            <ruby>老<rt>lǎo</rt>师<rt>shī</rt>们<rt>men</rt>也<rt>yě</rt>可<rt>kě</rt>以<rt>yǐ</rt>表<rt>biǎo</rt>扬<rt>yáng</rt>那<rt>nà</rt>些<rt>xiē</rt>爱<rt>ài</rt>护<rt>hù</rt>环<rt>huán</rt>境<rt>jìng</rt>的<rt>de</rt>同<rt>tóng</rt>学<rt>xué</rt>，给<rt>gěi</rt>他<rt>tā</rt>们<rt>men</rt>小<rt>xiǎo</rt>奖<rt>jiǎng</rt>励<rt>lì</rt>。</ruby><br><br>
+            <ruby>也<rt>yě</rt>可<rt>kě</rt>以<rt>yǐ</rt>批<rt>pī</rt>评<rt>píng</rt>那<rt>nà</rt>些<rt>xiē</rt>浪<rt>làng</rt>费<rt>fèi</rt>资<rt>zī</rt>源<rt>yuán</rt>的<rt>de</rt>同<rt>tóng</rt>学<rt>xué</rt>。</ruby><br><br>
+            <ruby>我<rt>wǒ</rt>们<rt>men</rt>的<rt>de</rt>政<rt>zhèng</rt>府<rt>fǔ</rt>可<rt>kě</rt>以<rt>yǐ</rt>奖<rt>jiǎng</rt>励<rt>lì</rt>那<rt>nà</rt>些<rt>xiē</rt>保<rt>bǎo</rt>护<rt>hù</rt>环<rt>huán</rt>境<rt>jìng</rt>的<rt>de</rt>人<rt>rén</rt>，和<rt>hé</rt>惩<rt>chéng</rt>罚<rt>fá</rt>浪<rt>làng</rt>费<rt>fèi</rt>资<rt>zī</rt>源<rt>yuán</rt>的<rt>de</rt>人<rt>rén</rt>。</ruby>
+			<button onclick="playAudio('9.mp3')">播放录音</button>
+			<button onclick="stopAudio()">停止播放</button>
+			<audio id="audio_answer_9" src="9.mp3"></audio>	
+        </blockquote>
+    </div>
+    <h1><ruby>口<rt>kǒu</rt>试<rt>shì</rt>对<rt>duì</rt>话<rt>huà</rt>考<rt>kǎo</rt>题<rt>tí</rt>及<rt>jí</rt>答<rt>dá</rt>案<rt>àn</rt>（2）关<rt>guān</rt>爱<rt>ài</rt>家<rt>jiā</rt>人<rt>rén</rt></ruby></h1>
+
+    <div class="qa">
+        <p>1. <ruby>同<rt>tóng</rt>学<rt>xué</rt>，在<rt>zài</rt>刚<rt>gāng</rt>才<rt>cái</rt>的<rt>de</rt>录<rt>lù</rt>像<rt>xiàng</rt>中<rt>zhōng</rt>，哪<rt>nǎ</rt>些<rt>xiē</rt>情<rt>qíng</rt>景<rt>jǐng</rt>令<rt>lìng</rt>你<rt>nǐ</rt>印<rt>yìn</rt>象<rt>xiàng</rt>深<rt>shēn</rt>刻<rt>kè</rt>？为<rt>wèi</rt>什<rt>shén</rt>么<rt>me</rt>？</ruby></p>
+        
+        <blockquote>
+            T:<ruby>在<rt>zài</rt>刚<rt>gāng</rt>才<rt>cái</rt>的<rt>de</rt>录<rt>lù</rt>像<rt>xiàng</rt>中<rt>zhōng</rt>，我<rt>wǒ</rt>看<rt>kàn</rt>到<rt>dào</rt>一<rt>yī</rt>位<rt>wèi</rt>奶<rt>nǎi</rt>奶<rt>nai</rt>，她<rt>tā</rt>在<rt>zài</rt>厨<rt>chú</rt>房<rt>fáng</rt>里<rt>lǐ</rt>收<rt>shōu</rt>晾<rt>liàng</rt>干<rt>gān</rt>的<rt>de</rt>衣<rt>yī</rt>服<rt>fú</rt>。</ruby><br><br>
+            <ruby>这<rt>zhè</rt>时<rt>shí</rt>，一<rt>yī</rt>位<rt>wèi</rt>小<rt>xiǎo</rt>女<rt>nǚ</rt>孩<rt>hái</rt>，可<rt>kě</rt>能<rt>néng</rt>是<rt>shì</rt>她<rt>tā</rt>的<rt>de</rt>孙<rt>sūn</rt>女<rt>nǚ</rt>，看<rt>kàn</rt>到<rt>dào</rt>了<rt>le</rt>，马<rt>mǎ</rt>上<rt>shàng</rt>走<rt>zǒu</rt>上<rt>shàng</rt>前<rt>qián</rt>，帮<rt>bāng</rt>助<rt>zhù</rt>奶<rt>nǎi</rt>奶<rt>nai</rt>拿<rt>ná</rt>着<rt>zhe</rt>衣<rt>yī</rt>服<rt>fú</rt>，她<rt>tā</rt>把<rt>bǎ</rt>衣<rt>yī</rt>服<rt>fú</rt>拿<rt>ná</rt>到<rt>dào</rt>沙<rt>shā</rt>发<rt>fā</rt>上<rt>shàng</rt>，帮<rt>bāng</rt>助<rt>zhù</rt>奶<rt>nǎi</rt>奶<rt>nai</rt>折<rt>zhé</rt>衣<rt>yī</rt>服<rt>fú</rt>。</ruby><br><br>
+            <ruby>还<rt>hái</rt>把<rt>bǎ</rt>折<rt>zhé</rt>好<rt>hǎo</rt>的<rt>de</rt>衣<rt>yī</rt>服<rt>fú</rt>放<rt>fàng</rt>到<rt>dào</rt>衣<rt>yī</rt>橱<rt>chú</rt>里<rt>lǐ</rt>。</ruby><br><br>
+            <ruby>奶<rt>nǎi</rt>奶<rt>nai</rt>看<rt>kàn</rt>到<rt>dào</rt>了<rt>le</rt>，欣<rt>xīn</rt>慰<rt>wèi</rt>地<rt>de</rt>笑<rt>xiào</rt>了<rt>le</rt>。</ruby><br><br>
+            <ruby>这<rt>zhè</rt>个<rt>gè</rt>情<rt>qíng</rt>景<rt>jǐng</rt>令<rt>lìng</rt>我<rt>wǒ</rt>印<rt>yìn</rt>象<rt>xiàng</rt>深<rt>shēn</rt>刻<rt>kè</rt>，因<rt>yīn</rt>为<rt>wèi</rt>我<rt>wǒ</rt>觉<rt>jué</rt>得<rt>de</rt>这<rt>zhè</rt>位<rt>wèi</rt>小<rt>xiǎo</rt>女<rt>nǚ</rt>孩<rt>hái</rt>懂<rt>dǒng</rt>得<rt>de</rt>关<rt>guān</rt>爱<rt>ài</rt>老<rt>lǎo</rt>人<rt>rén</rt>，是<rt>shì</rt>个<rt>gè</rt>懂<rt>dǒng</rt>事<rt>shì</rt>的<rt>de</rt>孩<rt>hái</rt>子<rt>zǐ</rt>。</ruby>
+			<button onclick="playAudio('10.mp3')">播放录音</button>
+			<button onclick="stopAudio()">停止播放</button>
+			<audio id="audio_answer_10" src="10.mp3"></audio>	
+        </blockquote>
+		<p><2. <ruby>
+			二<rt>èr</rt>．<rt>.</rt>在<rt>zài</rt>日<rt>rì</rt>常<rt>cháng</rt>生<rt>shēng</rt>活<rt>huó</rt>中<rt>zhōng</rt>，<rt>,</rt>你<rt>nǐ</rt>是<rt>shì</rt>怎<rt>zěn</rt>样<rt>yàng</rt>关<rt>guān</rt>爱<rt>ài</rt>家<rt>jiā</rt>人<rt>rén</rt>的<rt>de</rt>？<rt>?</rt>
+			</ruby></p>
+			
+		<blockquote>
+			T:<ruby>在<rt>zài</rt>日<rt>rì</rt>常<rt>cháng</rt>生<rt>shēng</rt>活<rt>huó</rt>中<rt>zhōng</rt>，<rt>,</rt>我<rt>wǒ</rt>常<rt>cháng</rt>常<rt>cháng</rt>在<rt>zài</rt>家<rt>jiā</rt>里<rt>lǐ</rt>帮<rt>bāng</rt>忙<rt>máng</rt>做<rt>zuò</rt>家<rt>jiā</rt>务<rt>wù</rt>。<rt>.</rt>
+			</ruby><br>
+			<ruby>
+			帮<rt>bāng</rt>妈<rt>mā</rt>妈<rt>ma</rt>和<rt>hé</rt>爸<rt>bà</rt>爸<rt>ba</rt>折<rt>zhé</rt>衣<rt>yī</rt>服<rt>fú</rt>，<rt>,</rt>和<rt>hé</rt>照<rt>zhào</rt>顾<rt>gù</rt>我<rt>wǒ</rt>的<rt>de</rt>奶<rt>nǎi</rt>奶<rt>nai</rt>。<rt>.</rt>
+			</ruby><br>
+			<ruby>
+			例<rt>lì</rt>如<rt>rú</rt>：<rt>:</rt>我<rt>wǒ</rt>会<rt>huì</rt>帮<rt>bāng</rt>奶<rt>nǎi</rt>奶<rt>nai</rt>煮<rt>zhǔ</rt>她<rt>tā</rt>喜<rt>xǐ</rt>欢<rt>huān</rt>吃<rt>chī</rt>的<rt>de</rt>菜<rt>cài</rt>，<rt>,</rt>
+			</ruby><br>
+			<ruby>
+			然<rt>rán</rt>后<rt>hòu</rt>，<rt>,</rt>我<rt>wǒ</rt>也<rt>yě</rt>会<rt>huì</rt>给<rt>gěi</rt>我<rt>wǒ</rt>的<rt>de</rt>妹<rt>mèi</rt>妹<rt>mei</rt>辅<rt>fǔ</rt>导<rt>dǎo</rt>功<rt>gōng</rt>课<rt>kè</rt>，<rt>,</rt>
+			</ruby><br>
+			<ruby>
+			教<rt>jiāo</rt>她<rt>tā</rt>做<rt>zuò</rt>功<rt>gōng</rt>课<rt>kè</rt>。<rt>.</rt>爸<rt>bà</rt>爸<rt>ba</rt>、<rt>,</rt>妈<rt>mā</rt>妈<rt>ma</rt>回<rt>huí</rt>家<rt>jiā</rt>后<rt>hòu</rt>，<rt>,</rt>
+			</ruby><br>
+			<ruby>
+			我<rt>wǒ</rt>也<rt>yě</rt>会<rt>huì</rt>帮<rt>bāng</rt>他<rt>tā</rt>们<rt>men</rt>煮<rt>zhǔ</rt>饭<rt>fàn</rt>给<rt>gěi</rt>他<rt>tā</rt>们<rt>men</rt>吃<rt>chī</rt>。<rt>.</rt>
+			</ruby>
+			<button onclick="playAudio('11.mp3')">播放录音</button>
+			<button onclick="stopAudio()">停止播放</button>
+			<audio id="audio_answer_11" src="11.mp3"></audio>
+		</blockquote>			
+		<p><3. 	
+			<ruby>
+			三<rt>sān</rt>．<rt>.</rt>除<rt>chú</rt>了<rt>le</rt>在<rt>zài</rt>录<rt>lù</rt>像<rt>xiàng</rt>中<rt>zhōng</rt>看<rt>kàn</rt>到<rt>dào</rt>的<rt>de</rt>，<rt>,</rt>你<rt>nǐ</rt>认<rt>rèn</rt>为<rt>wéi</rt>我<rt>wǒ</rt>们<rt>men</rt>还<rt>hái</rt>应<rt>yīng</rt>该<rt>gāi</rt>如<rt>rú</rt>何<rt>hé</rt>关<rt>guān</rt>爱<rt>ài</rt>老<rt>lǎo</rt>年<rt>nián</rt>人<rt>rén</rt>？<rt>?</rt>
+			</ruby></p>
+			<ruby>
+			<blockquote>
+			T:<ruby>除<rt>chú</rt>了<rt>le</rt>在<rt>zài</rt>录<rt>lù</rt>像<rt>xiàng</rt>中<rt>zhōng</rt>看<rt>kàn</rt>到<rt>dào</rt>的<rt>de</rt>，<rt>,</rt>我<rt>wǒ</rt>们<rt>men</rt>也<rt>yě</rt>可<rt>kě</rt>以<rt>yǐ</rt>陪<rt>péi</rt>伴<rt>bàn</rt>他<rt>tā</rt>们<rt>men</rt>做<rt>zuò</rt>他<rt>tā</rt>们<rt>men</rt>喜<rt>xǐ</rt>欢<rt>huān</rt>的<rt>de</rt>事<rt>shì</rt>，<rt>,</rt>
+			</ruby><br>
+			<ruby>
+			比<rt>bǐ</rt>如<rt>rú</rt>陪<rt>péi</rt>他<rt>tā</rt>们<rt>men</rt>看<rt>kàn</rt>电<rt>diàn</rt>视<rt>shì</rt>或<rt>huò</rt>玩<rt>wán</rt>游<rt>yóu</rt>戏<rt>xì</rt>。<rt>.</rt>
+			</ruby><br>
+			<ruby>
+			我<rt>wǒ</rt>们<rt>men</rt>还<rt>hái</rt>可<rt>kě</rt>以<rt>yǐ</rt>帮<rt>bāng</rt>助<rt>zhù</rt>他<rt>tā</rt>们<rt>men</rt>做<rt>zuò</rt>他<rt>tā</rt>们<rt>men</rt>体<rt>tǐ</rt>力<rt>lì</rt>上<rt>shàng</rt>感<rt>gǎn</rt>到<rt>dào</rt>做<rt>zuò</rt>不<rt>bù</rt>了<rt>liǎo</rt>的<rt>de</rt>事<rt>shì</rt>，<rt>,</rt>
+			</ruby><br>
+			<ruby>
+			比<rt>bǐ</rt>如<rt>rú</rt>帮<rt>bāng</rt>他<rt>tā</rt>们<rt>men</rt>抹<rt>mǒ</rt>地<rt>dì</rt>板<rt>bǎn</rt>，<rt>,</rt>煮<rt>zhǔ</rt>饭<rt>fàn</rt>。<rt>.</rt>
+			</ruby>
+			<button onclick="playAudio('12.mp3')">播放录音</button>
+			<button onclick="stopAudio()">停止播放</button>
+			<audio id="audio_answer_12" src="12.mp3"></audio>	
+			</blockquote>
+		<p><4. 	
+			<ruby>
+			四<rt>sì</rt>．<rt>.</rt>家<rt>jiā</rt>长<rt>zhǎng</rt>应<rt>yīng</rt>该<rt>gāi</rt>怎<rt>zěn</rt>样<rt>yàng</rt>鼓<rt>gǔ</rt>励<rt>lì</rt>同<rt>tóng</rt>学<rt>xué</rt>们<rt>men</rt>关<rt>guān</rt>爱<rt>ài</rt>老<rt>lǎo</rt>年<rt>nián</rt>人<rt>rén</rt>？<rt>?</rt>
+			</ruby></p>
+			<ruby>
+		<blockquote>
+			T:<ruby>我<rt>wǒ</rt>觉<rt>jué</rt>得<rt>de</rt>家<rt>jiā</rt>长<rt>zhǎng</rt>可<rt>kě</rt>以<rt>yǐ</rt>教<rt>jiào</rt>育<rt>yù</rt>我<rt>wǒ</rt>们<rt>men</rt>应<rt>yīng</rt>该<rt>gāi</rt>关<rt>guān</rt>爱<rt>ài</rt>老<rt>lǎo</rt>人<rt>rén</rt>，<rt>,</rt>
+			</ruby><br>
+			<ruby>
+			照<rt>zhào</rt>顾<rt>gù</rt>老<rt>lǎo</rt>人<rt>rén</rt>，<rt>,</rt>和<rt>hé</rt>教<rt>jiào</rt>育<rt>yù</rt>我<rt>wǒ</rt>们<rt>men</rt>怎<rt>zěn</rt>样<rt>yàng</rt>做<rt>zuò</rt>才<rt>cái</rt>是<rt>shì</rt>关<rt>guān</rt>爱<rt>ài</rt>老<rt>lǎo</rt>人<rt>rén</rt>。<rt>.</rt>
+			</ruby><br>
+			<ruby>
+			另<rt>lìng</rt>外<rt>wài</rt>，<rt>,</rt>他<rt>tā</rt>们<rt>men</rt>也<rt>yě</rt>可<rt>kě</rt>以<rt>yǐ</rt>以<rt>yǐ</rt>身<rt>shēn</rt>作<rt>zuò</rt>则<rt>zé</rt>，<rt>,</rt>
+			</ruby><br>
+			<ruby>
+			为<rt>wèi</rt>我<rt>wǒ</rt>们<rt>men</rt>做<rt>zuò</rt>个<rt>gè</rt>好<rt>hǎo</rt>榜<rt>bǎng</rt>样<rt>yàng</rt>，<rt>,</rt>自<rt>zì</rt>己<rt>jǐ</rt>就<rt>jiù</rt>应<rt>yīng</rt>该<rt>gāi</rt>关<rt>guān</rt>爱<rt>ài</rt>老<rt>lǎo</rt>人<rt>rén</rt>，<rt>,</rt>
+			</ruby><br>
+			<ruby>
+			照<rt>zhào</rt>顾<rt>gù</rt>老<rt>lǎo</rt>师<rt>shī</rt>。<rt>.</rt>比<rt>bǐ</rt>如<rt>rú</rt>，<rt>,</rt>家<rt>jiā</rt>长<rt>zhǎng</rt>应<rt>yīng</rt>该<rt>gāi</rt>常<rt>cháng</rt>常<rt>cháng</rt>探<rt>tàn</rt>访<rt>fǎng</rt>
+			</ruby><br>
+			<ruby>
+			爷<rt>yé</rt>爷<rt>ye</rt>奶<rt>nǎi</rt>奶<rt>nai</rt>，<rt>,</rt>帮<rt>bāng</rt>助<rt>zhù</rt>他<rt>tā</rt>们<rt>men</rt>做<rt>zuò</rt>家<rt>jiā</rt>务<rt>wù</rt>，<rt>,</rt>
+			</ruby><br>
+			<ruby>
+			陪<rt>péi</rt>伴<rt>bàn</rt>他<rt>tā</rt>们<rt>men</rt>做<rt>zuò</rt>他<rt>tā</rt>们<rt>men</rt>喜<rt>xǐ</rt>欢<rt>huān</rt>的<rt>de</rt>事<rt>shì</rt>情<rt>qing</rt>。<rt>.</rt>
+			</ruby>
+			<button onclick="playAudio('13.mp3')">播放录音</button>
+			<button onclick="stopAudio()">停止播放</button>
+			<audio id="audio_answer_13" src="13.mp3"></audio>			
+			</blockquote>
+		
+    </div>
+    <h1><ruby>口<rt>kǒu</rt>试<rt>shì</rt>对<rt>duì</rt>话<rt>huà</rt>题<rt>tí</rt>目<rt>mù</rt>及<rt>jí</rt>答<rt>dá</rt>案<rt>àn</rt>（12）诚<rt>chéng</rt>实<rt>shí</rt></ruby></h1>
+
+    <div class="qa">
+        <p>1. <ruby>同<rt>tóng</rt>学<rt>xué</rt>，请<rt>qǐng</rt>你<rt>nǐ</rt>描<rt>miáo</rt>述<rt>shù</rt>录<rt>lù</rt>像<rt>xiàng</rt>中<rt>zhōng</rt>值<rt>zhí</rt>得<rt>dé</rt>学<rt>xué</rt>习<rt>xí</rt>的<rt>de</rt>一<rt>yī</rt>个<rt>gè</rt>行<rt>xíng</rt>为<rt>wéi</rt>。</ruby></p>
+        
+        <blockquote>
+            T:<ruby>在<rt>zài</rt>录<rt>lù</rt>像<rt>xiàng</rt>中<rt>zhōng</rt>，我<rt>wǒ</rt>看<rt>kàn</rt>到<rt>dào</rt>一<rt>yī</rt>位<rt>wèi</rt>小<rt>xiǎo</rt>女<rt>nǚ</rt>孩<rt>hái</rt>，从<rt>cóng</rt>食<rt>shí</rt>堂<rt>táng</rt>里<rt>lǐ</rt>要<rt>yào</rt>回<rt>huí</rt>课<rt>kè</rt>室<rt>shì</rt>时<rt>shí</rt>，看<rt>kàn</rt>到<rt>dào</rt>一<rt>yī</rt>个<rt>gè</rt>水<rt>shuǐ</rt>壶<rt>hú</rt>，放<rt>fàng</rt>在<rt>zài</rt>桌<rt>zhuō</rt>子<rt>zi</rt>上<rt>shàng</rt>，周<rt>zhōu</rt>围<rt>wéi</rt>没<rt>méi</rt>有<rt>yǒu</rt>人<rt>rén</rt>。</ruby><br><br>
+            <ruby>她<rt>tā</rt>看<rt>kàn</rt>到<rt>dào</rt>了<rt>le</rt>，拿<rt>ná</rt>水<rt>shuǐ</rt>壶<rt>hú</rt>，看<rt>kàn</rt>到<rt>dào</rt>上<rt>shàng</rt>面<rt>miàn</rt>有<rt>yǒu</rt>主<rt>zhǔ</rt>人<rt>rén</rt>的<rt>de</rt>名<rt>míng</rt>字<rt>zì</rt>和<rt>hé</rt>班<rt>bān</rt>级<rt>jí</rt>。</ruby><br><br>
+            <ruby>她<rt>tā</rt>就<rt>jiù</rt>到<rt>dào</rt>了<rt>le</rt>那<rt>nà</rt>位<rt>wèi</rt>丢<rt>diū</rt>失<rt>shī</rt>水<rt>shuǐ</rt>壶<rt>hú</rt>的<rt>de</rt>同<rt>tóng</rt>学<rt>xué</rt>的<rt>de</rt>班<rt>bān</rt>级<rt>jí</rt>，问<rt>wèn</rt>是<rt>shì</rt>不<rt>bù</rt>是<rt>shì</rt>有<rt>yǒu</rt>人<rt>rén</rt>丢<rt>diū</rt>了<rt>le</rt>水<rt>shuǐ</rt>壶<rt>hú</rt>。</ruby><br><br>
+            <ruby>一<rt>yī</rt>位<rt>wèi</rt>男<rt>nán</rt>生<rt>shēng</rt>看<rt>kàn</rt>到<rt>dào</rt>了<rt>le</rt>，走<rt>zǒu</rt>上<rt>shàng</rt>前<rt>qián</rt>，告<rt>gào</rt>诉<rt>sù</rt>女<rt>nǚ</rt>生<rt>shēng</rt>，水<rt>shuǐ</rt>壶<rt>hú</rt>是<rt>shì</rt>他<rt>tā</rt>的<rt>de</rt>，然<rt>rán</rt>后<rt>hòu</rt>，他<rt>tā</rt>谢<rt>xiè</rt>谢<rt>xiè</rt>那<rt>nà</rt>位<rt>wèi</rt>女<rt>nǚ</rt>孩<rt>hái</rt>。</ruby><br><br>
+            <ruby>我<rt>wǒ</rt>看<rt>kàn</rt>到<rt>dào</rt>后<rt>hòu</rt>，感<rt>gǎn</rt>到<rt>dào</rt>很<rt>hěn</rt>感<rt>gǎn</rt>动<rt>dòng</rt>，因<rt>yīn</rt>为<rt>wèi</rt>那<rt>nà</rt>位<rt>wèi</rt>小<rt>xiǎo</rt>女<rt>nǚ</rt>孩<rt>hái</rt>可<rt>kě</rt>以<rt>yǐ</rt>不<rt>bù</rt>管<rt>guǎn</rt>水<rt>shuǐ</rt>壶<rt>hú</rt>，走<rt>zǒu</rt>回<rt>huí</rt>课<rt>kè</rt>室<rt>shì</rt>。</ruby><br><br>
+            <ruby>但<rt>dàn</rt>是<rt>shì</rt>她<rt>tā</rt>决<rt>jué</rt>定<rt>dìng</rt>归<rt>guī</rt>还<rt>huán</rt>失<rt>shī</rt>物<rt>wù</rt>给<rt>gěi</rt>失<rt>shī</rt>主<rt>zhǔ</rt>，她<rt>tā</rt>是<rt>shì</rt>个<rt>gè</rt>诚<rt>chéng</rt>实<rt>shí</rt>的<rt>de</rt>人<rt>rén</rt>，这<rt>zhè</rt>个<rt>gè</rt>行<rt>xíng</rt>为<rt>wéi</rt>值<rt>zhí</rt>得<rt>dé</rt>我<rt>wǒ</rt>们<rt>men</rt>学<rt>xué</rt>习<rt>xí</rt>。</ruby>
+			<button onclick="playAudio('14.mp3')">播放录音</button>
+			<button onclick="stopAudio()">停止播放</button>
+			<audio id="audio_answer_14" src="14.mp3"></audio>				
+        </blockquote>
+		
+
+<p>
+  <ruby>
+    二<rt>èr</rt>．<rt>.</rt>你<rt>nǐ</rt>觉<rt>jué</rt>得<rt>de</rt>诚<rt>chéng</rt>实<rt>shí</rt>重<rt>zhòng</rt>要<rt>yào</rt>吗<rt>ma</rt>？<rt>?</rt>为<rt>wèi</rt>什<rt>shén</rt>么<rt>me</rt>？<rt>?</rt>
+  </ruby>
+</p>
+
+<blockquote>
+  <ruby>
+    T<rt>T</rt>:<rt>:</rt>我<rt>wǒ</rt>觉<rt>jué</rt>得<rt>de</rt>诚<rt>chéng</rt>实<rt>shí</rt>重<rt>zhòng</rt>要<rt>yào</rt>。<rt>.</rt>
+  </ruby><br>
+  <ruby>
+    因<rt>yīn</rt>为<rt>wèi</rt>如<rt>rú</rt>果<rt>guǒ</rt>我<rt>wǒ</rt>们<rt>men</rt>不<rt>bù</rt>诚<rt>chéng</rt>实<rt>shí</rt>，<rt>,</rt>
+    别<rt>bié</rt>人<rt>rén</rt>就<rt>jiù</rt>不<rt>bù</rt>会<rt>huì</rt>相<rt>xiāng</rt>信<rt>xìn</rt>我<rt>wǒ</rt>们<rt>men</rt>。<rt>.</rt>
+  </ruby><br>
+  <ruby>
+    比<rt>bǐ</rt>如<rt>rú</rt>，<rt>,</rt>如<rt>rú</rt>果<rt>guǒ</rt>有<rt>yǒu</rt>人<rt>rén</rt>不<rt>bù</rt>小<rt>xiǎo</rt>心<rt>xīn</rt>丢<rt>diū</rt>了<rt>le</rt>水<rt>shuǐ</rt>壶<rt>hú</rt>，<rt>,</rt>
+  </ruby><br>
+  <ruby>
+    找<rt>zhǎo</rt>不<rt>bù</rt>到<rt>dào</rt>，<rt>,</rt>我<rt>wǒ</rt>们<rt>men</rt>如<rt>rú</rt>果<rt>guǒ</rt>不<rt>bù</rt>诚<rt>chéng</rt>实<rt>shí</rt>，<rt>,</rt>
+  </ruby><br>
+  <ruby>
+    把<rt>bǎ</rt>水<rt>shuǐ</rt>壶<rt>hú</rt>占<rt>zhàn</rt>为<rt>wéi</rt>己<rt>jǐ</rt>有<rt>yǒu</rt>，<rt>,</rt>
+    别<rt>bié</rt>人<rt>rén</rt>发<rt>fā</rt>现<rt>xiàn</rt>了<rt>le</rt>，<rt>,</rt>
+  </ruby><br>
+  <ruby>
+    以<rt>yǐ</rt>后<rt>hòu</rt>再<rt>zài</rt>有<rt>yǒu</rt>人<rt>rén</rt>丢<rt>diū</rt>东<rt>dōng</rt>西<rt>xi</rt>，<rt>,</rt>
+    虽<rt>suī</rt>然<rt>rán</rt>我<rt>wǒ</rt>们<rt>men</rt>没<rt>méi</rt>有<rt>yǒu</rt>拿<rt>ná</rt>，<rt>,</rt>
+  </ruby><br>
+  <ruby>
+    他<rt>tā</rt>们<rt>men</rt>也<rt>yě</rt>会<rt>huì</rt>认<rt>rèn</rt>为<rt>wéi</rt>是<rt>shì</rt>我<rt>wǒ</rt>们<rt>men</rt>拿<rt>ná</rt>的<rt>de</rt>。<rt>.</rt>
+  </ruby><br>
+  <ruby>
+    第<rt>dì</rt>二<rt>èr</rt>，<rt>,</rt>如<rt>rú</rt>果<rt>guǒ</rt>我<rt>wǒ</rt>们<rt>men</rt>不<rt>bù</rt>诚<rt>chéng</rt>实<rt>shí</rt>，<rt>,</rt>
+    别<rt>bié</rt>人<rt>rén</rt>不<rt>bù</rt>会<rt>huì</rt>和<rt>hé</rt>我<rt>wǒ</rt>们<rt>men</rt>做<rt>zuò</rt>朋<rt>péng</rt>友<rt>yǒu</rt>。<rt>.</rt>
+  </ruby><br>
+  <ruby>
+    因<rt>yīn</rt>为<rt>wèi</rt>，<rt>,</rt>不<rt>bù</rt>诚<rt>chéng</rt>实<rt>shí</rt>的<rt>de</rt>人<rt>rén</rt>大<rt>dà</rt>家<rt>jiā</rt>都<rt>dōu</rt>不<rt>bù</rt>会<rt>huì</rt>喜<rt>xǐ</rt>欢<rt>huān</rt>。<rt>.</rt>
+  </ruby><br>
+  <ruby>
+    T<rt>T</rt>:<rt>:</rt>如<rt>rú</rt>果<rt>guǒ</rt>我<rt>wǒ</rt>们<rt>men</rt>不<rt>bù</rt>诚<rt>chéng</rt>实<rt>shí</rt>，<rt>,</rt>
+  </ruby><br>
+  <ruby>
+    可<rt>kě</rt>能<rt>néng</rt>老<rt>lǎo</rt>师<rt>shī</rt>和<rt>hé</rt>家<rt>jiā</rt>长<rt>zhǎng</rt>就<rt>jiù</rt>不<rt>bù</rt>会<rt>huì</rt>了<rt>liǎo</rt>解<rt>jiě</rt>事<rt>shì</rt>情<rt>qing</rt>发<rt>fā</rt>生<rt>shēng</rt>和<rt>hé</rt>发<rt>fā</rt>展<rt>zhǎn</rt>的<rt>de</rt>实<rt>shí</rt>际<rt>jì</rt>情<rt>qíng</rt>况<rt>kuàng</rt>，<rt>,</rt>
+  </ruby><br>
+  <ruby>
+    就<rt>jiù</rt>不<rt>bù</rt>可<rt>kě</rt>以<rt>yǐ</rt>很<rt>hěn</rt>好<rt>hǎo</rt>地<rt>de</rt>处<rt>chǔ</rt>理<rt>lǐ</rt>好<rt>hǎo</rt>事<rt>shì</rt>情<rt>qing</rt>。<rt>.</rt>
+  </ruby><br>
+  <ruby>
+    可<rt>kě</rt>能<rt>néng</rt>会<rt>huì</rt>引<rt>yǐn</rt>起<rt>qǐ</rt>其<rt>qí</rt>他<rt>tā</rt>的<rt>de</rt>麻<rt>má</rt>烦<rt>fan</rt>。<rt>.</rt>
+  </ruby><br>
+  <ruby>
+    比<rt>bǐ</rt>如<rt>rú</rt>刚<rt>gāng</rt>才<rt>cái</rt>录<rt>lù</rt>像<rt>xiàng</rt>中<rt>zhōng</rt>的<rt>de</rt>两<rt>liǎng</rt>位<rt>wèi</rt>女<rt>nǚ</rt>孩<rt>hái</rt>，<rt>,</rt>
+  </ruby><br>
+  <ruby>
+    如<rt>rú</rt>果<rt>guǒ</rt>她<rt>tā</rt>们<rt>men</rt>没<rt>méi</rt>有<rt>yǒu</rt>告<rt>gào</rt>诉<rt>sù</rt>老<rt>lǎo</rt>师<rt>shī</rt>书<rt>shū</rt>被<rt>bèi</rt>撕<rt>sī</rt>破<rt>pò</rt>了<rt>le</rt>，<rt>,</rt>
+  </ruby><br>
+  <ruby>
+    老<rt>lǎo</rt>师<rt>shī</rt>可<rt>kě</rt>能<rt>néng</rt>不<rt>bù</rt>会<rt>huì</rt>粘<rt>zhān</rt>好<rt>hǎo</rt>书<rt>shū</rt>本<rt>běn</rt>，<rt>,</rt>
+  </ruby><br>
+  <ruby>
+    可<rt>kě</rt>能<rt>néng</rt>这<rt>zhè</rt>本<rt>běn</rt>书<rt>shū</rt>以<rt>yǐ</rt>后<rt>hòu</rt>就<rt>jiù</rt>不<rt>bù</rt>完<rt>wán</rt>整<rt>zhěng</rt>，<rt>,</rt>
+  </ruby><br>
+  <ruby>
+    同<rt>tóng</rt>学<rt>xué</rt>们<rt>men</rt>看<rt>kàn</rt>不<rt>bù</rt>到<rt>dào</rt>完<rt>wán</rt>整<rt>zhěng</rt>的<rt>de</rt>故<rt>gù</rt>事<rt>shì</rt>了<rt>le</rt>。<rt>.</rt>
+  </ruby>
+  <button onclick="playAudio('15.mp3')">播放录音</button>
+  <button onclick="stopAudio()">停止播放</button>
+  <audio id="audio_answer_15" src="15.mp3"></audio>
+</blockquote>
+
+<p>
+  <ruby>
+    三<rt>sān</rt>．<rt>.</rt>除<rt>chú</rt>了<rt>le</rt>录<rt>lù</rt>像<rt>xiàng</rt>中<rt>zhōng</rt>看<rt>kàn</rt>到<rt>dào</rt>的<rt>de</rt>，<rt>,</rt>
+  </ruby><br>
+  <ruby>
+    你<rt>nǐ</rt>觉<rt>jué</rt>得<rt>de</rt>我<rt>wǒ</rt>们<rt>men</rt>还<rt>hái</rt>可<rt>kě</rt>以<rt>yǐ</rt>怎<rt>zěn</rt>样<rt>yàng</rt>做<rt>zuò</rt>才<rt>cái</rt>可<rt>kě</rt>以<rt>yǐ</rt>做<rt>zuò</rt>个<rt>gè</rt>诚<rt>chéng</rt>实<rt>shí</rt>的<rt>de</rt>人<rt>rén</rt>？<rt>?</rt>
+  </ruby>
+</p>
+
+<blockquote>
+  <ruby>
+    T<rt>T</rt>:<rt>:</rt>除<rt>chú</rt>了<rt>le</rt>录<rt>lù</rt>像<rt>xiàng</rt>中<rt>zhōng</rt>看<rt>kàn</rt>到<rt>dào</rt>的<rt>de</rt>，<rt>,</rt>
+  </ruby><br>
+  <ruby>
+    我<rt>wǒ</rt>们<rt>men</rt>也<rt>yě</rt>可<rt>kě</rt>以<rt>yǐ</rt>不<rt>bù</rt>要<rt>yào</rt>撒<rt>sā</rt>谎<rt>huǎng</rt>。<rt>.</rt>
+  </ruby><br>
+  <ruby>
+    比<rt>bǐ</rt>如<rt>rú</rt>，<rt>,</rt>我<rt>wǒ</rt>们<rt>men</rt>忘<rt>wàng</rt>记<rt>jì</rt>做<rt>zuò</rt>功<rt>gōng</rt>课<rt>kè</rt>的<rt>de</rt>时<rt>shí</rt>候<rt>hou</rt>，<rt>,</rt>
+  </ruby><br>
+  <ruby>
+    我<rt>wǒ</rt>们<rt>men</rt>应<rt>yīng</rt>该<rt>gāi</rt>诚<rt>chéng</rt>实<rt>shí</rt>地<rt>de</rt>告<rt>gào</rt>诉<rt>sù</rt>老<rt>lǎo</rt>师<rt>shī</rt>，<rt>,</rt>
+  </ruby><br>
+  <ruby>
+    而<rt>ér</rt>不<rt>bù</rt>是<rt>shì</rt>欺<rt>qī</rt>骗<rt>piàn</rt>老<rt>lǎo</rt>师<rt>shī</rt>说<rt>shuō</rt>我<rt>wǒ</rt>们<rt>men</rt>忘<rt>wàng</rt>记<rt>jì</rt>带<rt>dài</rt>来<rt>lái</rt>。<rt>.</rt>
+  </ruby><br>
+  <ruby>
+    我<rt>wǒ</rt>们<rt>men</rt>考<rt>kǎo</rt>试<rt>shì</rt>成<rt>chéng</rt>绩<rt>jì</rt>不<rt>bù</rt>好<rt>hǎo</rt>的<rt>de</rt>时<rt>shí</rt>候<rt>hou</rt>，<rt>,</rt>
+  </ruby><br>
+  <ruby>
+    应<rt>yīng</rt>该<rt>gāi</rt>诚<rt>chéng</rt>实<rt>shí</rt>地<rt>de</rt>告<rt>gào</rt>诉<rt>sù</rt>家<rt>jiā</rt>长<rt>zhǎng</rt>，<rt>,</rt>
+  </ruby><br>
+  <ruby>
+    不<rt>bù</rt>要<rt>yào</rt>欺<rt>qī</rt>骗<rt>piàn</rt>家<rt>jiā</rt>长<rt>zhǎng</rt>。<rt>.</rt>
+  </ruby><br>
+  <ruby>
+    另<rt>lìng</rt>外<rt>wài</rt>，<rt>,</rt>我<rt>wǒ</rt>觉<rt>jué</rt>得<rt>de</rt>我<rt>wǒ</rt>们<rt>men</rt>借<rt>jiè</rt>了<rt>le</rt>同<rt>tóng</rt>学<rt>xué</rt>们<rt>men</rt>的<rt>de</rt>东<rt>dōng</rt>西<rt>xi</rt>或<rt>huò</rt>钱<rt>qián</rt>，<rt>,</rt>
+  </ruby><br>
+  <ruby>
+    要<rt>yào</rt>及<rt>jí</rt>时<rt>shí</rt>还<rt>huán</rt>给<rt>gěi</rt>他<rt>tā</rt>们<rt>men</rt>，<rt>,</rt>
+  </ruby><br>
+  <ruby>
+    这<rt>zhè</rt>也<rt>yě</rt>是<rt>shì</rt>诚<rt>chéng</rt>实<rt>shí</rt>的<rt>de</rt>表<rt>biǎo</rt>现<rt>xiàn</rt>。<rt>.</rt>
+  </ruby>
+  <button onclick="playAudio('16.mp3')">播放录音</button>
+  <button onclick="stopAudio()">停止播放</button>
+  <audio id="audio_answer_16" src="16.mp3"></audio>
+</blockquote>
+
+<p>
+  <ruby>
+    四<rt>sì</rt>．<rt>.</rt>请<rt>qǐng</rt>分<rt>fēn</rt>享<rt>xiǎng</rt>一<rt>yī</rt>件<rt>jiàn</rt>事<rt>shì</rt>，<rt>,</rt>
+  </ruby><br>
+  <ruby>
+    这<rt>zhè</rt>件<rt>jiàn</rt>事<rt>shì</rt>让<rt>ràng</rt>你<rt>nǐ</rt>明<rt>míng</rt>白<rt>bái</rt>诚<rt>chéng</rt>实<rt>shí</rt>很<rt>hěn</rt>重<rt>zhòng</rt>要<rt>yào</rt>。<rt>.</rt>
+  </ruby>
+</p>
+
+<blockquote>
+  <ruby>
+    T<rt>T</rt>:<rt>:</rt>我<rt>wǒ</rt>还<rt>hái</rt>记<rt>jì</rt>得<rt>de</rt>在<rt>zài</rt>两<rt>liǎng</rt>年<rt>nián</rt>前<rt>qián</rt>，<rt>,</rt>
+  </ruby><br>
+  <ruby>
+    我<rt>wǒ</rt>的<rt>de</rt>好<rt>hǎo</rt>朋<rt>péng</rt>友<rt>yǒu</rt>在<rt>zài</rt>课<rt>kè</rt>室<rt>shì</rt>里<rt>lǐ</rt>和<rt>hé</rt>一<rt>yī</rt>位<rt>wèi</rt>小<rt>xiǎo</rt>男<rt>nán</rt>孩<rt>hái</rt>吵<rt>chǎo</rt>架<rt>jià</rt>，<rt>,</rt>
+  </ruby><br>
+  <ruby>
+    我<rt>wǒ</rt>的<rt>de</rt>好<rt>hǎo</rt>朋<rt>péng</rt>友<rt>yǒu</rt>突<rt>tū</rt>然<rt>rán</rt>生<rt>shēng</rt>气<rt>qì</rt>，<rt>,</rt>
+  </ruby><br>
+  <ruby>
+    忍<rt>rěn</rt>不<rt>bù</rt>住<rt>zhù</rt>打<rt>dǎ</rt>了<rt>le</rt>他<rt>tā</rt>，<rt>,</rt>
+  </ruby><br>
+  <ruby>
+    只<rt>zhǐ</rt>有<rt>yǒu</rt>我<rt>wǒ</rt>看<rt>kàn</rt>到<rt>dào</rt>当<rt>dāng</rt>时<rt>shí</rt>的<rt>de</rt>情<rt>qíng</rt>景<rt>jǐng</rt>，<rt>,</rt>
+  </ruby><br>
+  <ruby>
+    在<rt>zài</rt>那<rt>nà</rt>时<rt>shí</rt>，<rt>,</rt>我<rt>wǒ</rt>不<rt>bù</rt>知<rt>zhī</rt>道<rt>dào</rt>怎<rt>zěn</rt>么<rt>me</rt>做<rt>zuò</rt>，<rt>,</rt>
+  </ruby><br>
+  <ruby>
+    虽<rt>suī</rt>然<rt>rán</rt>我<rt>wǒ</rt>的<rt>de</rt>好<rt>hǎo</rt>朋<rt>péng</rt>友<rt>yǒu</rt>做<rt>zuò</rt>错<rt>cuò</rt>了<rt>le</rt>事<rt>shì</rt>，<rt>,</rt>
+  </ruby><br>
+  <ruby>
+    可<rt>kě</rt>是<rt>shì</rt>，<rt>,</rt>他<rt>tā</rt>是<rt>shì</rt>我<rt>wǒ</rt>的<rt>de</rt>好<rt>hǎo</rt>朋<rt>péng</rt>友<rt>yǒu</rt>。<rt>.</rt>
+  </ruby><br>
+  <ruby>
+    如<rt>rú</rt>果<rt>guǒ</rt>，<rt>,</rt>我<rt>wǒ</rt>告<rt>gào</rt>诉<rt>sù</rt>老<rt>lǎo</rt>师<rt>shī</rt>，<rt>,</rt>
+  </ruby><br>
+  <ruby>
+    他<rt>tā</rt>可<rt>kě</rt>能<rt>néng</rt>不<rt>bù</rt>会<rt>huì</rt>和<rt>hé</rt>我<rt>wǒ</rt>做<rt>zuò</rt>好<rt>hǎo</rt>朋<rt>péng</rt>友<rt>yǒu</rt>。<rt>.</rt>
+  </ruby><br>
+  <ruby>
+    这<rt>zhè</rt>时<rt>shí</rt>，<rt>,</rt>一<rt>yī</rt>位<rt>wèi</rt>老<rt>lǎo</rt>师<rt>shī</rt>走<rt>zǒu</rt>进<rt>jìn</rt>来<rt>lái</rt>，<rt>,</rt>
+  </ruby><br>
+  <ruby>
+    说<rt>shuō</rt>刚<rt>gāng</rt>才<rt>cái</rt>她<rt>tā</rt>听<rt>tīng</rt>到<rt>dào</rt>吵<rt>chǎo</rt>架<rt>jià</rt>的<rt>de</rt>声<rt>shēng</rt>音<rt>yīn</rt>，<rt>,</rt>
+  </ruby><br>
+  <ruby>
+    问<rt>wèn</rt>我<rt>wǒ</rt>发<rt>fā</rt>生<rt>shēng</rt>了<rt>le</rt>什<rt>shén</rt>么<rt>me</rt>事<rt>shì</rt>，<rt>,</rt>
+  </ruby><br>
+  <ruby>
+    然<rt>rán</rt>后<rt>hòu</rt>，<rt>,</rt>她<rt>tā</rt>说<rt>shuō</rt>，<rt>,</rt>
+  </ruby><br>
+  <ruby>
+    勇<rt>yǒng</rt>敢<rt>gǎn</rt>承<rt>chéng</rt>认<rt>rèn</rt>错<rt>cuò</rt>误<rt>wù</rt>才<rt>cái</rt>是<rt>shì</rt>诚<rt>chéng</rt>实<rt>shí</rt>的<rt>de</rt>孩<rt>hái</rt>子<rt>zi</rt>。<rt>.</rt>
+  </ruby><br>
+  <ruby>
+    我<rt>wǒ</rt>的<rt>de</rt>朋<rt>péng</rt>友<rt>yǒu</rt>把<rt>bǎ</rt>发<rt>fā</rt>生<rt>shēng</rt>的<rt>de</rt>事<rt>shì</rt>一<rt>yī</rt>五<rt>wǔ</rt>一<rt>yī</rt>十<rt>shí</rt>告<rt>gào</rt>诉<rt>sù</rt>了<rt>le</rt>老<rt>lǎo</rt>师<rt>shī</rt>，<rt>,</rt>
+  </ruby><br>
+  <ruby>
+    老<rt>lǎo</rt>师<rt>shī</rt>虽<rt>suī</rt>然<rt>rán</rt>批<rt>pī</rt>评<rt>píng</rt>他<rt>tā</rt>不<rt>bù</rt>该<rt>gāi</rt>打<rt>dǎ</rt>同<rt>tóng</rt>学<rt>xué</rt>，<rt>,</rt>
+  </ruby><br>
+  <ruby>
+    但<rt>dàn</rt>也<rt>yě</rt>表<rt>biǎo</rt>扬<rt>yáng</rt>他<rt>tā</rt>是<rt>shì</rt>个<rt>gè</rt>诚<rt>chéng</rt>实<rt>shí</rt>的<rt>de</rt>孩<rt>hái</rt>子<rt>zi</rt>。<rt>.</rt>
+  </ruby><br>
+  <ruby>
+    我<rt>wǒ</rt>听<rt>tīng</rt>了<rt>le</rt>有<rt>yǒu</rt>些<rt>xiē</rt>惭<rt>cán</rt>愧<rt>kuì</rt>。<rt>.</rt>
+  </ruby><br>
+  <ruby>
+    而<rt>ér</rt>且<rt>qiě</rt>，<rt>,</rt>也<rt>yě</rt>明<rt>míng</rt>白<rt>bái</rt>了<rt>le</rt>诚<rt>chéng</rt>实<rt>shí</rt>很<rt>hěn</rt>重<rt>zhòng</rt>要<rt>yào</rt>。<rt>.</rt>
+  </ruby>
+  <button onclick="playAudio('18.mp3')">播放录音</button>
+  <button onclick="stopAudio()">停止播放</button>
+  <audio id="audio_answer_18" src="18.mp3"></audio>
+</blockquote>
+
+<p>
+  <ruby>
+    五<rt>wǔ</rt>．<rt>.</rt>学<rt>xué</rt>校<rt>xiào</rt>应<rt>yīng</rt>该<rt>gāi</rt>怎<rt>zěn</rt>样<rt>yàng</rt>鼓<rt>gǔ</rt>励<rt>lì</rt>同<rt>tóng</rt>学<rt>xué</rt>们<rt>men</rt>做<rt>zuò</rt>个<rt>gè</rt>诚<rt>chéng</rt>实<rt>shí</rt>的<rt>de</rt>人<rt>rén>？<rt>?</rt>
+  </ruby>
+</p>
+
+<blockquote>
+  <ruby>
+    T<rt>T</rt>:<rt>:</rt>学<rt>xué</rt>校<rt>xiào</rt>可<rt>kě</rt>以<rt>yǐ</rt>第<rt>dì</rt>一<rt>yī</rt>教<rt>jiào</rt>育<rt>yù</rt>我<rt>wǒ</rt>们<rt>men</rt>怎<rt>zěn</rt>样<rt>yàng</rt>做<rt>zuò</rt>个<rt>gè</rt>诚<rt>chéng</rt>实<rt>shí</rt>的<rt>de</rt>人<rt>rén</rt>，<rt>,</rt>
+  </ruby><br>
+  <ruby>
+    比<rt>bǐ</rt>如<rt>rú</rt>如<rt>rú</rt>果<rt>guǒ</rt>我<rt>wǒ</rt>们<rt>men</rt>说<rt>shuō</rt>谎<rt>huǎng</rt>时<rt>shí</rt>，<rt>,</rt>
+  </ruby><br>
+  <ruby>
+    老<rt>lǎo</rt>师<rt>shī</rt>可<rt>kě</rt>以<rt>yǐ</rt>跟<rt>gēn</rt>大<rt>dà</rt>家<rt>jiā</rt>说<rt>shuō</rt>，<rt>,</rt>
+  </ruby><br>
+  <ruby>
+    这<rt>zhè</rt>样<rt>yàng</rt>的<rt>de</rt>行<rt>xíng</rt>为<rt>wéi</rt>是<rt>shì</rt>不<rt>bù</rt>对<rt>duì</rt>的<rt>de</rt>。<rt>.</rt>
+  </ruby><br>
+  <ruby>
+    这<rt>zhè</rt>样<rt>yàng</rt>，<rt>,</rt>我<rt>wǒ</rt>们<rt>men</rt>可<rt>kě</rt>以<rt>yǐ</rt>学<rt>xué</rt>到<rt>dào</rt>怎<rt>zěn</rt>样<rt>yàng</rt>做<rt>zuò</rt>才<rt>cái</rt>是<rt>shì</rt>诚<rt>chéng</rt>实<rt>shí</rt>的<rt>de</rt>。<rt>.</rt>
+  </ruby><br>
+  <ruby>
+    第<rt>dì</rt>二<rt>èr</rt>，<rt>,</rt>学<rt>xué</rt>校<rt>xiào</rt>也<rt>yě</rt>可<rt>kě</rt>以<rt>yǐ</rt>举<rt>jǔ</rt>办<rt>bàn</rt>有<rt>yǒu</rt>关<rt>guān</rt>诚<rt>chéng</rt>实<rt>shí</rt>的<rt>de</rt>活<rt>huó</rt>动<rt>dòng</rt>，<rt>,</rt>
+  </ruby><br>
+  <ruby>
+    在<rt>zài</rt>活<rt>huó</rt>动<rt>dòng</rt>中<rt>zhōng</rt>如<rt>rú</rt>果<rt>guǒ</rt>我<rt>wǒ</rt>们<rt>men</rt>不<rt>bù</rt>诚<rt>chéng</rt>实<rt>shí</rt>，<rt>,</rt>
+  </ruby><br>
+  <ruby>
+    我<rt>wǒ</rt>们<rt>men</rt>不<rt>bù</rt>可<rt>kě</rt>以<rt>yǐ</rt>在<rt>zài</rt>课<rt>kè</rt>间<rt>jiān</rt>休<rt>xiū</rt>息<rt>xī</rt>。<rt>.</rt>
+  </ruby><br>
+  <ruby>
+    第<rt>dì</rt>三<rt>sān</rt>，<rt>,</rt>老<rt>lǎo</rt>师<rt>shī</rt>们<rt>men</rt>可<rt>kě</rt>以<rt>yǐ</rt>批<rt>pī</rt>评<rt>píng</rt>有<rt>yǒu</rt>不<rt>bù</rt>诚<rt>chéng</rt>实<rt>shí</rt>行<rt>xíng</rt>为<rt>wéi</rt>的<rt>de</rt>同<rt>tóng</rt>学<rt>xué</rt>，<rt>,</rt>
+  </ruby><br>
+  <ruby>
+    甚<rt>shèn</rt>至<rt>zhì</rt>给<rt>gěi</rt>与<rt>yǔ</rt>处<rt>chǔ</rt>罚<rt>fá</rt>。<rt>.</rt>
+  </ruby><br>
+  <ruby>
+    第<rt>dì</rt>四<rt>sì</rt>，<rt>,</rt>老<rt>lǎo</rt>师<rt>shī</rt>们<rt>men</rt>可<rt>kě</rt>以<rt>yǐ</rt>表<rt>biǎo</rt>扬<rt>yáng</rt>诚<rt>chéng</rt>实<rt>shí</rt>的<rt>de</rt>行<rt>xíng</rt>为<rt>wéi</rt>，<rt>,</rt>
+  </ruby><br>
+  <ruby>
+    让<rt>ràng</rt>我<rt>wǒ</rt>们<rt>men</rt>大<rt>dà</rt>家<rt>jiā</rt>向<rt>xiàng</rt>他<rt>tā</rt>们<rt>men</rt>学<rt>xué</rt>习<rt>xí</rt>。<rt>.</rt>
+  </ruby><br>
+  <ruby>
+    这<rt>zhè</rt>样<rt>yàng</rt>就<rt>jiù</rt>可<rt>kě</rt>以<rt>yǐ</rt>鼓<rt>gǔ</rt>励<rt>lì</rt>同<rt>tóng</rt>学<rt>xué</rt>们<rt>men</rt>做<rt>zuò</rt>个<rt>gè</rt>诚<rt>chéng</rt>实<rt>shí</rt>的<rt>de</rt>人<rt>rén</rt>。<rt>.</rt>
+  </ruby>
+  <button onclick="playAudio('19.mp3')">播放录音</button>
+  <button onclick="stopAudio()">停止播放</button>
+  <audio id="audio_answer_19" src="19.mp3"></audio>
+</blockquote>	
+
+		</div>		
+		
+    </div>
+    <h1><ruby>口<rt>kǒu</rt>试<rt>shì</rt>对<rt>duì</rt>话<rt>huà</rt>题<rt>tí</rt>目<rt>mù</rt>及<rt>jí</rt>答<rt>dá</rt>案<rt>àn</rt>（5）养<rt>yǎng</rt>宠<rt>chǒng</rt>物<rt>wù</rt></ruby></h1>
+
+    <div class="qa">
+        <p>1. <ruby>同<rt>tóng</rt>学<rt>xué</rt>，请<rt>qǐng</rt>你<rt>nǐ</rt>描<rt>miáo</rt>述<rt>shù</rt>在<rt>zài</rt>录<rt>lù</rt>像<rt>xiàng</rt>中<rt>zhōng</rt>看<rt>kàn</rt>到<rt>dào</rt>的<rt>de</rt>情<rt>qíng</rt>景<rt>jǐng</rt>，并<rt>bìng</rt>讲<rt>jiǎng</rt>一<rt>yī</rt>讲<rt>jiǎng</rt>你<rt>nǐ</rt>的<rt>de</rt>感<rt>gǎn</rt>受<rt>shòu</rt>。</ruby></p>
+        
+        <blockquote>
+            T:<ruby>我<rt>wǒ</rt>看<rt>kàn</rt>到<rt>dào</rt>录<rt>lù</rt>像<rt>xiàng</rt>中<rt>zhōng</rt>，有<rt>yǒu</rt>两<rt>liǎng</rt>位<rt>wèi</rt>哥<rt>gē</rt>哥<rt>ge</rt>和<rt>hé</rt>一<rt>yī</rt>个<rt>gè</rt>妹<rt>mèi</rt>妹<rt>mei</rt>在<rt>zài</rt>家<rt>jiā</rt>里<rt>lǐ</rt>和<rt>hé</rt>仓<rt>cāng</rt>鼠<rt>shǔ</rt>玩<rt>wán</rt>。</ruby><br><br>
+            <ruby>在<rt>zài</rt>玩<rt>wán</rt>的<rt>de</rt>时<rt>shí</rt>候<rt>hou</rt>，一<rt>yī</rt>位<rt>wèi</rt>哥<rt>gē</rt>哥<rt>ge</rt>给<rt>gěi</rt>仓<rt>cāng</rt>鼠<rt>shǔ</rt>巧<rt>qiǎo</rt>克<rt>kè</rt>力<rt>lì</rt>吃<rt>chī</rt>，他<rt>tā</rt>们<rt>men</rt>的<rt>de</rt>爷<rt>yé</rt>爷<rt>ye</rt>看<rt>kàn</rt>到<rt>dào</rt>了<rt>le</rt>，跟<rt>gēn</rt>他<rt>tā</rt>们<rt>men</rt>说<rt>shuō</rt>，不<rt>bù</rt>可<rt>kě</rt>以<rt>yǐ</rt>这<rt>zhè</rt>么<rt>me</rt>做<rt>zuò</rt>，会<rt>huì</rt>伤<rt>shāng</rt>害<rt>hài</rt>仓<rt>cāng</rt>鼠<rt>shǔ</rt>。</ruby><br><br>
+            <ruby>爷<rt>yé</rt>爷<rt>ye</rt>看<rt>kàn</rt>到<rt>dào</rt>孩<rt>hái</rt>子<rt>zi</rt>们<rt>men</rt>要<rt>yào</rt>喂<rt>wèi</rt>仓<rt>cāng</rt>鼠<rt>shǔ</rt>，把<rt>bǎ</rt>萝<rt>luó</rt>卜<rt>bo</rt>给<rt>gěi</rt>他<rt>tā</rt>们<rt>men</rt>，让<rt>ràng</rt>他<rt>tā</rt>们<rt>men</rt>喂<rt>wèi</rt>仓<rt>cāng</rt>鼠<rt>shǔ</rt>。</ruby><br><br>
+            <ruby>喂<rt>wèi</rt>了<rt>le</rt>仓<rt>cāng</rt>鼠<rt>shǔ</rt>后<rt>hòu</rt>，俩<rt>liǎ</rt>兄<rt>xiōng</rt>妹<rt>mèi</rt>用<rt>yòng</rt>一<rt>yī</rt>支<rt>zhī</rt>筷<rt>kuài</rt>子<rt>zi</rt>，打<rt>dǎ</rt>扰<rt>rǎo</rt>仓<rt>cāng</rt>鼠<rt>shǔ</rt>，爷<rt>yé</rt>爷<rt>ye</rt>看<rt>kàn</rt>到<rt>dào</rt>了<rt>le</rt>，跟<rt>gēn</rt>他<rt>tā</rt>们<rt>men</rt>讲<rt>jiǎng</rt>，这<rt>zhè</rt>么<rt>me</rt>做<rt>zuò</rt>是<rt>shì</rt>不<rt>bù</rt>对<rt>duì</rt>的<rt>de</rt>，会<rt>huì</rt>伤<rt>shāng</rt>害<rt>hài</rt>仓<rt>cāng</rt>鼠<rt>shǔ</rt>。</ruby><br><br>
+            <ruby>我<rt>wǒ</rt>看<rt>kàn</rt>到<rt>dào</rt>了<rt>le</rt>，觉<rt>jué</rt>得<rt>de</rt>着<rt>zháo</rt>急<rt>jí</rt>，因<rt>yīn</rt>为<rt>wèi</rt>录<rt>lù</rt>像<rt>xiàng</rt>中<rt>zhōng</rt>的<rt>de</rt>孩<rt>hái</rt>子<rt>zi</rt>们<rt>men</rt>没<rt>méi</rt>有<rt>yǒu</rt>学<rt>xué</rt>会<rt>huì</rt>照<rt>zhào</rt>顾<rt>gù</rt>和<rt>hé</rt>爱<rt>ài</rt>护<rt>hù</rt>小<rt>xiǎo</rt>仓<rt>cāng</rt>鼠<rt>shǔ</rt>。</ruby>
+			  <button onclick="playAudio('20.mp3')">播放录音</button>
+			  <button onclick="stopAudio()">停止播放</button>
+			  <audio id="audio_answer_20" src="20.mp3"></audio>
+        </blockquote>
+		
+		<p>
+  <ruby>
+    二<rt>èr</rt>．<rt>.</rt>你<rt>nǐ</rt>养<rt>yǎng</rt>宠<rt>chǒng</rt>物<rt>wù</rt>了<rt>le</rt>吗<rt>ma</rt>？<rt>?</rt>
+  </ruby><br>
+  <ruby>
+    你<rt>nǐ</rt>是<rt>shì</rt>怎<rt>zěn</rt>样<rt>yàng</rt>照<rt>zhào</rt>顾<rt>gù</rt>你<rt>nǐ</rt>的<rt>de</rt>宠<rt>chǒng</rt>物<rt>wù</rt>的<rt>de</rt>？<rt>?</rt>
+  </ruby><br>
+  <ruby>
+    如<rt>rú</rt>果<rt>guǒ</rt>你<rt>nǐ</rt>可<rt>kě</rt>以<rt>yǐ</rt>养<rt>yǎng</rt>一<rt>yī</rt>个<rt>gè</rt>宠<rt>chǒng</rt>物<rt>wù</rt>，<rt>,</rt>
+  </ruby><br>
+  <ruby>
+    你<rt>nǐ</rt>想<rt>xiǎng</rt>要<rt>yào</rt>养<rt>yǎng</rt>什<rt>shén</rt>么<rt>me</rt>？<rt>?</rt>为<rt>wèi</rt>什<rt>shén</rt>么<rt>me</rt>？<rt>?</rt>
+  </ruby>
+</p>
+
+<blockquote>
+  <ruby>
+    T<rt>T</rt>：<rt>:</rt>如<rt>rú</rt>果<rt>guǒ</rt>我<rt>wǒ</rt>可<rt>kě</rt>以<rt>yǐ</rt>养<rt>yǎng</rt>个<rt>gè</rt>宠<rt>chǒng</rt>物<rt>wù</rt>，<rt>,</rt>
+  </ruby><br>
+  <ruby>
+    我<rt>wǒ</rt>想<rt>xiǎng</rt>养<rt>yǎng</rt>小<rt>xiǎo</rt>狗<rt>gǒu</rt>。<rt>.</rt>
+  </ruby><br>
+  <ruby>
+    因<rt>yīn</rt>为<rt>wèi</rt>第<rt>dì</rt>一<rt>yī</rt>，<rt>,</rt>养<rt>yǎng</rt>小<rt>xiǎo</rt>狗<rt>gǒu</rt>很<rt>hěn</rt>有<rt>yǒu</rt>趣<rt>qù</rt>。<rt>.</rt>
+  </ruby><br>
+  <ruby>
+    我<rt>wǒ</rt>可<rt>kě</rt>以<rt>yǐ</rt>带<rt>dài</rt>它<rt>tā</rt>出<rt>chū</rt>去<rt>qù</rt>玩<rt>wán</rt>，<rt>,</rt>
+  </ruby><br>
+  <ruby>
+    可<rt>kě</rt>以<rt>yǐ</rt>给<rt>gěi</rt>它<rt>tā</rt>冲<rt>chōng</rt>凉<rt>liáng</rt>，<rt>,</rt>
+  </ruby><br>
+  <ruby>
+    喂<rt>wèi</rt>它<rt>tā</rt>吃<rt>chī</rt>东<rt>dōng</rt>西<rt>xi</rt>。<rt>.</rt>
+  </ruby><br>
+  <ruby>
+    我<rt>wǒ</rt>觉<rt>jué</rt>得<rt>de</rt>做<rt>zuò</rt>这<rt>zhè</rt>些<rt>xiē</rt>都<rt>dōu</rt>很<rt>hěn</rt>有<rt>yǒu</rt>趣<rt>qù</rt>。<rt>.</rt>
+  </ruby><br>
+  <ruby>
+    第<rt>dì</rt>二<rt>èr</rt>，<rt>,</rt>小<rt>xiǎo</rt>狗<rt>gǒu</rt>可<rt>kě</rt>以<rt>yǐ</rt>陪<rt>péi</rt>伴<rt>bàn</rt>我<rt>wǒ</rt>。<rt>.</rt>
+  </ruby><br>
+  <ruby>
+    人<rt>rén</rt>们<rt>men</rt>都<rt>dōu</rt>说<rt>shuō</rt>，<rt>,</rt>
+  </ruby><br>
+  <ruby>
+    狗<rt>gǒu</rt>是<rt>shì</rt>人<rt>rén</rt>类<rt>lèi</rt>最<rt>zuì</rt>好<rt>hǎo</rt>的<rt>de</rt>朋<rt>péng</rt>友<rt>yǒu</rt>。<rt>.</rt>
+  </ruby><br>
+  <ruby>
+    它<rt>tā</rt>们<rt>men</rt>很<rt>hěn</rt>聪<rt>cōng</rt>明<rt>míng</rt>，<rt>,</rt>
+  </ruby><br>
+  <ruby>
+    可<rt>kě</rt>以<rt>yǐ</rt>和<rt>hé</rt>人<rt>rén</rt>们<rt>men</rt>很<rt>hěn</rt>好<rt>hǎo</rt>地<rt>de</rt>互<rt>hù</rt>动<rt>dòng</rt>。<rt>.</rt>
+  </ruby><br>
+  <ruby>
+    如<rt>rú</rt>果<rt>guǒ</rt>爸<rt>bà</rt>爸<rt>ba</rt>、<rt>,</rt>妈<rt>mā</rt>妈<rt>ma</rt>不<rt>bù</rt>在<rt>zài</rt>家<rt>jiā</rt>，<rt>,</rt>
+  </ruby><br>
+  <ruby>
+    我<rt>wǒ</rt>的<rt>de</rt>小<rt>xiǎo</rt>狗<rt>gǒu</rt>可<rt>kě</rt>以<rt>yǐ</rt>陪<rt>péi</rt>伴<rt>bàn</rt>我<rt>wǒ</rt>。<rt>.</rt>
+  </ruby><br>
+  <ruby>
+    最<rt>zuì</rt>后<rt>hòu</rt>，<rt>,</rt>养<rt>yǎng</rt>小<rt>xiǎo</rt>狗<rt>gǒu</rt>可<rt>kě</rt>以<rt>yǐ</rt>让<rt>ràng</rt>我<rt>wǒ</rt>变<rt>biàn</rt>得<rt>de</rt>更<rt>gèng</rt>有<rt>yǒu</rt>爱<rt>ài</rt>心<rt>xīn</rt>和<rt>hé</rt>有<rt>yǒu</rt>责<rt>zé</rt>任<rt>rèn</rt>感<rt>gǎn</rt>。<rt>.</rt>
+  </ruby><br>
+  <ruby>
+    所<rt>suǒ</rt>以<rt>yǐ</rt>，<rt>,</rt>我<rt>wǒ</rt>想<rt>xiǎng</rt>要<rt>yào</rt>养<rt>yǎng</rt>一<rt>yī</rt>只<rt>zhī</rt>小<rt>xiǎo</rt>狗<rt>gǒu</rt>。<rt>.</rt>
+  </ruby>
+  <button onclick="playAudio('21.mp3')">播放录音</button>
+  <button onclick="stopAudio()">停止播放</button>
+  <audio id="audio_answer_21" src="21.mp3"></audio>
+</blockquote>
+		
+		
+		
+
+
+<p>
+  <ruby>
+    三<rt>sān</rt>．<rt>.</rt>你<rt>nǐ</rt>觉<rt>jué</rt>得<rt>de</rt>小<rt>xiǎo</rt>学<rt>xué</rt>生<rt>shēng</rt>可<rt>kě</rt>以<rt>yǐ</rt>养<rt>yǎng</rt>宠<rt>chǒng</rt>物<rt>wù</rt>吗<rt>ma</rt>？<rt>?</rt>
+  </ruby><br>
+  <ruby>
+    你<rt>nǐ</rt>认<rt>rèn</rt>为<rt>wéi</rt>养<rt>yǎng</rt>宠<rt>chǒng</rt>物<rt>wù</rt>最<rt>zuì</rt>重<rt>zhòng</rt>要<rt>yào</rt>的<rt>de</rt>是<rt>shì</rt>什<rt>shén</rt>么<rt>me</rt>？<rt>?</rt>
+  </ruby>
+</p>
+
+<blockquote>
+  <ruby>
+    T<rt>T</rt>：<rt>:</rt>我<rt>wǒ</rt>认<rt>rèn</rt>为<rt>wéi</rt>小<rt>xiǎo</rt>学<rt>xué</rt>生<rt>shēng</rt>可<rt>kě</rt>以<rt>yǐ</rt>养<rt>yǎng</rt>宠<rt>chǒng</rt>物<rt>wù</rt>。<rt>.</rt>
+  </ruby><br>
+  <ruby>
+    因<rt>yīn</rt>为<rt>wèi</rt>养<rt>yǎng</rt>宠<rt>chǒng</rt>物<rt>wù</rt>可<rt>kě</rt>以<rt>yǐ</rt>让<rt>ràng</rt>他<rt>tā</rt>们<rt>men</rt>建<rt>jiàn</rt>立<rt>lì</rt>责<rt>zé</rt>任<rt>rèn</rt>感<rt>gǎn</rt>。<rt>.</rt>
+  </ruby><br>
+  <ruby>
+    我<rt>wǒ</rt>觉<rt>jué</rt>得<rt>de</rt>养<rt>yǎng</rt>宠<rt>chǒng</rt>物<rt>wù</rt>最<rt>zuì</rt>重<rt>zhòng</rt>要<rt>yào</rt>的<rt>de</rt>是<rt>shì</rt>我<rt>wǒ</rt>们<rt>men</rt>要<rt>yào</rt>有<rt>yǒu</rt>爱<rt>ài</rt>心<rt>xīn</rt>。<rt>.</rt>
+  </ruby><br>
+  <ruby>
+    因<rt>yīn</rt>为<rt>wèi</rt>，<rt>,</rt>小<rt>xiǎo</rt>狗<rt>gǒu</rt>没<rt>méi</rt>有<rt>yǒu</rt>人<rt>rén</rt>爱<rt>ài</rt>的<rt>de</rt>时<rt>shí</rt>候<rt>hou</rt>，<rt>,</rt>
+  </ruby><br>
+  <ruby>
+    他<rt>tā</rt>们<rt>men</rt>可<rt>kě</rt>能<rt>néng</rt>很<rt>hěn</rt>伤<rt>shāng</rt>心<rt>xīn</rt>，<rt>,</rt>
+  </ruby><br>
+  <ruby>
+    就<rt>jiù</rt>会<rt>huì</rt>离<rt>lí</rt>开<rt>kāi</rt>主<rt>zhǔ</rt>人<rt>rén</rt>。<rt>.</rt>
+  </ruby><br>
+  <ruby>
+    只<rt>zhǐ</rt>有<rt>yǒu</rt>爱<rt>ài</rt>宠<rt>chǒng</rt>物<rt>wù</rt>，<rt>,</rt>才<rt>cái</rt>会<rt>huì</rt>在<rt>zài</rt>它<rt>tā</rt>们<rt>men</rt>生<rt>shēng</rt>病<rt>bìng</rt>的<rt>de</rt>时<rt>shí</rt>候<rt>hou</rt>，<rt>,</rt>
+  </ruby><br>
+  <ruby>
+    带<rt>dài</rt>它<rt>tā</rt>们<rt>men</rt>看<rt>kàn</rt>医<rt>yī</rt>生<rt>shēng</rt>，<rt>,</rt>
+  </ruby><br>
+  <ruby>
+    不<rt>bù</rt>会<rt>huì</rt>抛<rt>pāo</rt>弃<rt>qì</rt>它<rt>tā</rt>们<rt>men</rt>，<rt>,</rt>
+  </ruby><br>
+  <ruby>
+    会<rt>huì</rt>为<rt>wèi</rt>它<rt>tā</rt>们<rt>men</rt>负<rt>fù</rt>责<rt>zé</rt>任<rt>rèn</rt>,<rt>,</rt>
+  </ruby><br>
+  <ruby>
+    把<rt>bǎ</rt>它<rt>tā</rt>们<rt>men</rt>照<rt>zhào</rt>顾<rt>gù</rt>好<rt>hǎo</rt>。<rt>.</rt>
+  </ruby>
+  <button onclick="playAudio('22.mp3')">播放录音</button>
+  <button onclick="stopAudio()">停止播放</button>
+  <audio id="audio_answer_22" src="22.mp3"></audio>
+</blockquote>	
+
+<p>
+  <ruby>
+    四<rt>sì</rt>．<rt>.</rt>你<rt>nǐ</rt>觉<rt>jué</rt>得<rt>de</rt>学<rt>xué</rt>校<rt>xiào</rt>应<rt>yīng</rt>该<rt>gāi</rt>怎<rt>zěn</rt>样<rt>yàng</rt>鼓<rt>gǔ</rt>励<rt>lì</rt>大<rt>dà</rt>家<rt>jiā</rt>成<rt>chéng</rt>为<rt>wéi</rt>有<rt>yǒu</rt>责<rt>zé</rt>任<rt>rèn</rt>心<rt>xīn</rt>的<rt>de</rt>人<rt>rén</rt>？<rt>?</rt>
+  </ruby>
+</p>
+
+<blockquote>
+  <ruby>
+    T<rt>T</rt>:<rt>:</rt>学<rt>xué</rt>校<rt>xiào</rt>可<rt>kě</rt>以<rt>yǐ</rt>在<rt>zài</rt>同<rt>tóng</rt>学<rt>xué</rt>们<rt>men</rt>常<rt>cháng</rt>去<rt>qù</rt>的<rt>de</rt>地<rt>dì</rt>方<rt>fāng</rt>，<rt>,</rt>
+  </ruby><br>
+  <ruby>
+    比<rt>bǐ</rt>如<rt>rú</rt>食<rt>shí</rt>堂<rt>táng</rt>或<rt>huò</rt>者<rt>zhě</rt>课<rt>kè</rt>室<rt>shì</rt>走<rt>zǒu</rt>廊<rt>láng</rt>张<rt>zhāng</rt>贴<rt>tiē</rt>海<rt>hǎi</rt>报<rt>bào</rt>，<rt>,</rt>
+  </ruby><br>
+  <ruby>
+    提<rt>tí</rt>醒<rt>xǐng</rt>同<rt>tóng</rt>学<rt>xué</rt>们<rt>men</rt>要<rt>yào</rt>做<rt>zuò</rt>个<rt>gè</rt>有<rt>yǒu</rt>责<rt>zé</rt>任<rt>rèn</rt>心<rt>xīn</rt>的<rt>de</rt>人<rt>rén</rt>。<rt>.</rt>
+  </ruby><br>
+  <ruby>
+    老<rt>lǎo</rt>师<rt>shī</rt>可<rt>kě</rt>以<rt>yǐ</rt>在<rt>zài</rt>好<rt>hǎo</rt>公<rt>gōng</rt>民<rt>mín</rt>课<rt>kè</rt>时<rt>shí</rt>，<rt>,</rt>
+  </ruby><br>
+  <ruby>
+    教<rt>jiāo</rt>同<rt>tóng</rt>学<rt>xué</rt>们<rt>men</rt>怎<rt>zěn</rt>么<rt>me</rt>做<rt>zuò</rt>才<rt>cái</rt>是<rt>shì</rt>负<rt>fù</rt>责<rt>zé</rt>任<rt>rèn</rt>，<rt>,</rt>
+  </ruby><br>
+  <ruby>
+    怎<rt>zěn</rt>样<rt>yàng</rt>做<rt>zuò</rt>是<rt>shì</rt>不<rt>bù</rt>负<rt>fù</rt>责<rt>zé</rt>任<rt>rèn</rt>的<rt>de</rt>，<rt>,</rt>
+  </ruby><br>
+  <ruby>
+    为<rt>wèi</rt>什<rt>shén</rt>么<rt>me</rt>做<rt>zuò</rt>个<rt>gè</rt>负<rt>fù</rt>责<rt>zé</rt>任<rt>rèn</rt>的<rt>de</rt>人<rt>rén</rt>很<rt>hěn</rt>重<rt>zhòng</rt>要<rt>yào</rt>。<rt>.</rt>
+  </ruby><br>
+  <ruby>
+    老<rt>lǎo</rt>师<rt>shī</rt>也<rt>yě</rt>可<rt>kě</rt>以<rt>yǐ</rt>表<rt>biǎo</rt>扬<rt>yáng</rt>那<rt>nà</rt>些<rt>xiē</rt>做<rt>zuò</rt>事<rt>shì</rt>有<rt>yǒu</rt>责<rt>zé</rt>任<rt>rèn</rt>心<rt>xīn</rt>的<rt>de</rt>同<rt>tóng</rt>学<rt>xué</rt>，<rt>,</rt>
+  </ruby><br>
+  <ruby>
+    让<rt>ràng</rt>大<rt>dà</rt>家<rt>jiā</rt>都<rt>dōu</rt>跟<rt>gēn</rt>他<rt>tā</rt>们<rt>men</rt>学<rt>xué</rt>习<rt>xí</rt>，<rt>,</rt>
+  </ruby><br>
+  <ruby>
+    还<rt>hái</rt>可<rt>kě</rt>以<rt>yǐ</rt>批<rt>pī</rt>评<rt>píng</rt>做<rt>zuò</rt>事<rt>shì</rt>不<rt>bù</rt>负<rt>fù</rt>责<rt>zé</rt>任<rt>rèn</rt>的<rt>de</rt>同<rt>tóng</rt>学<rt>xué</rt>，<rt>,</rt>
+  </ruby><br>
+  <ruby>
+    让<rt>ràng</rt>他<rt>tā</rt>们<rt>men</rt>改<rt>gǎi</rt>正<rt>zhèng</rt>错<rt>cuò</rt>误<rt>wù</rt>。<rt>.</rt>
+  </ruby><br>
+  <ruby>
+    这<rt>zhè</rt>样<rt>yàng</rt>，<rt>,</rt>学<rt>xué</rt>校<rt>xiào</rt>就<rt>jiù</rt>可<rt>kě</rt>以<rt>yǐ</rt>鼓<rt>gǔ</rt>励<rt>lì</rt>同<rt>tóng</rt>学<rt>xué</rt>们<rt>men</rt>做<rt>zuò</rt>有<rt>yǒu</rt>责<rt>zé</rt>任<rt>rèn</rt>心<rt>xīn</rt>的<rt>de</rt>人<rt>rén</rt>。<rt>.</rt>
+  </ruby>
+  <button onclick="playAudio('23.mp3')">播放录音</button>
+  <button onclick="stopAudio()">停止播放</button>
+  <audio id="audio_answer_23" src="23.mp3"></audio>
+</blockquote>
+
+    </div>
+
+    <h1><ruby>口<rt>kǒu</rt>试<rt>shì</rt>对<rt>duì</rt>话<rt>huà</rt>题<rt>tí</rt>目<rt>mù</rt>及<rt>jí</rt>答<rt>dá</rt>案<rt>àn</rt>（14）帮<rt>bāng</rt>助<rt>zhù</rt>同<rt>tóng</rt>学<rt>xué</rt></ruby></h1>
+
+    <div class="qa">
+        <p>1. <ruby>同<rt>tóng</rt>学<rt>xué</rt>，请<rt>qǐng</rt>你<rt>nǐ</rt>描<rt>miáo</rt>述<rt>shù</rt>录<rt>lù</rt>像<rt>xiàng</rt>中<rt>zhōng</rt>值<rt>zhí</rt>得<rt>dé</rt>我<rt>wǒ</rt>们<rt>men</rt>学<rt>xué</rt>习<rt>xí</rt>的<rt>de</rt>一<rt>yī</rt>件<rt>jiàn</rt>事<rt>shì</rt>。</ruby></p>
+        
+        <blockquote>
+            T:<ruby>在<rt>zài</rt>录<rt>lù</rt>像<rt>xiàng</rt>中<rt>zhōng</rt>，我<rt>wǒ</rt>看<rt>kàn</rt>到<rt>dào</rt>两<rt>liǎng</rt>位<rt>wèi</rt>小<rt>xiǎo</rt>男<rt>nán</rt>孩<rt>hái</rt>，其<rt>qí</rt>中<rt>zhōng</rt>一<rt>yī</rt>位<rt>wèi</rt>男<rt>nán</rt>孩<rt>hái</rt>戴<rt>dài</rt>着<rt>zhe</rt>眼<rt>yǎn</rt>镜<rt>jìng</rt>，另<rt>lìng</rt>外<rt>wài</rt>一<rt>yī</rt>个<rt>gè</rt>男<rt>nán</rt>生<rt>shēng</rt>的<rt>de</rt>脚<rt>jiǎo</rt>受<rt>shòu</rt>伤<rt>shāng</rt>了<rt>le</rt>，不<rt>bù</rt>能<rt>néng</rt>和<rt>hé</rt>他<rt>tā</rt>一<rt>yī</rt>起<rt>qǐ</rt>上<rt>shàng</rt>补<rt>bǔ</rt>习<rt>xí</rt>课<rt>kè</rt>。</ruby><br><br>
+            <ruby>戴<rt>dài</rt>眼<rt>yǎn</rt>镜<rt>jìng</rt>的<rt>de</rt>男<rt>nán</rt>生<rt>shēng</rt>拿<rt>ná</rt>到<rt>dào</rt>老<rt>lǎo</rt>师<rt>shī</rt>的<rt>de</rt>资<rt>zī</rt>料<rt>liào</rt>时<rt>shí</rt>，想<rt>xiǎng</rt>起<rt>qǐ</rt>他<rt>tā</rt>的<rt>de</rt>朋<rt>péng</rt>友<rt>yǒu</rt>没<rt>méi</rt>来<rt>lái</rt>，于<rt>yú</rt>是<rt>shì</rt>，就<rt>jiù</rt>跟<rt>gēn</rt>老<rt>lǎo</rt>师<rt>shī</rt>多<rt>duō</rt>要<rt>yào</rt>了<rt>le</rt>一<rt>yī</rt>份<rt>fèn</rt>资<rt>zī</rt>料<rt>liào</rt>。</ruby><br><br>
+            <ruby>之<rt>zhī</rt>后<rt>hòu</rt>，他<rt>tā</rt>到<rt>dào</rt>了<rt>le</rt>受<rt>shòu</rt>伤<rt>shāng</rt>的<rt>de</rt>同<rt>tóng</rt>学<rt>xué</rt>家<rt>jiā</rt>里<rt>lǐ</rt>，跟<rt>gēn</rt>他<rt>tā</rt>讲<rt>jiǎng</rt>了<rt>le</rt>怎<rt>zěn</rt>么<rt>me</rt>做<rt>zuò</rt>题<rt>tí</rt>，很<rt>hěn</rt>耐<rt>nài</rt>心<rt>xīn</rt>。</ruby><br><br>
+            <ruby>他<rt>tā</rt>们<rt>men</rt>做<rt>zuò</rt>完<rt>wán</rt>功<rt>gōng</rt>课<rt>kè</rt>后<rt>hòu</rt>，还<rt>hái</rt>玩<rt>wán</rt>了<rt>le</rt>一<rt>yī</rt>些<rt>xiē</rt>闯<rt>chuǎng</rt>关<rt>guān</rt>游<rt>yóu</rt>戏<rt>xì</rt>。</ruby><br><br>
+            <ruby>戴<rt>dài</rt>眼<rt>yǎn</rt>镜<rt>jìng</rt>的<rt>de</rt>男<rt>nán</rt>孩<rt>hái</rt>要<rt>yào</rt>回<rt>huí</rt>家<rt>jiā</rt>时<rt>shí</rt>，受<rt>shòu</rt>伤<rt>shāng</rt>同<rt>tóng</rt>学<rt>xué</rt>的<rt>de</rt>爸<rt>bà</rt>爸<rt>ba</rt>下<rt>xià</rt>班<rt>bān</rt>了<rt>le</rt>，正<rt>zhèng</rt>好<rt>hǎo</rt>走<rt>zǒu</rt>进<rt>jìn</rt>家<rt>jiā</rt>门<rt>mén</rt>，他<rt>tā</rt>看<rt>kàn</rt>到<rt>dào</rt>戴<rt>dài</rt>眼<rt>yǎn</rt>镜<rt>jìng</rt>男<rt>nán</rt>孩<rt>hái</rt>的<rt>de</rt>行<rt>xíng</rt>为<rt>wéi</rt>，感<rt>gǎn</rt>到<rt>dào</rt>很<rt>hěn</rt>开<rt>kāi</rt>心<rt>xīn</rt>。</ruby><br><br>
+            <ruby>称<rt>chēng</rt>赞<rt>zàn</rt>他<rt>tā</rt>是<rt>shì</rt>个<rt>gè</rt>乐<rt>lè</rt>于<rt>yú</rt>助<rt>zhù</rt>人<rt>rén</rt>的<rt>de</rt>好<rt>hǎo</rt>孩<rt>hái</rt>子<rt>zǐ</rt>。</ruby><br><br>
+            <ruby>我<rt>wǒ</rt>看<rt>kàn</rt>到<rt>dào</rt>这<rt>zhè</rt>一<rt>yī</rt>幕<rt>mù</rt>，感<rt>gǎn</rt>到<rt>dào</rt>很<rt>hěn</rt>开<rt>kāi</rt>心<rt>xīn</rt>，因<rt>yīn</rt>为<rt>wèi</rt>学<rt>xué</rt>校<rt>xiào</rt>就<rt>jiù</rt>是<rt>shì</rt>个<rt>gè</rt>大<rt>dà</rt>家<rt>jiā</rt>庭<rt>tíng</rt>，同<rt>tóng</rt>学<rt>xué</rt>们<rt>men</rt>应<rt>yīng</rt>该<rt>gāi</rt>团<rt>tuán</rt>结<rt>jié</rt>友<rt>yǒu</rt>爱<rt>ài</rt>，互<rt>hù</rt>相<rt>xiāng</rt>帮<rt>bāng</rt>助<rt>zhù</rt>。</ruby>
+			<button onclick="playAudio('24.mp3')">播放录音</button>
+			  <button onclick="stopAudio()">停止播放</button>
+			  <audio id="audio_answer_24" src="24.mp3"></audio>
+        </blockquote>
+
+<p>
+  <ruby>
+    二<rt>èr</rt>．<rt>.</rt>请<rt>qǐng</rt>你<rt>nǐ</rt>分<rt>fēn</rt>享<rt>xiǎng</rt>一<rt>yī</rt>件<rt>jiàn</rt>你<rt>nǐ</rt>帮<rt>bāng</rt>助<rt>zhù</rt>过<rt>guò</rt>别<rt>bié</rt>人<rt>rén</rt>或<rt>huò</rt>者<rt>zhě</rt>别<rt>bié</rt>人<rt>rén</rt>帮<rt>bāng</rt>助<rt>zhù</rt>过<rt>guò</rt>你<rt>nǐ</rt>的<rt>de</rt>事<rt>shì</rt>，<rt>,</rt>
+  </ruby><br>
+  <ruby>
+    你<rt>nǐ</rt>那<rt>nà</rt>时<rt>shí</rt>的<rt>de</rt>感<rt>gǎn</rt>受<rt>shòu</rt>是<rt>shì</rt>什<rt>shén</rt>么<rt>me</rt>样<rt>yàng</rt>的<rt>de</rt>？<rt>?</rt>
+  </ruby>
+</p>
+
+<blockquote>
+  <ruby>
+    T<rt>T</rt>:<rt>:</rt>我<rt>wǒ</rt>还<rt>hái</rt>记<rt>jì</rt>得<rt>de</rt>那<rt>nà</rt>是<rt>shì</rt>去<rt>qù</rt>年<rt>nián</rt>年<rt>nián</rt>终<rt>zhōng</rt>考<rt>kǎo</rt>试<rt>shì</rt>时<rt>shí</rt>，<rt>,</rt>
+  </ruby><br>
+  <ruby>
+    我<rt>wǒ</rt>的<rt>de</rt>好<rt>hǎo</rt>朋<rt>péng</rt>友<rt>yǒu</rt>小<rt>xiǎo</rt>丽<rt>lì</rt>学<rt>xué</rt>习<rt>xí</rt>不<rt>bù</rt>太<rt>tài</rt>好<rt>hǎo</rt>，<rt>,</rt>
+  </ruby><br>
+  <ruby>
+    感<rt>gǎn</rt>到<rt>dào</rt>很<rt>hěn</rt>紧<rt>jǐn</rt>张<rt>zhāng</rt>。<rt>.</rt>
+  </ruby><br>
+  <ruby>
+    学<rt>xué</rt>校<rt>xiào</rt>老<rt>lǎo</rt>师<rt>shī</rt>给<rt>gěi</rt>她<rt>tā</rt>功<rt>gōng</rt>课<rt>kè</rt>时<rt>shí</rt>，<rt>,</rt>
+  </ruby><br>
+  <ruby>
+    她<rt>tā</rt>不<rt>bù</rt>会<rt>huì</rt>做<rt>zuò</rt>。<rt>.</rt>
+  </ruby><br>
+  <ruby>
+    我<rt>wǒ</rt>看<rt>kàn</rt>到<rt>dào</rt>了<rt>le</rt>，<rt>,</rt>
+  </ruby><br>
+  <ruby>
+    伸<rt>shēn</rt>出<rt>chū</rt>援<rt>yuán</rt>手<rt>shǒu</rt>帮<rt>bāng</rt>助<rt>zhù</rt>她<rt>tā</rt>。<rt>.</rt>
+  </ruby><br>
+  <ruby>
+    我<rt>wǒ</rt>每<rt>měi</rt>次<rt>cì</rt>都<rt>dōu</rt>耐<rt>nài</rt>心<rt>xīn</rt>地<rt>de</rt>帮<rt>bāng</rt>助<rt>zhù</rt>她<rt>tā</rt>，<rt>,</rt>
+  </ruby><br>
+  <ruby>
+    她<rt>tā</rt>很<rt>hěn</rt>快<rt>kuài</rt>就<rt>jiù</rt>做<rt>zuò</rt>完<rt>wán</rt>功<rt>gōng</rt>课<rt>kè</rt>。<rt>.</rt>
+  </ruby><br>
+  <ruby>
+    她<rt>tā</rt>感<rt>gǎn</rt>到<rt>dào</rt>开<rt>kāi</rt>心<rt>xīn</rt>和<rt>hé</rt>感<rt>gǎn</rt>动<rt>dòng</rt>。<rt>.</rt>
+  </ruby><br>
+  <ruby>
+    她<rt>tā</rt>在<rt>zài</rt>年<rt>nián</rt>终<rt>zhōng</rt>考<rt>kǎo</rt>试<rt>shì</rt>时<rt>shí</rt>，<rt>,</rt>
+  </ruby><br>
+  <ruby>
+    获<rt>huò</rt>得<rt>dé</rt>理<rt>lǐ</rt>想<rt>xiǎng</rt>的<rt>de</rt>分<rt>fēn</rt>数<rt>shù</rt>。<rt>.</rt>
+  </ruby><br>
+  <ruby>
+    我<rt>wǒ</rt>感<rt>gǎn</rt>到<rt>dào</rt>十<rt>shí</rt>分<rt>fēn</rt>自<rt>zì</rt>豪<rt>háo</rt>和<rt>hé</rt>开<rt>kāi</rt>心<rt>xīn</rt>。<rt>.</rt>
+  </ruby><br>
+  <ruby>
+    因<rt>yīn</rt>为<rt>wèi</rt>我<rt>wǒ</rt>这<rt>zhè</rt>样<rt>yàng</rt>做<rt>zuò</rt>可<rt>kě</rt>以<rt>yǐ</rt>帮<rt>bāng</rt>助<rt>zhù</rt>我<rt>wǒ</rt>的<rt>de</rt>好<rt>hǎo</rt>朋<rt>péng</rt>友<rt>yǒu</rt>。<rt>.</rt>
+  </ruby><br>
+  <ruby>
+    大<rt>dà</rt>家<rt>jiā</rt>应<rt>yīng</rt>该<rt>gāi</rt>互<rt>hù</rt>相<rt>xiāng</rt>帮<rt>bāng</rt>助<rt>zhù</rt>，<rt>,</rt>
+  </ruby><br>
+  <ruby>
+    互<rt>hù</rt>相<rt>xiāng</rt>关<rt>guān</rt>爱<rt>ài</rt>。<rt>.</rt>
+  </ruby>
+  <button onclick="playAudio('25.mp3')">播放录音</button>
+  <button onclick="stopAudio()">停止播放</button>
+  <audio id="audio_answer_25" src="25.mp3"></audio>
+</blockquote>		
+		
+<p>
+  <ruby>
+    三<rt>sān</rt>．<rt>.</rt>俗<rt>sú</rt>话<rt>huà</rt>说<rt>shuō</rt>"<rt>"</rt>助<rt>zhù</rt>人<rt>rén</rt>为<rt>wéi</rt>快<rt>kuài</rt>乐<rt>lè</rt>之<rt>zhī</rt>本<rt>běn</rt>"<rt>"</rt>
+  </ruby><br>
+  <ruby>
+    你<rt>nǐ</rt>觉<rt>jué</rt>得<rt>de</rt>这<rt>zhè</rt>句<rt>jù</rt>话<rt>huà</rt>说<rt>shuō</rt>得<rt>de</rt>对<rt>duì</rt>吗<rt>ma</rt>？<rt>?</rt>为<rt>wèi</rt>什<rt>shén</rt>么<rt>me</rt>？<rt>?</rt>
+  </ruby>
+</p>
+
+<blockquote>
+  <ruby>
+    T<rt>T</rt>:<rt>:</rt>我<rt>wǒ</rt>觉<rt>jué</rt>得<rt>de</rt>这<rt>zhè</rt>句<rt>jù</rt>话<rt>huà</rt>说<rt>shuō</rt>得<rt>de</rt>对<rt>duì</rt>。<rt>.</rt>
+  </ruby><br>
+  <ruby>
+    因<rt>yīn</rt>为<rt>wèi</rt>，<rt>,</rt>第<rt>dì</rt>一<rt>yī</rt>，<rt>,</rt>当<rt>dāng</rt>我<rt>wǒ</rt>们<rt>men</rt>帮<rt>bāng</rt>助<rt>zhù</rt>别<rt>bié</rt>人<rt>rén</rt>时<rt>shí</rt>，<rt>,</rt>
+  </ruby><br>
+  <ruby>
+    通<rt>tōng</rt>常<rt>cháng</rt>，<rt>,</rt>我<rt>wǒ</rt>们<rt>men</rt>帮<rt>bāng</rt>助<rt>zhù</rt>他<rt>tā</rt>们<rt>men</rt>克<rt>kè</rt>服<rt>fú</rt>了<rt>le</rt>困<rt>kùn</rt>难<rt>nán</rt>，<rt>,</rt>
+  </ruby><br>
+  <ruby>
+    因<rt>yīn</rt>此<rt>cǐ</rt>，<rt>,</rt>帮<rt>bāng</rt>助<rt>zhù</rt>别<rt>bié</rt>人<rt>rén</rt>可<rt>kě</rt>以<rt>yǐ</rt>给<rt>gěi</rt>我<rt>wǒ</rt>们<rt>men</rt>带<rt>dài</rt>来<rt>lái</rt>成<rt>chéng</rt>就<rt>jiù</rt>感<rt>gǎn</rt>，<rt>,</rt>
+  </ruby><br>
+  <ruby>
+    让<rt>ràng</rt>我<rt>wǒ</rt>们<rt>men</rt>对<rt>duì</rt>自<rt>zì</rt>己<rt>jǐ</rt>感<rt>gǎn</rt>到<rt>dào</rt>满<rt>mǎn</rt>意<rt>yì</rt>。<rt>.</rt>
+  </ruby><br>
+  <ruby>
+    第<rt>dì</rt>二<rt>èr</rt>，<rt>,</rt>当<rt>dāng</rt>我<rt>wǒ</rt>们<rt>men</rt>帮<rt>bāng</rt>助<rt>zhù</rt>了<rt>le</rt>别<rt>bié</rt>人<rt>rén</rt>，<rt>,</rt>
+  </ruby><br>
+  <ruby>
+    他<rt>tā</rt>们<rt>men</rt>通<rt>tōng</rt>常<rt>cháng</rt>会<rt>huì</rt>感<rt>gǎn</rt>激<rt>jī</rt>我<rt>wǒ</rt>们<rt>men</rt>，<rt>,</rt>
+  </ruby><br>
+  <ruby>
+    从<rt>cóng</rt>而<rt>ér</rt>拉<rt>lā</rt>近<rt>jìn</rt>我<rt>wǒ</rt>们<rt>men</rt>的<rt>de</rt>距<rt>jù</rt>离<rt>lí</rt>，<rt>,</rt>
+  </ruby><br>
+  <ruby>
+    使<rt>shǐ</rt>我<rt>wǒ</rt>们<rt>men</rt>的<rt>de</rt>关<rt>guān</rt>系<rt>xì</rt>更<rt>gèng</rt>亲<rt>qīn</rt>密<rt>mì</rt>。<rt>.</rt>
+  </ruby><br>
+  <ruby>
+    所<rt>suǒ</rt>以<rt>yǐ</rt>，<rt>,</rt>我<rt>wǒ</rt>们<rt>men</rt>会<rt>huì</rt>感<rt>gǎn</rt>到<rt>dào</rt>快<rt>kuài</rt>乐<rt>lè</rt>。<rt>.</rt>
+  </ruby><br>
+  <ruby>
+    因<rt>yīn</rt>此<rt>cǐ</rt>，<rt>,</rt>助<rt>zhù</rt>人<rt>rén</rt>是<rt>shì</rt>快<rt>kuài</rt>乐<rt>lè</rt>之<rt>zhī</rt>本<rt>běn</rt>。<rt>.</rt>
+  </ruby>
+  <button onclick="playAudio('26.mp3')">播放录音</button>
+  <button onclick="stopAudio()">停止播放</button>
+  <audio id="audio_answer_26" src="26.mp3"></audio>
+</blockquote>		
+		
+<p>
+  <ruby>
+    四<rt>sì</rt>．<rt>.</rt>你<rt>nǐ</rt>认<rt>rèn</rt>为<rt>wéi</rt>学<rt>xué</rt>校<rt>xiào</rt>应<rt>yīng</rt>该<rt>gāi</rt>怎<rt>zěn</rt>么<rt>me</rt>做<rt>zuò</rt>可<rt>kě</rt>以<rt>yǐ</rt>鼓<rt>gǔ</rt>励<rt>lì</rt>同<rt>tóng</rt>学<rt>xué</rt>们<rt>men</rt>互<rt>hù</rt>相<rt>xiāng</rt>帮<rt>bāng</rt>助<rt>zhù</rt>。<rt>.</rt>
+  </ruby>
+</p>
+
+<blockquote>
+  <ruby>
+    T<rt>T</rt>:<rt>:</rt>我<rt>wǒ</rt>认<rt>rèn</rt>为<rt>wéi</rt>学<rt>xué</rt>校<rt>xiào</rt>不<rt>bù</rt>止<rt>zhǐ</rt>是<rt>shì</rt>教<rt>jiāo</rt>给<rt>gěi</rt>孩<rt>hái</rt>子<rt>zi</rt>们<rt>men</rt>知<rt>zhī</rt>识<rt>shi</rt>的<rt>de</rt>地<rt>dì</rt>方<rt>fāng</rt>，<rt>,</rt>
+  </ruby><br>
+  <ruby>
+    也<rt>yě</rt>应<rt>yīng</rt>该<rt>gāi</rt>是<rt>shì</rt>培<rt>péi</rt>养<rt>yǎng</rt>孩<rt>hái</rt>子<rt>zi</rt>们<rt>men</rt>好<rt>hǎo</rt>品<rt>pǐn</rt>德<rt>dé</rt>，<rt>,</rt>
+  </ruby><br>
+  <ruby>
+    好<rt>hǎo</rt>习<rt>xí</rt>惯<rt>guàn</rt>的<rt>de</rt>场<rt>chǎng</rt>所<rt>suǒ</rt>。<rt>.</rt>
+  </ruby><br>
+  <ruby>
+    我<rt>wǒ</rt>认<rt>rèn</rt>为<rt>wéi</rt>学<rt>xué</rt>校<rt>xiào</rt>可<rt>kě</rt>以<rt>yǐ</rt>第<rt>dì</rt>一<rt>yī</rt>，<rt>,</rt>
+  </ruby><br>
+  <ruby>
+    教<rt>jiào</rt>育<rt>yù</rt>孩<rt>hái</rt>子<rt>zi</rt>们<rt>men</rt>，<rt>,</rt>为<rt>wèi</rt>什<rt>shén</rt>么<rt>me</rt>要<rt>yào</rt>互<rt>hù</rt>相<rt>xiāng</rt>帮<rt>bāng</rt>助<rt>zhù</rt>，<rt>,</rt>
+  </ruby><br>
+  <ruby>
+    互<rt>hù</rt>相<rt>xiāng</rt>帮<rt>bāng</rt>助<rt>zhù</rt>的<rt>de</rt>重<rt>zhòng</rt>要<rt>yào</rt>性<rt>xìng</rt>。<rt>.</rt>
+  </ruby><br>
+  <ruby>
+    第<rt>dì</rt>二<rt>èr</rt>，<rt>,</rt>我<rt>wǒ</rt>觉<rt>jué</rt>得<rt>de</rt>学<rt>xué</rt>校<rt>xiào</rt>可<rt>kě</rt>以<rt>yǐ</rt>举<rt>jǔ</rt>办<rt>bàn</rt>活<rt>huó</rt>动<rt>dòng</rt>，<rt>,</rt>
+  </ruby><br>
+  <ruby>
+    比<rt>bǐ</rt>如<rt>rú</rt>说<rt>shuō</rt>学<rt>xué</rt>校<rt>xiào</rt>可<rt>kě</rt>以<rt>yǐ</rt>通<rt>tōng</rt>过<rt>guò</rt>演<rt>yǎn</rt>戏<rt>xì</rt>，<rt>,</rt>
+  </ruby><br>
+  <ruby>
+    把<rt>bǎ</rt>互<rt>hù</rt>相<rt>xiāng</rt>帮<rt>bāng</rt>助<rt>zhù</rt>的<rt>de</rt>观<rt>guān</rt>念<rt>niàn</rt>传<rt>chuán</rt>达<rt>dá</rt>给<rt>gěi</rt>大<rt>dà</rt>家<rt>jiā</rt>。<rt>.</rt>
+  </ruby><br>
+  <ruby>
+    第<rt>dì</rt>三<rt>sān</rt>，<rt>,</rt>我<rt>wǒ</rt>认<rt>rèn</rt>为<rt>wéi</rt>学<rt>xué</rt>校<rt>xiào</rt>可<rt>kě</rt>以<rt>yǐ</rt>批<rt>pī</rt>评<rt>píng</rt>不<rt>bù</rt>关<rt>guān</rt>心<rt>xīn</rt>、<rt>,</rt>
+  </ruby><br>
+  <ruby>
+    不<rt>bù</rt>帮<rt>bāng</rt>助<rt>zhù</rt>其<rt>qí</rt>他<rt>tā</rt>同<rt>tóng</rt>学<rt>xué</rt>的<rt>de</rt>行<rt>xíng</rt>为<rt>wéi</rt>。<rt>.</rt>
+  </ruby><br>
+  <ruby>
+    也<rt>yě</rt>可<rt>kě</rt>以<rt>yǐ</rt>表<rt>biǎo</rt>扬<rt>yáng</rt>那<rt>nà</rt>些<rt>xiē</rt>关<rt>guān</rt>爱<rt>ài</rt>同<rt>tóng</rt>学<rt>xué</rt>们<rt>men</rt>，<rt>,</rt>
+  </ruby><br>
+  <ruby>
+    乐<rt>lè</rt>于<rt>yú</rt>助<rt>zhù</rt>人<rt>rén</rt>的<rt>de</rt>同<rt>tóng</rt>学<rt>xué</rt>们<rt>men</rt>。<rt>.</rt>
+  </ruby><br>
+  <ruby>
+    总<rt>zǒng</rt>之<rt>zhī</rt>，<rt>,</rt>我<rt>wǒ</rt>认<rt>rèn</rt>为<rt>wéi</rt>通<rt>tōng</rt>过<rt>guò</rt>这<rt>zhè</rt>些<rt>xiē</rt>方<rt>fāng</rt>法<rt>fǎ</rt>，<rt>,</rt>
+  </ruby><br>
+  <ruby>
+    就<rt>jiù</rt>可<rt>kě</rt>以<rt>yǐ</rt>鼓<rt>gǔ</rt>励<rt>lì</rt>同<rt>tóng</rt>学<rt>xué</rt>们<rt>men</rt>做<rt>zuò</rt>个<rt>gè</rt>乐<rt>lè</rt>于<rt>yú</rt>助<rt>zhù</rt>人<rt>rén</rt>的<rt>de</rt>人<rt>rén</rt>。<rt>.</rt>
+  </ruby>
+  <button onclick="playAudio('27.mp3')">播放录音</button>
+  <button onclick="stopAudio()">停止播放</button>
+  <audio id="audio_answer_27" src="27.mp3"></audio>
+</blockquote>
+
+
+		
+		
+    </div>
+    <h1><ruby>口<rt>kǒu</rt>试<rt>shì</rt>强<rt>qiáng</rt>化<rt>huà</rt>题<rt>tí</rt>目<rt>mù</rt>及<rt>jí</rt>答<rt>dá</rt>案<rt>àn</rt>（注<rt>zhù</rt>意<rt>yì</rt>安<rt>ān</rt>全<rt>quán</rt>）</ruby></h1>
+
+    <div class="qa">
+        <p>1. <ruby>请<rt>qǐng</rt>你<rt>nǐ</rt>描<rt>miáo</rt>述<rt>shù</rt>刚<rt>gāng</rt>才<rt>cái</rt>在<rt>zài</rt>录<rt>lù</rt>像<rt>xiàng</rt>中<rt>zhōng</rt>看<rt>kàn</rt>到<rt>dào</rt>的<rt>de</rt>情<rt>qíng</rt>景<rt>jǐng</rt>和<rt>hé</rt>你<rt>nǐ</rt>的<rt>de</rt>感<rt>gǎn</rt>受<rt>shòu</rt>。</ruby></p>
+        
+        <blockquote>
+            T:<ruby>在<rt>zài</rt>录<rt>lù</rt>像<rt>xiàng</rt>中<rt>zhōng</rt>，我<rt>wǒ</rt>看<rt>kàn</rt>到<rt>dào</rt>两<rt>liǎng</rt>个<rt>gè</rt>男<rt>nán</rt>孩<rt>hái</rt>，好<rt>hǎo</rt>像<rt>xiàng</rt>是<rt>shì</rt>哥<rt>gē</rt>哥<rt>ge</rt>和<rt>hé</rt>弟<rt>dì</rt>弟<rt>di</rt>，想<rt>xiǎng</rt>要<rt>yào</rt>出<rt>chū</rt>门<rt>mén</rt>玩<rt>wán</rt>滑<rt>huá</rt>板<rt>bǎn</rt>车<rt>chē</rt>。</ruby><br><br>
+            <ruby>他<rt>tā</rt>们<rt>men</rt>走<rt>zǒu</rt>到<rt>dào</rt>门<rt>mén</rt>外<rt>wài</rt>的<rt>de</rt>走<rt>zǒu</rt>廊<rt>láng</rt>时<rt>shí</rt>，哥<rt>gē</rt>哥<rt>ge</rt>感<rt>gǎn</rt>到<rt>dào</rt>很<rt>hěn</rt>兴<rt>xīng</rt>奋<rt>fèn</rt>，就<rt>jiù</rt>开<rt>kāi</rt>始<rt>shǐ</rt>在<rt>zài</rt>走<rt>zǒu</rt>廊<rt>láng</rt>玩<rt>wán</rt>滑<rt>huá</rt>板<rt>bǎn</rt>车<rt>chē</rt>，滑<rt>huá</rt>板<rt>bǎn</rt>车<rt>chē</rt>撞<rt>zhuàng</rt>倒<rt>dǎo</rt>了<rt>le</rt>邻<rt>lín</rt>居<rt>jū</rt>的<rt>de</rt>花<rt>huā</rt>盆<rt>pén</rt>，花<rt>huā</rt>盆<rt>pén</rt>里<rt>lǐ</rt>的<rt>de</rt>泥<rt>ní</rt>土<rt>tǔ</rt>洒<rt>sǎ</rt>出<rt>chū</rt>来<rt>lái</rt>。</ruby><br><br>
+            <ruby>邻<rt>lín</rt>居<rt>jū</rt>看<rt>kàn</rt>到<rt>dào</rt>了<rt>le</rt>，很<rt>hěn</rt>生<rt>shēng</rt>气<rt>qì</rt>，脸<rt>liǎn</rt>一<rt>yī</rt>阵<rt>zhèn</rt>红<rt>hóng</rt>一<rt>yī</rt>阵<rt>zhèn</rt>白<rt>bái</rt>，把<rt>bǎ</rt>哥<rt>gē</rt>哥<rt>ge</rt>责<rt>zé</rt>备<rt>bèi</rt>了<rt>le</rt>一<rt>yī</rt>顿<rt>dùn</rt>。</ruby><br><br>
+            <ruby>这<rt>zhè</rt>时<rt>shí</rt>，他<rt>tā</rt>们<rt>men</rt>的<rt>de</rt>爸<rt>bà</rt>爸<rt>ba</rt>出<rt>chū</rt>来<rt>lái</rt>，连<rt>lián</rt>声<rt>shēng</rt>给<rt>gěi</rt>邻<rt>lín</rt>居<rt>jū</rt>道<rt>dào</rt>歉<rt>qiàn</rt>，并<rt>bìng</rt>且<rt>qiě</rt>批<rt>pī</rt>评<rt>píng</rt>了<rt>le</rt>哥<rt>gē</rt>哥<rt>ge</rt>，叫<rt>jiào</rt>他<rt>tā</rt>注<rt>zhù</rt>意<rt>yì</rt>安<rt>ān</rt>全<rt>quán</rt>。</ruby><br><br>
+            <ruby>哥<rt>gē</rt>哥<rt>ge</rt>赶<rt>gǎn</rt>忙<rt>máng</rt>收<rt>shōu</rt>起<rt>qǐ</rt>滑<rt>huá</rt>板<rt>bǎn</rt>车<rt>chē</rt>，把<rt>bǎ</rt>它<rt>tā</rt>带<rt>dài</rt>到<rt>dào</rt>楼<rt>lóu</rt>下<rt>xià</rt>安<rt>ān</rt>全<rt>quán</rt>的<rt>de</rt>地<rt>dì</rt>方<rt>fāng</rt>去<rt>qù</rt>玩<rt>wán</rt>。</ruby><br><br>
+            <ruby>我<rt>wǒ</rt>看<rt>kàn</rt>到<rt>dào</rt>后<rt>hòu</rt>很<rt>hěn</rt>生<rt>shēng</rt>气<rt>qì</rt>。</ruby><br><br>
+            <ruby>因<rt>yīn</rt>为<rt>wèi</rt>哥<rt>gē</rt>哥<rt>ge</rt>应<rt>yīng</rt>该<rt>gāi</rt>注<rt>zhù</rt>意<rt>yì</rt>安<rt>ān</rt>全<rt>quán</rt>，而<rt>ér</rt>且<rt>qiě</rt>他<rt>tā</rt>应<rt>yīng</rt>该<rt>gāi</rt>做<rt>zuò</rt>弟<rt>dì</rt>弟<rt>di</rt>的<rt>de</rt>好<rt>hǎo</rt>榜<rt>bǎng</rt>样<rt>yàng</rt>，注<rt>zhù</rt>意<rt>yì</rt>安<rt>ān</rt>全<rt>quán</rt>。</ruby><br><br>
+            <ruby>滑<rt>huá</rt>板<rt>bǎn</rt>车<rt>chē</rt>是<rt>shì</rt>很<rt>hěn</rt>好<rt>hǎo</rt>玩<rt>wán</rt>的<rt>de</rt>游<rt>yóu</rt>戏<rt>xì</rt>，孩<rt>hái</rt>子<rt>zi</rt>们<rt>men</rt>都<rt>dōu</rt>喜<rt>xǐ</rt>欢<rt>huān</rt>玩<rt>wán</rt>，但<rt>dàn</rt>我<rt>wǒ</rt>们<rt>men</rt>要<rt>yào</rt>找<rt>zhǎo</rt>到<rt>dào</rt>适<rt>shì</rt>当<rt>dāng</rt>的<rt>de</rt>地<rt>dì</rt>方<rt>fāng</rt>玩<rt>wán</rt>，才<rt>cái</rt>会<rt>huì</rt>比<rt>bǐ</rt>较<rt>jiào</rt>安<rt>ān</rt>全<rt>quán</rt>。</ruby>
+			<button onclick="playAudio('28.mp3')">播放录音</button>
+			  <button onclick="stopAudio()">停止播放</button>
+			  <audio id="audio_answer_28" src="28.mp3"></audio>
+        </blockquote>
+		
+<p>
+  <ruby>
+    二<rt>èr</rt>．<rt>.</rt>同<rt>tóng</rt>学<rt>xué</rt>，<rt>,</rt>请<rt>qǐng</rt>你<rt>nǐ</rt>跟<rt>gēn</rt>我<rt>wǒ</rt>们<rt>men</rt>分<rt>fēn</rt>享<rt>xiǎng</rt>一<rt>yī</rt>件<rt>jiàn</rt>事<rt>shì</rt>，<rt>,</rt>
+  </ruby><br>
+  <ruby>
+    通<rt>tōng</rt>过<rt>guò</rt>这<rt>zhè</rt>件<rt>jiàn</rt>事<rt>shì</rt>，<rt>,</rt>你<rt>nǐ</rt>明<rt>míng</rt>白<rt>bái</rt>安<rt>ān</rt>全<rt>quán</rt>很<rt>hěn</rt>重<rt>zhòng</rt>要<rt>yào</rt>。<rt>.</rt>
+  </ruby>
+</p>
+
+<blockquote>
+  <ruby>
+    T<rt>T</rt>：<rt>:</rt>有<rt>yǒu</rt>一<rt>yī</rt>次<rt>cì</rt>，<rt>,</rt>我<rt>wǒ</rt>看<rt>kàn</rt>见<rt>jiàn</rt>一<rt>yī</rt>个<rt>gè</rt>小<rt>xiǎo</rt>男<rt>nán</rt>孩<rt>hái</rt>和<rt>hé</rt>他<rt>tā</rt>的<rt>de</rt>朋<rt>péng</rt>友<rt>yǒu</rt>们<rt>men</rt>在<rt>zài</rt>马<rt>mǎ</rt>路<rt>lù</rt>边<rt>biān</rt>玩<rt>wán</rt>气<rt>qì</rt>球<rt>qiú</rt>。<rt>.</rt>
+  </ruby><br>
+  <ruby>
+    那<rt>nà</rt>位<rt>wèi</rt>小<rt>xiǎo</rt>男<rt>nán</rt>孩<rt>hái</rt>不<rt>bù</rt>小<rt>xiǎo</rt>心<rt>xīn</rt>把<rt>bǎ</rt>气<rt>qì</rt>球<rt>qiú</rt>踢<rt>tī</rt>到<rt>dào</rt>马<rt>mǎ</rt>路<rt>lù</rt>上<rt>shàng</rt>，<rt>,</rt>
+  </ruby><br>
+  <ruby>
+    他<rt>tā</rt>立<rt>lì</rt>刻<rt>kè</rt>跑<rt>pǎo</rt>到<rt>dào</rt>马<rt>mǎ</rt>路<rt>lù</rt>上<rt>shàng</rt>去<rt>qù</rt>捡<rt>jiǎn</rt>气<rt>qì</rt>球<rt>qiú</rt>。<rt>.</rt>
+  </ruby><br>
+  <ruby>
+    这<rt>zhè</rt>时<rt>shí</rt>，<rt>,</rt>有<rt>yǒu</rt>一<rt>yī</rt>位<rt>wèi</rt>阿<rt>ā</rt>姨<rt>yí</rt>，<rt>,</rt>马<rt>mǎ</rt>上<rt>shàng</rt>阻<rt>zǔ</rt>止<rt>zhǐ</rt>他<rt>tā</rt>，<rt>,</rt>
+  </ruby><br>
+  <ruby>
+    告<rt>gào</rt>诉<rt>sù</rt>他<rt>tā</rt>这<rt>zhè</rt>样<rt>yàng</rt>做<rt>zuò</rt>不<rt>bù</rt>对<rt>duì</rt>，<rt>,</rt>很<rt>hěn</rt>危<rt>wēi</rt>险<rt>xiǎn</rt>。<rt>.</rt>
+  </ruby><br>
+  <ruby>
+    阿<rt>ā</rt>姨<rt>yí</rt>指<rt>zhǐ</rt>着<rt>zhe</rt>一<rt>yī</rt>辆<rt>liàng</rt>快<rt>kuài</rt>速<rt>sù</rt>开<rt>kāi</rt>过<rt>guò</rt>来<rt>lái</rt>的<rt>de</rt>车<rt>chē</rt>说<rt>shuō</rt>，<rt>,</rt>
+  </ruby><br>
+  <ruby>
+    你<rt>nǐ</rt>看<rt>kàn</rt>，<rt>,</rt>你<rt>nǐ</rt>差<rt>chà</rt>点<rt>diǎn</rt>儿<rt>er</rt>被<rt>bèi</rt>车<rt>chē</rt>撞<rt>zhuàng</rt>到<rt>dào</rt>。<rt>.</rt>
+  </ruby><br>
+  <ruby>
+    男<rt>nán</rt>孩<rt>hái</rt>吓<rt>xià</rt>了<rt>le</rt>一<rt>yī</rt>跳<rt>tiào</rt>。<rt>.</rt>
+  </ruby><br>
+  <ruby>
+    通<rt>tōng</rt>过<rt>guò</rt>这<rt>zhè</rt>件<rt>jiàn</rt>事<rt>shì</rt>，<rt>,</rt>我<rt>wǒ</rt>明<rt>míng</rt>白<rt>bái</rt>了<rt>le</rt>安<rt>ān</rt>全<rt>quán</rt>很<rt>hěn</rt>重<rt>zhòng</rt>要<rt>yào</rt>。<rt>.</rt>
+  </ruby>
+  <button onclick="playAudio('29.mp3')">播放录音</button>
+  <button onclick="stopAudio()">停止播放</button>
+  <audio id="audio_answer_29" src="29.mp3"></audio>
+</blockquote>		
+		
+<p>
+  <ruby>
+    三<rt>sān</rt>．<rt>.</rt>除<rt>chú</rt>了<rt>le</rt>你<rt>nǐ</rt>在<rt>zài</rt>录<rt>lù</rt>像<rt>xiàng</rt>中<rt>zhōng</rt>看<rt>kàn</rt>到<rt>dào</rt>的<rt>de</rt>，<rt>,</rt>
+  </ruby><br>
+  <ruby>
+    我<rt>wǒ</rt>们<rt>men</rt>在<rt>zài</rt>外<rt>wài</rt>面<rt>miàn</rt>还<rt>hái</rt>应<rt>yīng</rt>该<rt>gāi</rt>怎<rt>zěn</rt>样<rt>yàng</rt>注<rt>zhù</rt>意<rt>yì</rt>安<rt>ān</rt>全<rt>quán</rt>？<rt>?</rt>
+  </ruby>
+</p>
+
+<blockquote>
+  <ruby>
+    T<rt>T</rt>：<rt>:</rt>我<rt>wǒ</rt>们<rt>men</rt>过<rt>guò</rt>马<rt>mǎ</rt>路<rt>lù</rt>时<rt>shí</rt>，<rt>,</rt>
+  </ruby><br>
+  <ruby>
+    要<rt>yào</rt>先<rt>xiān</rt>左<rt>zuǒ</rt>右<rt>yòu</rt>看<rt>kàn</rt>，<rt>,</rt>
+  </ruby><br>
+  <ruby>
+    没<rt>méi</rt>有<rt>yǒu</rt>车<rt>chē</rt>时<rt>shí</rt>，<rt>,</rt>
+  </ruby><br>
+  <ruby>
+    才<rt>cái</rt>可<rt>kě</rt>以<rt>yǐ</rt>走<rt>zǒu</rt>。<rt>.</rt>
+  </ruby><br>
+  <ruby>
+    我<rt>wǒ</rt>们<rt>men</rt>也<rt>yě</rt>要<rt>yào</rt>使<rt>shǐ</rt>用<rt>yòng</rt>交<rt>jiāo</rt>通<rt>tōng</rt>灯<rt>dēng</rt>，<rt>,</rt>
+  </ruby><br>
+  <ruby>
+    绿<rt>lǜ</rt>灯<rt>dēng</rt>亮<rt>liàng</rt>时<rt>shí</rt>才<rt>cái</rt>可<rt>kě</rt>以<rt>yǐ</rt>走<rt>zǒu</rt>。<rt>.</rt>
+  </ruby><br>
+  <ruby>
+    在<rt>zài</rt>地<rt>dì</rt>铁<rt>tiě</rt>站<rt>zhàn</rt>，<rt>,</rt>
+  </ruby><br>
+  <ruby>
+    如<rt>rú</rt>果<rt>guǒ</rt>地<rt>dì</rt>铁<rt>tiě</rt>的<rt>de</rt>车<rt>chē</rt>门<rt>mén</rt>要<rt>yào</rt>关<rt>guān</rt>了<rt>le</rt>，<rt>,</rt>
+  </ruby><br>
+  <ruby>
+    我<rt>wǒ</rt>们<rt>men</rt>不<rt>bù</rt>要<rt>yào</rt>挤<rt>jǐ</rt>进<rt>jìn</rt>去<rt>qù</rt>。<rt>.</rt>
+  </ruby><br>
+  <ruby>
+    我<rt>wǒ</rt>们<rt>men</rt>去<rt>qù</rt>游<rt>yóu</rt>泳<rt>yǒng</rt>时<rt>shí</rt>，<rt>,</rt>
+  </ruby><br>
+  <ruby>
+    不<rt>bù</rt>要<rt>yào</rt>在<rt>zài</rt>儿<rt>ér</rt>童<rt>tóng</rt>不<rt>bù</rt>能<rt>néng</rt>游<rt>yóu</rt>泳<rt>yǒng</rt>的<rt>de</rt>深<rt>shēn</rt>水<rt>shuǐ</rt>区<rt>qū</rt>游<rt>yóu</rt>泳<rt>yǒng</rt>。<rt>.</rt>
+  </ruby><br>
+  <ruby>
+    总<rt>zǒng</rt>之<rt>zhī</rt>，<rt>,</rt>
+  </ruby><br>
+  <ruby>
+    我<rt>wǒ</rt>们<rt>men</rt>在<rt>zài</rt>公<rt>gōng</rt>共<rt>gòng</rt>场<rt>chǎng</rt>所<rt>suǒ</rt>，<rt>,</rt>
+  </ruby><br>
+  <ruby>
+    一<rt>yī</rt>定<rt>dìng</rt>要<rt>yào</rt>遵<rt>zūn</rt>守<rt>shǒu</rt>规<rt>guī</rt>则<rt>zé</rt>，<rt>,</rt>
+  </ruby><br>
+  <ruby>
+    这<rt>zhè</rt>样<rt>yàng</rt>才<rt>cái</rt>比<rt>bǐ</rt>较<rt>jiào</rt>安<rt>ān</rt>全<rt>quán</rt>。<rt>.</rt>
+  </ruby>
+  <button onclick="playAudio('30.mp3')">播放录音</button>
+  <button onclick="stopAudio()">停止播放</button>
+  <audio id="audio_answer_30" src="30.mp3"></audio>
+</blockquote>		
+		
+		<p>
+  <ruby>
+    四<rt>sì</rt>．<rt>.</rt>家<rt>jiā</rt>长<rt>zhǎng</rt>应<rt>yīng</rt>该<rt>gāi</rt>怎<rt>zěn</rt>么<rt>me</rt>做<rt>zuò</rt>让<rt>ràng</rt>同<rt>tóng</rt>学<rt>xué</rt>们<rt>men</rt>注<rt>zhù</rt>意<rt>yì</rt>安<rt>ān</rt>全<rt>quán</rt>？<rt>?</rt>
+  </ruby>
+</p>
+
+<blockquote>
+  <ruby>
+    T<rt>T</rt>:<rt>:</rt>我<rt>wǒ</rt>认<rt>rèn</rt>为<rt>wéi</rt>家<rt>jiā</rt>长<rt>zhǎng</rt>可<rt>kě</rt>以<rt>yǐ</rt>跟<rt>gēn</rt>孩<rt>hái</rt>子<rt>zi</rt>们<rt>men</rt>讲<rt>jiǎng</rt>，<rt>,</rt>
+  </ruby><br>
+  <ruby>
+    什<rt>shén</rt>么<rt>me</rt>是<rt>shì</rt>危<rt>wēi</rt>险<rt>xiǎn</rt>的<rt>de</rt>行<rt>xíng</rt>为<rt>wéi</rt>，<rt>,</rt>
+  </ruby><br>
+  <ruby>
+    怎<rt>zěn</rt>样<rt>yàng</rt>做<rt>zuò</rt>才<rt>cái</rt>能<rt>néng</rt>避<rt>bì</rt>免<rt>miǎn</rt>危<rt>wēi</rt>险<rt>xiǎn</rt>，<rt>,</rt>
+  </ruby><br>
+  <ruby>
+    才<rt>cái</rt>是<rt>shì</rt>安<rt>ān</rt>全<rt>quán</rt>的<rt>de</rt>。<rt>.</rt>
+  </ruby><br>
+  <ruby>
+    比<rt>bǐ</rt>如<rt>rú</rt>，<rt>,</rt>家<rt>jiā</rt>长<rt>zhǎng</rt>可<rt>kě</rt>以<rt>yǐ</rt>告<rt>gào</rt>诉<rt>sù</rt>我<rt>wǒ</rt>们<rt>men</rt>应<rt>yīng</rt>该<rt>gāi</rt>怎<rt>zěn</rt>样<rt>yàng</rt>过<rt>guò</rt>马<rt>mǎ</rt>路<rt>lù</rt>。<rt>.</rt>
+  </ruby><br>
+  <ruby>
+    另<rt>lìng</rt>外<rt>wài</rt>，<rt>,</rt>家<rt>jiā</rt>长<rt>zhǎng</rt>可<rt>kě</rt>以<rt>yǐ</rt>以<rt>yǐ</rt>身<rt>shēn</rt>作<rt>zuò</rt>则<rt>zé</rt>，<rt>,</rt>
+  </ruby><br>
+  <ruby>
+    为<rt>wèi</rt>孩<rt>hái</rt>子<rt>zi</rt>们<rt>men</rt>做<rt>zuò</rt>个<rt>gè</rt>好<rt>hǎo</rt>榜<rt>bǎng</rt>样<rt>yàng</rt>，<rt>,</rt>
+  </ruby><br>
+  <ruby>
+    他<rt>tā</rt>们<rt>men</rt>自<rt>zì</rt>己<rt>jǐ</rt>要<rt>yào</rt>注<rt>zhù</rt>意<rt>yì</rt>安<rt>ān</rt>全<rt>quán</rt>，<rt>,</rt>
+  </ruby><br>
+  <ruby>
+    不<rt>bù</rt>可<rt>kě</rt>以<rt>yǐ</rt>做<rt>zuò</rt>危<rt>wēi</rt>险<rt>xiǎn</rt>的<rt>de</rt>事<rt>shì</rt>情<rt>qing</rt>。<rt>.</rt>
+  </ruby><br>
+  <ruby>
+    这<rt>zhè</rt>样<rt>yàng</rt>孩<rt>hái</rt>子<rt>zi</rt>们<rt>men</rt>就<rt>jiù</rt>会<rt>huì</rt>有<rt>yǒu</rt>样<rt>yàng</rt>学<rt>xué</rt>样<rt>yàng</rt>，<rt>,</rt>
+  </ruby><br>
+  <ruby>
+    做<rt>zuò</rt>一<rt>yī</rt>个<rt>gè</rt>注<rt>zhù</rt>意<rt>yì</rt>安<rt>ān</rt>全<rt>quán</rt>的<rt>de</rt>人<rt>rén</rt>。<rt>.</rt>
+  </ruby>
+  <button onclick="playAudio('31.mp3')">播放录音</button>
+  <button onclick="stopAudio()">停止播放</button>
+  <audio id="audio_answer_31" src="31.mp3"></audio>
+</blockquote>
+		
+    </div>
+    <h1><ruby>口<rt>kǒu</rt>试<rt>shì</rt>强<rt>qiáng</rt>化<rt>huà</rt>题<rt>tí</rt>目<rt>mù</rt>及<rt>jí</rt>答<rt>dá</rt>案<rt>àn</rt>（8）学<rt>xué</rt>习<rt>xí</rt>新<rt>xīn</rt>技<rt>jì</rt>能<rt>néng</rt></ruby></h1>
+
+    <div class="qa">
+        <p>1. <ruby>请<rt>qǐng</rt>你<rt>nǐ</rt>描<rt>miáo</rt>述<rt>shù</rt>刚<rt>gāng</rt>才<rt>cái</rt>在<rt>zài</rt>录<rt>lù</rt>像<rt>xiàng</rt>中<rt>zhōng</rt>看<rt>kàn</rt>到<rt>dào</rt>的<rt>de</rt>情<rt>qíng</rt>景<rt>jǐng</rt>。</ruby></p>
+        
+        <blockquote>
+            T:<ruby>在<rt>zài</rt>刚<rt>gāng</rt>才<rt>cái</rt>的<rt>de</rt>录<rt>lù</rt>像<rt>xiàng</rt>中<rt>zhōng</rt>，我<rt>wǒ</rt>看<rt>kàn</rt>到<rt>dào</rt>一<rt>yī</rt>位<rt>wèi</rt>小<rt>xiǎo</rt>男<rt>nán</rt>孩<rt>hái</rt>跟<rt>gēn</rt>着<rt>zhe</rt>爸<rt>bà</rt>爸<rt>ba</rt>到<rt>dào</rt>家<rt>jiā</rt>附<rt>fù</rt>近<rt>jìn</rt>的<rt>de</rt>公<rt>gōng</rt>园<rt>yuán</rt>学<rt>xué</rt>习<rt>xí</rt>骑<rt>qí</rt>脚<rt>jiǎo</rt>踏<rt>tà</rt>车<rt>chē</rt>。</ruby><br><br>
+            <ruby>小<rt>xiǎo</rt>男<rt>nán</rt>孩<rt>hái</rt>刚<rt>gāng</rt>学<rt>xué</rt>习<rt>xí</rt>的<rt>de</rt>时<rt>shí</rt>候<rt>hou</rt>，没<rt>méi</rt>有<rt>yǒu</rt>掌<rt>zhǎng</rt>握<rt>wò</rt>技<rt>jì</rt>巧<rt>qiǎo</rt>，在<rt>zài</rt>草<rt>cǎo</rt>地<rt>dì</rt>上<rt>shàng</rt>跌<rt>diē</rt>倒<rt>dǎo</rt>了<rt>le</rt>好<rt>hǎo</rt>几<rt>jǐ</rt>次<rt>cì</rt>，但<rt>dàn</rt>是<rt>shì</rt>他<rt>tā</rt>不<rt>bù</rt>放<rt>fàng</rt>弃<rt>qì</rt>，坚<rt>jiān</rt>持<rt>chí</rt>到<rt>dào</rt>底<rt>dǐ</rt>，过<rt>guò</rt>了<rt>le</rt>一<rt>yī</rt>段<rt>duàn</rt>时<rt>shí</rt>间<rt>jiān</rt>，他<rt>tā</rt>终<rt>zhōng</rt>于<rt>yú</rt>学<rt>xué</rt>会<rt>huì</rt>了<rt>le</rt>骑<rt>qí</rt>脚<rt>jiǎo</rt>踏<rt>tà</rt>车<rt>chē</rt>。</ruby><br><br>
+            <ruby>爸<rt>bà</rt>爸<rt>ba</rt>竖<rt>shù</rt>起<rt>qǐ</rt>来<rt>lái</rt>大<rt>dà</rt>拇<rt>mǔ</rt>指<rt>zhǐ</rt>，称<rt>chēng</rt>赞<rt>zàn</rt>他<rt>tā</rt>做<rt>zuò</rt>得<rt>de</rt>好<rt>hǎo</rt>，没<rt>méi</rt>有<rt>yǒu</rt>放<rt>fàng</rt>弃<rt>qì</rt>，终<rt>zhōng</rt>于<rt>yú</rt>取<rt>qǔ</rt>得<rt>dé</rt>成<rt>chéng</rt>功<rt>gōng</rt>。</ruby><br><br>
+            <ruby>我<rt>wǒ</rt>看<rt>kàn</rt>到<rt>dào</rt>了<rt>le</rt>录<rt>lù</rt>像<rt>xiàng</rt>，感<rt>gǎn</rt>到<rt>dào</rt>十<rt>shí</rt>分<rt>fēn</rt>开<rt>kāi</rt>心<rt>xīn</rt>。</ruby><br><br>
+            <ruby>我<rt>wǒ</rt>们<rt>men</rt>失<rt>shī</rt>败<rt>bài</rt>的<rt>de</rt>时<rt>shí</rt>候<rt>hou</rt>，不<rt>bù</rt>应<rt>yīng</rt>该<rt>gāi</rt>放<rt>fàng</rt>弃<rt>qì</rt>，应<rt>yīng</rt>该<rt>gāi</rt>要<rt>yào</rt>有<rt>yǒu</rt>信<rt>xìn</rt>心<rt>xīn</rt>，不<rt>bù</rt>怕<rt>pà</rt>困<rt>kùn</rt>难<rt>nán</rt>，持<rt>chí</rt>之<rt>zhī</rt>以<rt>yǐ</rt>恒<rt>héng</rt>，就<rt>jiù</rt>会<rt>huì</rt>成<rt>chéng</rt>功<rt>gōng</rt>。</ruby>
+						<button onclick="playAudio('32.mp3')">播放录音</button>
+			  <button onclick="stopAudio()">停止播放</button>
+			  <audio id="audio_answer_32" src="32.mp3"></audio>
+        </blockquote>
+		
+<p>
+  <ruby>
+    2<rt>èr</rt>.<rt>.</rt>如<rt>rú</rt>果<rt>guǒ</rt>让<rt>ràng</rt>你<rt>nǐ</rt>学<rt>xué</rt>一<rt>yī</rt>样<rt>yàng</rt>新<rt>xīn</rt>技<rt>jì</rt>能<rt>néng</rt>，<rt>,</rt>你<rt>nǐ</rt>会<rt>huì</rt>学<rt>xué</rt>什<rt>shén</rt>么<rt>me</rt>？<rt>?</rt>为<rt>wèi</rt>什<rt>shén</rt>么<rt>me</rt>？<rt>?</rt>
+  </ruby>
+</p>
+
+<blockquote>
+  <ruby>
+    T<rt>T</rt>:<rt>:</rt>我<rt>wǒ</rt>要<rt>yào</rt>学<rt>xué</rt>编<rt>biān</rt>织<rt>zhī</rt>。<rt>.</rt>
+  </ruby><br>
+  <ruby>
+    因<rt>yīn</rt>为<rt>wèi</rt>我<rt>wǒ</rt>学<rt>xué</rt>了<rt>le</rt>编<rt>biān</rt>织<rt>zhī</rt>会<rt>huì</rt>让<rt>ràng</rt>我<rt>wǒ</rt>比<rt>bǐ</rt>较<rt>jiào</rt>专<rt>zhuān</rt>心<rt>xīn</rt>，<rt>,</rt>
+  </ruby><br>
+  <ruby>
+    当<rt>dāng</rt>我<rt>wǒ</rt>们<rt>men</rt>编<rt>biān</rt>织<rt>zhī</rt>的<rt>de</rt>时<rt>shí</rt>候<rt>hou</rt>，<rt>,</rt>
+  </ruby><br>
+  <ruby>
+    必<rt>bì</rt>须<rt>xū</rt>要<rt>yào</rt>非<rt>fēi</rt>常<rt>cháng</rt>专<rt>zhuān</rt>心<rt>xīn</rt>，<rt>,</rt>
+  </ruby><br>
+  <ruby>
+    不<rt>bù</rt>然<rt>rán</rt>我<rt>wǒ</rt>们<rt>men</rt>会<rt>huì</rt>编<rt>biān</rt>错<rt>cuò</rt>，<rt>,</rt>
+  </ruby><br>
+  <ruby>
+    就<rt>jiù</rt>要<rt>yào</rt>重<rt>chóng</rt>新<rt>xīn</rt>来<rt>lái</rt>过<rt>guò</rt>。<rt>.</rt>
+  </ruby><br>
+  <ruby>
+    另<rt>lìng</rt>外<rt>wài</rt>，<rt>,</rt>学<rt>xué</rt>习<rt>xí</rt>编<rt>biān</rt>织<rt>zhī</rt>是<rt>shì</rt>很<rt>hěn</rt>好<rt>hǎo</rt>的<rt>de</rt>放<rt>fàng</rt>松<rt>sōng</rt>的<rt>de</rt>活<rt>huó</rt>动<rt>dòng</rt>，<rt>,</rt>
+  </ruby><br>
+  <ruby>
+    我<rt>wǒ</rt>们<rt>men</rt>编<rt>biān</rt>织<rt>zhī</rt>的<rt>de</rt>时<rt>shí</rt>候<rt>hou</rt>，<rt>,</rt>
+  </ruby><br>
+  <ruby>
+    可<rt>kě</rt>以<rt>yǐ</rt>减<rt>jiǎn</rt>轻<rt>qīng</rt>学<rt>xué</rt>业<rt>yè</rt>的<rt>de</rt>压<rt>yā</rt>力<rt>lì</rt>，<rt>,</rt>
+  </ruby><br>
+  <ruby>
+    让<rt>ràng</rt>我<rt>wǒ</rt>们<rt>men</rt>不<rt>bù</rt>会<rt>huì</rt>因<rt>yīn</rt>为<rt>wèi</rt>考<rt>kǎo</rt>试<rt>shì</rt>或<rt>huò</rt>者<rt>zhě</rt>功<rt>gōng</rt>课<rt>kè</rt>而<rt>ér</rt>烦<rt>fán</rt>恼<rt>nǎo</rt>。<rt>.</rt>
+  </ruby>
+  <button onclick="playAudio('33.mp3')">播放录音</button>
+  <button onclick="stopAudio()">停止播放</button>
+  <audio id="audio_answer_33" src="33.mp3"></audio>
+</blockquote>		
+<blockquote>		
+<p>
+  <ruby>
+    如<rt>rú</rt>果<rt>guǒ</rt>我<rt>wǒ</rt>要<rt>yào</rt>学<rt>xué</rt>一<rt>yī</rt>样<rt>yàng</rt>新<rt>xīn</rt>技<rt>jì</rt>能<rt>néng</rt>，<rt>,</rt>我<rt>wǒ</rt>会<rt>huì</rt>学<rt>xué</rt>习<rt>xí</rt>画<rt>huà</rt>画<rt>huà</rt>。<rt>.</rt>
+  </ruby><br>
+  <ruby>
+    因<rt>yīn</rt>为<rt>wèi</rt>第<rt>dì</rt>一<rt>yī</rt>，<rt>,</rt>画<rt>huà</rt>画<rt>huà</rt>可<rt>kě</rt>以<rt>yǐ</rt>让<rt>ràng</rt>我<rt>wǒ</rt>放<rt>fàng</rt>松<rt>sōng</rt>心<rt>xīn</rt>情<rt>qíng</rt>，<rt>,</rt>缓<rt>huǎn</rt>解<rt>jiě</rt>压<rt>yā</rt>力<rt>lì</rt>；<rt>;</rt>
+  </ruby><br>
+  <ruby>
+    第<rt>dì</rt>二<rt>èr</rt>，<rt>,</rt>画<rt>huà</rt>画<rt>huà</rt>也<rt>yě</rt>会<rt>huì</rt>教<rt>jiāo</rt>我<rt>wǒ</rt>怎<rt>zěn</rt>样<rt>yàng</rt>有<rt>yǒu</rt>耐<rt>nài</rt>心<rt>xīn</rt>，<rt>,</rt>
+  </ruby><br>
+  <ruby>
+    因<rt>yīn</rt>为<rt>wèi</rt>画<rt>huà</rt>画<rt>huà</rt>需<rt>xū</rt>要<rt>yào</rt>很<rt>hěn</rt>多<rt>duō</rt>时<rt>shí</rt>间<rt>jiān</rt>，<rt>,</rt>
+  </ruby><br>
+  <ruby>
+    和<rt>hé</rt>注<rt>zhù</rt>意<rt>yì</rt>细<rt>xì</rt>节<rt>jié</rt>，<rt>,</rt>
+  </ruby><br>
+  <ruby>
+    不<rt>bù</rt>会<rt>huì</rt>让<rt>ràng</rt>我<rt>wǒ</rt>很<rt>hěn</rt>快<rt>kuài</rt>就<rt>jiù</rt>感<rt>gǎn</rt>到<rt>dào</rt>烦<rt>fán</rt>恼<rt>nǎo</rt>，<rt>,</rt>
+  </ruby><br>
+  <ruby>
+    而<rt>ér</rt>丧<rt>sàng</rt>失<rt>shī</rt>耐<rt>nài</rt>心<rt>xīn</rt>。<rt>.</rt>
+  </ruby><br>
+  <ruby>
+    最<rt>zuì</rt>后<rt>hòu</rt>，<rt>,</rt>画<rt>huà</rt>画<rt>huà</rt>是<rt>shì</rt>一<rt>yī</rt>种<rt>zhǒng</rt>艺<rt>yì</rt>术<rt>shù</rt>，<rt>,</rt>
+  </ruby><br>
+  <ruby>
+    它<rt>tā</rt>可<rt>kě</rt>以<rt>yǐ</rt>让<rt>ràng</rt>我<rt>wǒ</rt>发<rt>fā</rt>现<rt>xiàn</rt>美<rt>měi</rt>好<rt>hǎo</rt>的<rt>de</rt>东<rt>dōng</rt>西<rt>xi</rt>，<rt>,</rt>
+  </ruby><br>
+  <ruby>
+    也<rt>yě</rt>可<rt>kě</rt>以<rt>yǐ</rt>使<rt>shǐ</rt>我<rt>wǒ</rt>记<rt>jì</rt>录<rt>lù</rt>下<rt>xià</rt>美<rt>měi</rt>好<rt>hǎo</rt>的<rt>de</rt>东<rt>dōng</rt>西<rt>xi</rt>和<rt>hé</rt>经<rt>jīng</rt>验<rt>yàn</rt>。<rt>.</rt>
+  </ruby>
+  <button onclick="playAudio('34.mp3')">播放录音</button>
+  <button onclick="stopAudio()">停止播放</button>
+  <audio id="audio_answer_34" src="34.mp3"></audio>
+</blockquote>		
+
+<p>
+  <ruby>
+    3<rt>sān</rt>.<rt>.</rt>你<rt>nǐ</rt>觉<rt>jué</rt>得<rt>de</rt>学<rt>xué</rt>习<rt>xí</rt>新<rt>xīn</rt>技<rt>jì</rt>能<rt>néng</rt>，<rt>,</rt>有<rt>yǒu</rt>什<rt>shén</rt>么<rt>me</rt>好<rt>hǎo</rt>处<rt>chù</rt>？<rt>?</rt>
+  </ruby>
+</p>
+
+<blockquote>
+  <ruby>
+    T<rt>T</rt>:<rt>:</rt>学<rt>xué</rt>习<rt>xí</rt>新<rt>xīn</rt>技<rt>jì</rt>能<rt>néng</rt>会<rt>huì</rt>让<rt>ràng</rt>我<rt>wǒ</rt>们<rt>men</rt>更<rt>gèng</rt>加<rt>jiā</rt>独<rt>dú</rt>立<rt>lì</rt>。<rt>.</rt>
+  </ruby><br>
+  <ruby>
+    比<rt>bǐ</rt>如<rt>rú</rt>，<rt>,</rt>我<rt>wǒ</rt>们<rt>men</rt>学<rt>xué</rt>会<rt>huì</rt>了<rt>le</rt>煮<rt>zhǔ</rt>饭<rt>fàn</rt>，<rt>,</rt>
+  </ruby><br>
+  <ruby>
+    就<rt>jiù</rt>可<rt>kě</rt>以<rt>yǐ</rt>自<rt>zì</rt>己<rt>jǐ</rt>煮<rt>zhǔ</rt>饭<rt>fàn</rt>吃<rt>chī</rt>，<rt>,</rt>
+  </ruby><br>
+  <ruby>
+    也<rt>yě</rt>可<rt>kě</rt>以<rt>yǐ</rt>给<rt>gěi</rt>我<rt>wǒ</rt>们<rt>men</rt>家<rt>jiā</rt>人<rt>rén</rt>煮<rt>zhǔ</rt>饭<rt>fàn</rt>吃<rt>chī</rt>，<rt>,</rt>
+  </ruby><br>
+  <ruby>
+    如<rt>rú</rt>果<rt>guǒ</rt>爸<rt>bà</rt>爸<rt>ba</rt>、<rt>,</rt>妈<rt>mā</rt>妈<rt>ma</rt>做<rt>zuò</rt>工<rt>gōng</rt>，<rt>,</rt>
+  </ruby><br>
+  <ruby>
+    不<rt>bù</rt>能<rt>néng</rt>按<rt>àn</rt>时<rt>shí</rt>回<rt>huí</rt>家<rt>jiā</rt>，<rt>,</rt>
+  </ruby><br>
+  <ruby>
+    我<rt>wǒ</rt>不<rt>bù</rt>需<rt>xū</rt>要<rt>yào</rt>等<rt>děng</rt>他<rt>tā</rt>们<rt>men</rt>煮<rt>zhǔ</rt>饭<rt>fàn</rt>给<rt>gěi</rt>我<rt>wǒ</rt>吃<rt>chī</rt>。<rt>.</rt>
+  </ruby><br>
+  <ruby>
+    第<rt>dì</rt>二<rt>èr</rt>，<rt>,</rt>我<rt>wǒ</rt>们<rt>men</rt>可<rt>kě</rt>以<rt>yǐ</rt>增<rt>zēng</rt>加<rt>jiā</rt>一<rt>yī</rt>个<rt>gè</rt>业<rt>yè</rt>余<rt>yú</rt>爱<rt>ài</rt>好<rt>hào</rt>。<rt>.</rt>
+  </ruby><br>
+  <ruby>
+    比<rt>bǐ</rt>如<rt>rú</rt>学<rt>xué</rt>会<rt>huì</rt>编<rt>biān</rt>织<rt>zhī</rt>和<rt>hé</rt>弹<rt>tán</rt>钢<rt>gāng</rt>琴<rt>qín</rt>，<rt>,</rt>
+  </ruby><br>
+  <ruby>
+    我<rt>wǒ</rt>们<rt>men</rt>在<rt>zài</rt>课<rt>kè</rt>余<rt>yú</rt>时<rt>shí</rt>间<rt>jiān</rt>，<rt>,</rt>
+  </ruby><br>
+  <ruby>
+    就<rt>jiù</rt>可<rt>kě</rt>以<rt>yǐ</rt>做<rt>zuò</rt>活<rt>huó</rt>动<rt>dòng</rt>，<rt>,</rt>
+  </ruby><br>
+  <ruby>
+    不<rt>bù</rt>用<rt>yòng</rt>打<rt>dǎ</rt>电<rt>diàn</rt>脑<rt>nǎo</rt>游<rt>yóu</rt>戏<rt>xì</rt>等<rt>děng</rt>，<rt>,</rt>
+  </ruby><br>
+  <ruby>
+    这<rt>zhè</rt>样<rt>yàng</rt>，<rt>,</rt>我<rt>wǒ</rt>们<rt>men</rt>就<rt>jiù</rt>可<rt>kě</rt>以<rt>yǐ</rt>过<rt>guò</rt>充<rt>chōng</rt>实<rt>shí</rt>的<rt>de</rt>生<rt>shēng</rt>活<rt>huó</rt>。<rt>.</rt>
+  </ruby><br>
+    <button onclick="playAudio('35.mp3')">播放录音</button>
+  <button onclick="stopAudio()">停止播放</button>
+  <audio id="audio_answer_35" src="35.mp3"></audio>
+  <br><br><br>
+  
+  <ruby>
+    T<rt>T</rt>：<rt>:</rt>我<rt>wǒ</rt>认<rt>rèn</rt>为<rt>wéi</rt>学<rt>xué</rt>习<rt>xí</rt>新<rt>xīn</rt>技<rt>jì</rt>能<rt>néng</rt>的<rt>de</rt>好<rt>hǎo</rt>处<rt>chù</rt>很<rt>hěn</rt>多<rt>duō</rt>。<rt>.</rt>
+  </ruby><br>
+  <ruby>
+    第<rt>dì</rt>一<rt>yī</rt>，<rt>,</rt>我<rt>wǒ</rt>们<rt>men</rt>学<rt>xué</rt>习<rt>xí</rt>新<rt>xīn</rt>的<rt>de</rt>技<rt>jì</rt>能<rt>néng</rt>可<rt>kě</rt>以<rt>yǐ</rt>开<rt>kāi</rt>阔<rt>kuò</rt>我<rt>wǒ</rt>们<rt>men</rt>的<rt>de</rt>视<rt>shì</rt>野<rt>yě</rt>。<rt>.</rt>
+  </ruby><br>
+  <ruby>
+    学<rt>xué</rt>习<rt>xí</rt>新<rt>xīn</rt>技<rt>jì</rt>能<rt>néng</rt>让<rt>ràng</rt>我<rt>wǒ</rt>们<rt>men</rt>接<rt>jiē</rt>触<rt>chù</rt>新<rt>xīn</rt>的<rt>de</rt>学<rt>xué</rt>科<rt>kē</rt>，<rt>,</rt>
+  </ruby><br>
+  <ruby>
+    新<rt>xīn</rt>的<rt>de</rt>知<rt>zhī</rt>识<rt>shi</rt>，<rt>,</rt>
+  </ruby><br>
+  <ruby>
+    这<rt>zhè</rt>可<rt>kě</rt>能<rt>néng</rt>是<rt>shì</rt>我<rt>wǒ</rt>们<rt>men</rt>以<rt>yǐ</rt>前<rt>qián</rt>从<rt>cóng</rt>来<rt>lái</rt>没<rt>méi</rt>有<rt>yǒu</rt>接<rt>jiē</rt>触<rt>chù</rt>过<rt>guò</rt>的<rt>de</rt>。<rt>.</rt>
+  </ruby><br>
+  <ruby>
+    比<rt>bǐ</rt>如<rt>rú</rt>学<rt>xué</rt>习<rt>xí</rt>画<rt>huà</rt>画<rt>huà</rt>，<rt>,</rt>
+  </ruby><br>
+  <ruby>
+    我<rt>wǒ</rt>们<rt>men</rt>可<rt>kě</rt>能<rt>néng</rt>会<rt>huì</rt>学<rt>xué</rt>到<rt>dào</rt>各<rt>gè</rt>种<rt>zhǒng</rt>颜<rt>yán</rt>色<rt>sè</rt>和<rt>hé</rt>光<rt>guāng</rt>影<rt>yǐng</rt>的<rt>de</rt>知<rt>zhī</rt>识<rt>shi</rt>，<rt>,</rt>
+  </ruby><br>
+  <ruby>
+    我<rt>wǒ</rt>们<rt>men</rt>对<rt>duì</rt>事<rt>shì</rt>物<rt>wù</rt>的<rt>de</rt>看<rt>kàn</rt>法<rt>fǎ</rt>就<rt>jiù</rt>会<rt>huì</rt>跟<rt>gēn</rt>以<rt>yǐ</rt>前<rt>qián</rt>不<rt>bù</rt>同<rt>tóng</rt>。<rt>.</rt>
+  </ruby><br>
+  <ruby>
+    第<rt>dì</rt>二<rt>èr</rt>，<rt>,</rt>学<rt>xué</rt>习<rt>xí</rt>新<rt>xīn</rt>技<rt>jì</rt>能<rt>néng</rt>会<rt>huì</rt>让<rt>ràng</rt>我<rt>wǒ</rt>们<rt>men</rt>结<rt>jié</rt>交<rt>jiāo</rt>新<rt>xīn</rt>的<rt>de</rt>朋<rt>péng</rt>友<rt>yǒu</rt>。<rt>.</rt>
+  </ruby><br>
+  <ruby>
+    学<rt>xué</rt>习<rt>xí</rt>新<rt>xīn</rt>技<rt>jì</rt>能<rt>néng</rt>尤<rt>yóu</rt>其<rt>qí</rt>是<rt>shì</rt>很<rt>hěn</rt>多<rt>duō</rt>人<rt>rén</rt>参<rt>cān</rt>加<rt>jiā</rt>的<rt>de</rt>运<rt>yùn</rt>动<rt>dòng</rt>类<rt>lèi</rt>，<rt>,</rt>
+  </ruby><br>
+  <ruby>
+    会<rt>huì</rt>让<rt>ràng</rt>我<rt>wǒ</rt>们<rt>men</rt>交<rt>jiāo</rt>到<rt>dào</rt>新<rt>xīn</rt>朋<rt>péng</rt>友<rt>yǒu</rt>，<rt>,</rt>
+  </ruby><br>
+  <ruby>
+    获<rt>huò</rt>得<rt>dé</rt>更<rt>gèng</rt>多<rt>duō</rt>的<rt>de</rt>友<rt>yǒu</rt>谊<rt>yì</rt>。<rt>.</rt>
+  </ruby>
+  <button onclick="playAudio('36.mp3')">播放录音</button>
+  <button onclick="stopAudio()">停止播放</button>
+  <audio id="audio_answer_36" src="36.mp3"></audio>
+</blockquote>
+
+<p>
+  <ruby>
+    4<rt>sì</rt>.<rt>.</rt>你<rt>nǐ</rt>觉<rt>jué</rt>得<rt>de</rt>学<rt>xué</rt>会<rt>huì</rt>新<rt>xīn</rt>技<rt>jì</rt>能<rt>néng</rt>，<rt>,</rt>最<rt>zuì</rt>重<rt>zhòng</rt>要<rt>yào</rt>的<rt>de</rt>是<rt>shì</rt>什<rt>shén</rt>么<rt>me</rt>？<rt>?</rt>
+  </ruby>
+</p>
+
+<blockquote>
+  <ruby>
+    T<rt>T</rt>：<rt>:</rt>我<rt>wǒ</rt>觉<rt>jué</rt>得<rt>de</rt>学<rt>xué</rt>会<rt>huì</rt>新<rt>xīn</rt>技<rt>jì</rt>能<rt>néng</rt>，<rt>,</rt>最<rt>zuì</rt>重<rt>zhòng</rt>要<rt>yào</rt>的<rt>de</rt>是<rt>shì</rt>不<rt>bù</rt>怕<rt>pà</rt>困<rt>kùn</rt>难<rt>nán</rt>。<rt>.</rt>
+  </ruby><br>
+  <ruby>
+    因<rt>yīn</rt>为<rt>wèi</rt>，<rt>,</rt>学<rt>xué</rt>习<rt>xí</rt>新<rt>xīn</rt>的<rt>de</rt>技<rt>jì</rt>能<rt>néng</rt>，<rt>,</rt>一<rt>yī</rt>定<rt>dìng</rt>会<rt>huì</rt>有<rt>yǒu</rt>困<rt>kùn</rt>难<rt>nán</rt>，<rt>,</rt>
+  </ruby><br>
+  <ruby>
+    没<rt>méi</rt>有<rt>yǒu</rt>那<rt>nà</rt>么<rt>me</rt>容<rt>róng</rt>易<rt>yì</rt>就<rt>jiù</rt>学<rt>xué</rt>会<rt>huì</rt>，<rt>,</rt>
+  </ruby><br>
+  <ruby>
+    如<rt>rú</rt>果<rt>guǒ</rt>我<rt>wǒ</rt>们<rt>men</rt>害<rt>hài</rt>怕<rt>pà</rt>困<rt>kùn</rt>难<rt>nán</rt>，<rt>,</rt>就<rt>jiù</rt>不<rt>bù</rt>可<rt>kě</rt>以<rt>yǐ</rt>学<rt>xué</rt>会<rt>huì</rt>新<rt>xīn</rt>技<rt>jì</rt>能<rt>néng</rt>。<rt>.</rt>
+  </ruby><br>
+  <ruby>
+    有<rt>yǒu</rt>一<rt>yī</rt>次<rt>cì</rt>，<rt>,</rt>我<rt>wǒ</rt>和<rt>hé</rt>朋<rt>péng</rt>友<rt>yǒu</rt>去<rt>qù</rt>公<rt>gōng</rt>园<rt>yuán</rt>，<rt>,</rt>
+  </ruby><br>
+  <ruby>
+    教<rt>jiāo</rt>她<rt>tā</rt>怎<rt>zěn</rt>么<rt>me</rt>骑<rt>qí</rt>脚<rt>jiǎo</rt>踏<rt>tà</rt>车<rt>chē</rt>。<rt>.</rt>
+  </ruby><br>
+  <ruby>
+    她<rt>tā</rt>尝<rt>cháng</rt>试<rt>shì</rt>了<rt>le</rt>一<rt>yī</rt>次<rt>cì</rt>，<rt>,</rt>可<rt>kě</rt>是<rt>shì</rt>学<rt>xué</rt>不<rt>bù</rt>会<rt>huì</rt>，<rt>,</rt>
+  </ruby><br>
+  <ruby>
+    她<rt>tā</rt>就<rt>jiù</rt>放<rt>fàng</rt>弃<rt>qì</rt>了<rt>le</rt>。<rt>.</rt>
+  </ruby><br>
+  <ruby>
+    我<rt>wǒ</rt>看<rt>kàn</rt>到<rt>dào</rt>时<rt>shí</rt>，<rt>,</rt>跟<rt>gēn</rt>她<rt>tā</rt>讲<rt>jiǎng</rt>不<rt>bù</rt>要<rt>yào</rt>怕<rt>pà</rt>困<rt>kùn</rt>难<rt>nán</rt>。<rt>.</rt>
+  </ruby><br>
+  <ruby>
+    因<rt>yīn</rt>为<rt>wèi</rt>，<rt>,</rt>怕<rt>pà</rt>困<rt>kùn</rt>难<rt>nán</rt>就<rt>jiù</rt>不<rt>bù</rt>能<rt>néng</rt>坚<rt>jiān</rt>持<rt>chí</rt>学<rt>xué</rt>习<rt>xí</rt>新<rt>xīn</rt>技<rt>jì</rt>能<rt>néng</rt>了<rt>le</rt>。<rt>.</rt>
+  </ruby><br>
+  <ruby>
+    我<rt>wǒ</rt>朋<rt>péng</rt>友<rt>yǒu</rt>听<rt>tīng</rt>了<rt>le</rt>，<rt>,</rt>就<rt>jiù</rt>决<rt>jué</rt>定<rt>dìng</rt>继<rt>jì</rt>续<rt>xù</rt>学<rt>xué</rt>，<rt>,</rt>
+  </ruby><br>
+  <ruby>
+    她<rt>tā</rt>学<rt>xué</rt>了<rt>le</rt>一<rt>yī</rt>个<rt>gè</rt>半<rt>bàn</rt>小<rt>xiǎo</rt>时<rt>shí</rt>，<rt>,</rt>终<rt>zhōng</rt>于<rt>yú</rt>学<rt>xué</rt>会<rt>huì</rt>怎<rt>zěn</rt>么<rt>me</rt>骑<rt>qí</rt>脚<rt>jiǎo</rt>踏<rt>tà</rt>车<rt>chē</rt>了<rt>le</rt>。<rt>.</rt>
+  </ruby>
+  <button onclick="playAudio('37.mp3')">播放录音</button>
+  <button onclick="stopAudio()">停止播放</button>
+  <audio id="audio_answer_37" src="37.mp3"></audio>
+</blockquote>
+<p>
+  <ruby>
+    你<rt>nǐ</rt>觉<rt>jué</rt>得<rt>de</rt>家<rt>jiā</rt>长<rt>zhǎng</rt>怎<rt>zěn</rt>样<rt>yàng</rt>鼓<rt>gǔ</rt>励<rt>lì</rt>同<rt>tóng</rt>学<rt>xué</rt>们<rt>men</rt>学<rt>xué</rt>习<rt>xí</rt>新<rt>xīn</rt>技<rt>jì</rt>能<rt>néng</rt>？<rt>?</rt>
+  </ruby>
+</p>
+
+<blockquote>
+  <ruby>
+    T<rt>T</rt>：<rt>:</rt>我<rt>wǒ</rt>觉<rt>jué</rt>得<rt>de</rt>家<rt>jiā</rt>长<rt>zhǎng</rt>可<rt>kě</rt>以<rt>yǐ</rt>为<rt>wèi</rt>同<rt>tóng</rt>学<rt>xué</rt>们<rt>men</rt>做<rt>zuò</rt>个<rt>gè</rt>好<rt>hǎo</rt>榜<rt>bǎng</rt>样<rt>yàng</rt>，<rt>,</rt>
+  </ruby><br>
+  <ruby>
+    他<rt>tā</rt>们<rt>men</rt>自<rt>zì</rt>己<rt>jǐ</rt>可<rt>kě</rt>以<rt>yǐ</rt>积<rt>jī</rt>极<rt>jí</rt>学<rt>xué</rt>习<rt>xí</rt>新<rt>xīn</rt>技<rt>jì</rt>能<rt>néng</rt>，<rt>,</rt>
+  </ruby><br>
+  <ruby>
+    或<rt>huò</rt>者<rt>zhě</rt>和<rt>hé</rt>同<rt>tóng</rt>学<rt>xué</rt>们<rt>men</rt>一<rt>yī</rt>起<rt>qǐ</rt>学<rt>xué</rt>习<rt>xí</rt>一<rt>yī</rt>些<rt>xiē</rt>新<rt>xīn</rt>的<rt>de</rt>知<rt>zhī</rt>识<rt>shi</rt>，<rt>,</rt>
+  </ruby><br>
+  <ruby>
+    同<rt>tóng</rt>学<rt>xué</rt>们<rt>men</rt>看<rt>kàn</rt>到<rt>dào</rt>了<rt>le</rt>，<rt>,</rt>就<rt>jiù</rt>会<rt>huì</rt>想<rt>xiǎng</rt>要<rt>yào</rt>学<rt>xué</rt>习<rt>xí</rt>新<rt>xīn</rt>知<rt>zhī</rt>识<rt>shi</rt>，<rt>,</rt>
+  </ruby><br>
+  <ruby>
+    不<rt>bù</rt>会<rt>huì</rt>觉<rt>jué</rt>得<rt>de</rt>学<rt>xué</rt>习<rt>xí</rt>新<rt>xīn</rt>知<rt>zhī</rt>识<rt>shi</rt>是<rt>shì</rt>麻<rt>má</rt>烦<rt>fan</rt>的<rt>de</rt>事<rt>shì</rt>。<rt>.</rt>
+  </ruby><br>
+  <ruby>
+    第<rt>dì</rt>二<rt>èr</rt>，<rt>,</rt>家<rt>jiā</rt>长<rt>zhǎng</rt>可<rt>kě</rt>以<rt>yǐ</rt>教<rt>jiào</rt>育<rt>yù</rt>我<rt>wǒ</rt>们<rt>men</rt>为<rt>wèi</rt>什<rt>shén</rt>么<rt>me</rt>要<rt>yào</rt>学<rt>xué</rt>习<rt>xí</rt>新<rt>xīn</rt>技<rt>jì</rt>能<rt>néng</rt>，<rt>,</rt>
+  </ruby><br>
+  <ruby>
+    还<rt>hái</rt>有<rt>yǒu</rt>积<rt>jī</rt>极<rt>jí</rt>学<rt>xué</rt>习<rt>xí</rt>新<rt>xīn</rt>技<rt>jì</rt>能<rt>néng</rt>的<rt>de</rt>重<rt>zhòng</rt>要<rt>yào</rt>性<rt>xìng</rt>。<rt>.</rt>
+  </ruby><br>
+  <ruby>
+    让<rt>ràng</rt>同<rt>tóng</rt>学<rt>xué</rt>们<rt>men</rt>明<rt>míng</rt>白<rt>bái</rt>，<rt>,</rt>学<rt>xué</rt>习<rt>xí</rt>新<rt>xīn</rt>技<rt>jì</rt>能<rt>néng</rt>可<rt>kě</rt>能<rt>néng</rt>是<rt>shì</rt>一<rt>yī</rt>件<rt>jiàn</rt>必<rt>bì</rt>须<rt>xū</rt>要<rt>yào</rt>做<rt>zuò</rt>的<rt>de</rt>事<rt>shì</rt>情<rt>qing</rt>，<rt>,</rt>
+  </ruby><br>
+  <ruby>
+    这<rt>zhè</rt>样<rt>yàng</rt>家<rt>jiā</rt>长<rt>zhǎng</rt>就<rt>jiù</rt>可<rt>kě</rt>以<rt>yǐ</rt>鼓<rt>gǔ</rt>励<rt>lì</rt>我<rt>wǒ</rt>们<rt>men</rt>学<rt>xué</rt>习<rt>xí</rt>新<rt>xīn</rt>技<rt>jì</rt>能<rt>néng</rt>了<rt>le</rt>。<rt>.</rt>
+  </ruby>
+  <button onclick="playAudio('38.mp3')">播放录音</button>
+  <button onclick="stopAudio()">停止播放</button>
+  <audio id="audio_answer_38" src="38.mp3"></audio>
+</blockquote>
+<p>
+  <ruby>
+    一<rt>yī</rt>，<rt>,</rt>录<rt>lù</rt>像<rt>xiàng</rt>中<rt>zhōng</rt>哪<rt>nǎ</rt>些<rt>xiē</rt>行<rt>xíng</rt>为<rt>wéi</rt>值<rt>zhí</rt>得<rt>dé</rt>我<rt>wǒ</rt>们<rt>men</rt>学<rt>xué</rt>习<rt>xí</rt>？<rt>?</rt>
+  </ruby>
+</p>
+
+<blockquote>
+  <ruby>
+    T<rt>T</rt>：<rt>:</rt>在<rt>zài</rt>刚<rt>gāng</rt>才<rt>cái</rt>的<rt>de</rt>录<rt>lù</rt>像<rt>xiàng</rt>中<rt>zhōng</rt>，<rt>,</rt>我<rt>wǒ</rt>看<rt>kàn</rt>到<rt>dào</rt>一<rt>yī</rt>位<rt>wèi</rt>小<rt>xiǎo</rt>女<rt>nǚ</rt>孩<rt>hái</rt>，<rt>,</rt>
+  </ruby><br>
+  <ruby>
+    她<rt>tā</rt>来<rt>lái</rt>到<rt>dào</rt>巴<rt>bā</rt>刹<rt>shā</rt>，<rt>,</rt>她<rt>tā</rt>的<rt>de</rt>妈<rt>mā</rt>妈<rt>ma</rt>在<rt>zài</rt>巴<rt>bā</rt>刹<rt>shā</rt>买<rt>mǎi</rt>了<rt>le</rt>很<rt>hěn</rt>多<rt>duō</rt>东<rt>dōng</rt>西<rt>xi</rt>，<rt>,</rt>
+  </ruby><br>
+  <ruby>
+    两<rt>liǎng</rt>只<rt>zhī</rt>手<rt>shǒu</rt>都<rt>dōu</rt>提<rt>tí</rt>了<rt>le</rt>许<rt>xǔ</rt>多<rt>duō</rt>装<rt>zhuāng</rt>满<rt>mǎn</rt>东<rt>dōng</rt>西<rt>xi</rt>的<rt>de</rt>塑<rt>sù</rt>料<rt>liào</rt>袋<rt>dài</rt>，<rt>,</rt>
+  </ruby><br>
+  <ruby>
+    看<rt>kàn</rt>起<rt>qǐ</rt>来<rt>lái</rt>很<rt>hěn</rt>重<rt>zhòng</rt>。<rt>.</rt>
+  </ruby><br>
+  <ruby>
+    这<rt>zhè</rt>位<rt>wèi</rt>小<rt>xiǎo</rt>女<rt>nǚ</rt>孩<rt>hái</rt>，<rt>,</rt>赶<rt>gǎn</rt>忙<rt>máng</rt>走<rt>zǒu</rt>上<rt>shàng</rt>前<rt>qián</rt>，<rt>,</rt>
+  </ruby><br>
+  <ruby>
+    从<rt>cóng</rt>妈<rt>mā</rt>妈<rt>ma</rt>手<rt>shǒu</rt>中<rt>zhōng</rt>拿<rt>ná</rt>过<rt>guò</rt>塑<rt>sù</rt>料<rt>liào</rt>袋<rt>dài</rt>，<rt>,</rt>
+  </ruby><br>
+  <ruby>
+    帮<rt>bāng</rt>助<rt>zhù</rt>妈<rt>mā</rt>妈<rt>ma</rt>把<rt>bǎ</rt>这<rt>zhè</rt>些<rt>xiē</rt>东<rt>dōng</rt>西<rt>xi</rt>提<rt>tí</rt>回<rt>huí</rt>家<rt>jiā</rt>。<rt>.</rt>
+  </ruby><br>
+  <ruby>
+    我<rt>wǒ</rt>看<rt>kàn</rt>到<rt>dào</rt>后<rt>hòu</rt>感<rt>gǎn</rt>到<rt>dào</rt>很<rt>hěn</rt>欣<rt>xīn</rt>慰<rt>wèi</rt>，<rt>,</rt>
+  </ruby><br>
+  <ruby>
+    我<rt>wǒ</rt>觉<rt>jué</rt>得<rt>de</rt>她<rt>tā</rt>这<rt>zhè</rt>样<rt>yàng</rt>的<rt>de</rt>行<rt>xíng</rt>为<rt>wéi</rt>值<rt>zhí</rt>得<rt>dé</rt>我<rt>wǒ</rt>们<rt>men</rt>学<rt>xué</rt>习<rt>xí</rt>。<rt>.</rt>
+  </ruby><br>
+  <ruby>
+    因<rt>yīn</rt>为<rt>wèi</rt>妈<rt>mā</rt>妈<rt>ma</rt>每<rt>měi</rt>天<rt>tiān</rt>做<rt>zuò</rt>工<rt>gōng</rt>，<rt>,</rt>已<rt>yǐ</rt>经<rt>jīng</rt>很<rt>hěn</rt>辛<rt>xīn</rt>苦<rt>kǔ</rt>，<rt>,</rt>
+  </ruby><br>
+  <ruby>
+    她<rt>tā</rt>能<rt>néng</rt>够<rt>gòu</rt>帮<rt>bāng</rt>助<rt>zhù</rt>妈<rt>mā</rt>妈<rt>ma</rt>，<rt>,</rt>让<rt>ràng</rt>她<rt>tā</rt>不<rt>bù</rt>要<rt>yào</rt>那<rt>nà</rt>么<rt>me</rt>辛<rt>xīn</rt>苦<rt>kǔ</rt>。<rt>.</rt>
+  </ruby>
+  <button onclick="playAudio('39.mp3')">播放录音</button>
+  <button onclick="stopAudio()">停止播放</button>
+  <audio id="audio_answer_39" src="39.mp3"></audio>
+</blockquote>
+<p>
+  <ruby>
+    二<rt>èr</rt>，<rt>,</rt>你<rt>nǐ</rt>会<rt>huì</rt>帮<rt>bāng</rt>助<rt>zhù</rt>家<rt>jiā</rt>长<rt>zhǎng</rt>做<rt>zuò</rt>家<rt>jiā</rt>务<rt>wù</rt>吗<rt>ma</rt>？<rt>?</rt>你<rt>nǐ</rt>都<rt>dōu</rt>是<rt>shì</rt>怎<rt>zěn</rt>么<rt>me</rt>帮<rt>bāng</rt>助<rt>zhù</rt>他<rt>tā</rt>们<rt>men</rt>的<rt>de</rt>？<rt>?</rt>
+  </ruby>
+</p>
+
+<blockquote>
+  <ruby>
+    T<rt>T</rt>:<rt>:</rt>我<rt>wǒ</rt>会<rt>huì</rt>帮<rt>bāng</rt>助<rt>zhù</rt>家<rt>jiā</rt>长<rt>zhǎng</rt>做<rt>zuò</rt>家<rt>jiā</rt>务<rt>wù</rt>。<rt>.</rt>
+  </ruby><br>
+  <ruby>
+    我<rt>wǒ</rt>的<rt>de</rt>家<rt>jiā</rt>长<rt>zhǎng</rt>每<rt>měi</rt>天<rt>tiān</rt>都<rt>dōu</rt>要<rt>yào</rt>工<rt>gōng</rt>作<rt>zuò</rt>，<rt>,</rt>
+  </ruby><br>
+  <ruby>
+    他<rt>tā</rt>们<rt>men</rt>回<rt>huí</rt>家<rt>jiā</rt>时<rt>shí</rt>已<rt>yǐ</rt>经<rt>jīng</rt>很<rt>hěn</rt>晚<rt>wǎn</rt>了<rt>le</rt>，<rt>,</rt>
+  </ruby><br>
+  <ruby>
+    所<rt>suǒ</rt>以<rt>yǐ</rt>，<rt>,</rt>为<rt>wèi</rt>了<rt>le</rt>不<rt>bù</rt>让<rt>ràng</rt>他<rt>tā</rt>们<rt>men</rt>太<rt>tài</rt>劳<rt>láo</rt>累<rt>lèi</rt>，<rt>,</rt>
+  </ruby><br>
+  <ruby>
+    我<rt>wǒ</rt>常<rt>cháng</rt>常<rt>cháng</rt>会<rt>huì</rt>帮<rt>bāng</rt>助<rt>zhù</rt>他<rt>tā</rt>们<rt>men</rt>做<rt>zuò</rt>家<rt>jiā</rt>务<rt>wù</rt>，<rt>,</rt>
+  </ruby><br>
+  <ruby>
+    比<rt>bǐ</rt>如<rt>rú</rt>：<rt>:</rt>抹<rt>mā</rt>桌<rt>zhuō</rt>子<rt>zi</rt>、<rt>,</rt>抹<rt>mā</rt>地<rt>dì</rt>板<rt>bǎn</rt>，<rt>,</rt>打<rt>dǎ</rt>扫<rt>sǎo</rt>房<rt>fáng</rt>间<rt>jiān</rt>。<rt>.</rt>
+  </ruby><br>
+  <ruby>
+    我<rt>wǒ</rt>还<rt>hái</rt>会<rt>huì</rt>把<rt>bǎ</rt>晾<rt>liàng</rt>干<rt>gān</rt>的<rt>de</rt>衣<rt>yī</rt>服<rt>fu</rt>收<rt>shōu</rt>回<rt>huí</rt>来<rt>lái</rt>，<rt>,</rt>
+  </ruby><br>
+  <ruby>
+    把<rt>bǎ</rt>它<rt>tā</rt>们<rt>men</rt>收<rt>shōu</rt>到<rt>dào</rt>衣<rt>yī</rt>橱<rt>chú</rt>里<rt>lǐ</rt>。<rt>.</rt>
+  </ruby><br>
+  <ruby>
+    有<rt>yǒu</rt>时<rt>shí</rt>，<rt>,</rt>我<rt>wǒ</rt>也<rt>yě</rt>会<rt>huì</rt>帮<rt>bāng</rt>助<rt>zhù</rt>家<rt>jiā</rt>长<rt>zhǎng</rt>浇<rt>jiāo</rt>花<rt>huā</rt>。<rt>.</rt>
+  </ruby><br>
+  <ruby>
+    家<rt>jiā</rt>长<rt>zhǎng</rt>很<rt>hěn</rt>辛<rt>xīn</rt>苦<rt>kǔ</rt>，<rt>,</rt>
+  </ruby><br>
+  <ruby>
+    我<rt>wǒ</rt>帮<rt>bāng</rt>助<rt>zhù</rt>他<rt>tā</rt>们<rt>men</rt>，<rt>,</rt>
+  </ruby><br>
+  <ruby>
+    他<rt>tā</rt>们<rt>men</rt>就<rt>jiù</rt>可<rt>kě</rt>以<rt>yǐ</rt>有<rt>yǒu</rt>时<rt>shí</rt>间<rt>jiān</rt>休<rt>xiū</rt>息<rt>xī</rt>。<rt>.</rt>
+  </ruby><br>
+  <ruby>
+    所<rt>suǒ</rt>以<rt>yǐ</rt>，<rt>,</rt>我<rt>wǒ</rt>会<rt>huì</rt>帮<rt>bāng</rt>忙<rt>máng</rt>做<rt>zuò</rt>家<rt>jiā</rt>务<rt>wù</rt>。<rt>.</rt>
+  </ruby>
+  <button onclick="playAudio('40.mp3')">播放录音</button>
+  <button onclick="stopAudio()">停止播放</button>
+  <audio id="audio_answer_40" src="40.mp3"></audio>
+</blockquote>
+<p>
+  <ruby>
+    三<rt>sān</rt>，<rt>,</rt>有<rt>yǒu</rt>些<rt>xiē</rt>同<rt>tóng</rt>学<rt>xué</rt>认<rt>rèn</rt>为<rt>wéi</rt>，<rt>,</rt>我<rt>wǒ</rt>们<rt>men</rt>除<rt>chú</rt>了<rt>le</rt>做<rt>zuò</rt>功<rt>gōng</rt>课<rt>kè</rt>，<rt>,</rt>去<rt>qù</rt>课<rt>kè</rt>外<rt>wài</rt>活<rt>huó</rt>动<rt>dòng</rt>还<rt>hái</rt>有<rt>yǒu</rt>补<rt>bǔ</rt>习<rt>xí</rt>，<rt>,</rt>已<rt>yǐ</rt>经<rt>jīng</rt>很<rt>hěn</rt>累<rt>lèi</rt>了<rt>le</rt>也<rt>yě</rt>没<rt>méi</rt>有<rt>yǒu</rt>多<rt>duō</rt>余<rt>yú</rt>的<rt>de</rt>时<rt>shí</rt>间<rt>jiān</rt>，<rt>,</rt>不<rt>bù</rt>应<rt>yīng</rt>该<rt>gāi</rt>再<rt>zài</rt>帮<rt>bāng</rt>助<rt>zhù</rt>家<rt>jiā</rt>长<rt>zhǎng</rt>做<rt>zuò</rt>家<rt>jiā</rt>务<rt>wù</rt>，<rt>,</rt>你<rt>nǐ</rt>同<rt>tóng</rt>意<rt>yì</rt>吗<rt>ma</rt>？<rt>?</rt>为<rt>wèi</rt>什<rt>shén</rt>么<rt>me</rt>？<rt>?</rt>
+  </ruby>
+</p>
+
+<blockquote>
+  <ruby>
+    T<rt>T</rt>：<rt>:</rt>我<rt>wǒ</rt>不<rt>bù</rt>同<rt>tóng</rt>意<rt>yì</rt>这<rt>zhè</rt>样<rt>yàng</rt>的<rt>de</rt>说<rt>shuō</rt>法<rt>fǎ</rt>。<rt>.</rt>
+  </ruby><br>
+  <ruby>
+    第<rt>dì</rt>一<rt>yī</rt>，<rt>,</rt>虽<rt>suī</rt>然<rt>rán</rt>我<rt>wǒ</rt>们<rt>men</rt>很<rt>hěn</rt>忙<rt>máng</rt>，<rt>,</rt>但<rt>dàn</rt>其<rt>qí</rt>实<rt>shí</rt>我<rt>wǒ</rt>们<rt>men</rt>有<rt>yǒu</rt>休<rt>xiū</rt>息<rt>xī</rt>的<rt>de</rt>时<rt>shí</rt>间<rt>jiān</rt>，<rt>,</rt>
+  </ruby><br>
+  <ruby>
+    我<rt>wǒ</rt>觉<rt>jué</rt>得<rt>de</rt>如<rt>rú</rt>果<rt>guǒ</rt>我<rt>wǒ</rt>们<rt>men</rt>可<rt>kě</rt>以<rt>yǐ</rt>好<rt>hǎo</rt>好<rt>hǎo</rt>安<rt>ān</rt>排<rt>pái</rt>自<rt>zì</rt>己<rt>jǐ</rt>的<rt>de</rt>休<rt>xiū</rt>息<rt>xī</rt>时<rt>shí</rt>间<rt>jiān</rt>，<rt>,</rt>
+  </ruby><br>
+  <ruby>
+    就<rt>jiù</rt>不<rt>bù</rt>会<rt>huì</rt>因<rt>yīn</rt>为<rt>wèi</rt>帮<rt>bāng</rt>忙<rt>máng</rt>做<rt>zuò</rt>家<rt>jiā</rt>务<rt>wù</rt>而<rt>ér</rt>耽<rt>dān</rt>误<rt>wù</rt>自<rt>zì</rt>己<rt>jǐ</rt>的<rt>de</rt>学<rt>xué</rt>业<rt>yè</rt>。<rt>.</rt>
+  </ruby><br>
+  <ruby>
+    另<rt>lìng</rt>外<rt>wài</rt>，<rt>,</rt>我<rt>wǒ</rt>觉<rt>jué</rt>得<rt>de</rt>帮<rt>bāng</rt>忙<rt>máng</rt>做<rt>zuò</rt>家<rt>jiā</rt>务<rt>wù</rt>是<rt>shì</rt>每<rt>měi</rt>个<rt>gè</rt>家<rt>jiā</rt>庭<rt>tíng</rt>成<rt>chéng</rt>员<rt>yuán</rt>的<rt>de</rt>责<rt>zé</rt>任<rt>rèn</rt>。<rt>.</rt>
+  </ruby><br>
+  <ruby>
+    就<rt>jiù</rt>算<rt>suàn</rt>我<rt>wǒ</rt>们<rt>men</rt>年<rt>nián</rt>级<rt>jí</rt>还<rt>hái</rt>比<rt>bǐ</rt>较<rt>jiào</rt>小<rt>xiǎo</rt>，<rt>,</rt>也<rt>yě</rt>应<rt>yīng</rt>该<rt>gāi</rt>做<rt>zuò</rt>自<rt>zì</rt>己<rt>jǐ</rt>力<rt>lì</rt>所<rt>suǒ</rt>能<rt>néng</rt>及<rt>jí</rt>的<rt>de</rt>事<rt>shì</rt>情<rt>qing</rt>，<rt>,</rt>
+  </ruby><br>
+  <ruby>
+    比<rt>bǐ</rt>如<rt>rú</rt>收<rt>shōu</rt>拾<rt>shi</rt>自<rt>zì</rt>己<rt>jǐ</rt>的<rt>de</rt>房<rt>fáng</rt>间<rt>jiān</rt>，<rt>,</rt>清<rt>qīng</rt>洗<rt>xǐ</rt>自<rt>zì</rt>己<rt>jǐ</rt>的<rt>de</rt>衣<rt>yī</rt>裤<rt>kù</rt>。<rt>.</rt>
+  </ruby><br>
+  <ruby>
+    父<rt>fù</rt>母<rt>mǔ</rt>都<rt>dōu</rt>在<rt>zài</rt>工<rt>gōng</rt>作<rt>zuò</rt>，<rt>,</rt>也<rt>yě</rt>在<rt>zài</rt>做<rt>zuò</rt>家<rt>jiā</rt>务<rt>wù</rt>，<rt>,</rt>
+  </ruby><br>
+  <ruby>
+    我<rt>wǒ</rt>们<rt>men</rt>不<rt>bù</rt>能<rt>néng</rt>把<rt>bǎ</rt>自<rt>zì</rt>己<rt>jǐ</rt>的<rt>de</rt>功<rt>gōng</rt>课<rt>kè</rt>多<rt>duō</rt>作<rt>zuò</rt>为<rt>wéi</rt>不<rt>bù</rt>要<rt>yào</rt>做<rt>zuò</rt>家<rt>jiā</rt>务<rt>wù</rt>的<rt>de</rt>借<rt>jiè</rt>口<rt>kǒu</rt>，<rt>,</rt>
+  </ruby><br>
+  <ruby>
+    把<rt>bǎ</rt>自<rt>zì</rt>己<rt>jǐ</rt>的<rt>de</rt>责<rt>zé</rt>任<rt>rèn</rt>推<rt>tuī</rt>给<rt>gěi</rt>别<rt>bié</rt>人<rt>rén</rt>。<rt>.</rt>
+  </ruby><br>
+  <ruby>
+    增<rt>zēng</rt>加<rt>jiā</rt>家<rt>jiā</rt>长<rt>zhǎng</rt>的<rt>de</rt>身<rt>shēn</rt>体<rt>tǐ</rt>负<rt>fù</rt>担<rt>dān</rt>。<rt>.</rt>
+  </ruby><br>
+  <ruby>
+    所<rt>suǒ</rt>以<rt>yǐ</rt>，<rt>,</rt>我<rt>wǒ</rt>觉<rt>jué</rt>得<rt>de</rt>我<rt>wǒ</rt>们<rt>men</rt>应<rt>yīng</rt>该<rt>gāi</rt>帮<rt>bāng</rt>忙<rt>máng</rt>做<rt>zuò</rt>家<rt>jiā</rt>务<rt>wù</rt>。<rt>.</rt>
+  </ruby>
+  <button onclick="playAudio('41.mp3')">播放录音</button>
+  <button onclick="stopAudio()">停止播放</button>
+  <audio id="audio_answer_41" src="41.mp3"></audio>
+</blockquote>
+
+<p>
+  <ruby>
+    你<rt>nǐ</rt>觉<rt>jué</rt>得<rt>de</rt>帮<rt>bāng</rt>忙<rt>máng</rt>做<rt>zuò</rt>家<rt>jiā</rt>务<rt>wù</rt>重<rt>zhòng</rt>要<rt>yào</rt>吗<rt>ma</rt>？<rt>?</rt>为<rt>wèi</rt>什<rt>shén</rt>么<rt>me</rt>？<rt>?</rt>
+  </ruby>
+</p>
+
+<blockquote>
+  <ruby>
+    T<rt>T</rt>:<rt>:</rt>我<rt>wǒ</rt>觉<rt>jué</rt>得<rt>de</rt>帮<rt>bāng</rt>忙<rt>máng</rt>做<rt>zuò</rt>家<rt>jiā</rt>务<rt>wù</rt>很<rt>hěn</rt>重<rt>zhòng</rt>要<rt>yào</rt>。<rt>.</rt>
+  </ruby><br>
+  <ruby>
+    首<rt>shǒu</rt>先<rt>xiān</rt>，<rt>,</rt>帮<rt>bāng</rt>忙<rt>máng</rt>做<rt>zuò</rt>家<rt>jiā</rt>务<rt>wù</rt>可<rt>kě</rt>以<rt>yǐ</rt>使<rt>shǐ</rt>我<rt>wǒ</rt>们<rt>men</rt>更<rt>gèng</rt>加<rt>jiā</rt>独<rt>dú</rt>立<rt>lì</rt>。<rt>.</rt>
+  </ruby><br>
+  <ruby>
+    因<rt>yīn</rt>为<rt>wèi</rt>我<rt>wǒ</rt>们<rt>men</rt>会<rt>huì</rt>长<rt>zhǎng</rt>大<rt>dà</rt>，<rt>,</rt>那<rt>nà</rt>时<rt>shí</rt>，<rt>,</rt>我<rt>wǒ</rt>们<rt>men</rt>就<rt>jiù</rt>需<rt>xū</rt>要<rt>yào</rt>自<rt>zì</rt>己<rt>jǐ</rt>照<rt>zhào</rt>顾<rt>gù</rt>自<rt>zì</rt>己<rt>jǐ</rt>，<rt>,</rt>
+  </ruby><br>
+  <ruby>
+    不<rt>bù</rt>能<rt>néng</rt>再<rt>zài</rt>依<rt>yī</rt>靠<rt>kào</rt>父<rt>fù</rt>母<rt>mǔ</rt>，<rt>,</rt>所<rt>suǒ</rt>以<rt>yǐ</rt>，<rt>,</rt>我<rt>wǒ</rt>们<rt>men</rt>从<rt>cóng</rt>小<rt>xiǎo</rt>就<rt>jiù</rt>应<rt>yīng</rt>该<rt>gāi</rt>学<rt>xué</rt>会<rt>huì</rt>做<rt>zuò</rt>家<rt>jiā</rt>务<rt>wù</rt>，<rt>,</rt>
+  </ruby><br>
+  <ruby>
+    变<rt>biàn</rt>得<rt>de</rt>独<rt>dú</rt>立<rt>lì</rt>，<rt>,</rt>不<rt>bù</rt>需<rt>xū</rt>要<rt>yào</rt>依<rt>yī</rt>靠<rt>kào</rt>家<rt>jiā</rt>长<rt>zhǎng</rt>就<rt>jiù</rt>可<rt>kě</rt>以<rt>yǐ</rt>好<rt>hǎo</rt>好<rt>hǎo</rt>生<rt>shēng</rt>活<rt>huó</rt>。<rt>.</rt>
+  </ruby><br>
+  <ruby>
+    第<rt>dì</rt>二<rt>èr</rt>，<rt>,</rt>我<rt>wǒ</rt>觉<rt>jué</rt>得<rt>de</rt>做<rt>zuò</rt>家<rt>jiā</rt>务<rt>wù</rt>可<rt>kě</rt>以<rt>yǐ</rt>拉<rt>lā</rt>近<rt>jìn</rt>家<rt>jiā</rt>人<rt>rén</rt>之<rt>zhī</rt>间<rt>jiān</rt>的<rt>de</rt>感<rt>gǎn</rt>情<rt>qíng</rt>。<rt>.</rt>
+  </ruby><br>
+  <ruby>
+    因<rt>yīn</rt>为<rt>wèi</rt>，<rt>,</rt>我<rt>wǒ</rt>们<rt>men</rt>帮<rt>bāng</rt>忙<rt>máng</rt>做<rt>zuò</rt>家<rt>jiā</rt>务<rt>wù</rt>，<rt>,</rt>是<rt>shì</rt>为<rt>wèi</rt>家<rt>jiā</rt>人<rt>rén</rt>着<rt>zhuó</rt>想<rt>xiǎng</rt>，<rt>,</rt>关<rt>guān</rt>爱<rt>ài</rt>家<rt>jiā</rt>人<rt>rén</rt>的<rt>de</rt>表<rt>biǎo</rt>现<rt>xiàn</rt>。<rt>.</rt>
+  </ruby><br>
+  <ruby>
+    家<rt>jiā</rt>庭<rt>tíng</rt>成<rt>chéng</rt>员<rt>yuán</rt>之<rt>zhī</rt>间<rt>jiān</rt>互<rt>hù</rt>相<rt>xiāng</rt>帮<rt>bāng</rt>助<rt>zhù</rt>，<rt>,</rt>互<rt>hù</rt>相<rt>xiāng</rt>关<rt>guān</rt>心<rt>xīn</rt>会<rt>huì</rt>使<rt>shǐ</rt>我<rt>wǒ</rt>们<rt>men</rt>的<rt>de</rt>关<rt>guān</rt>系<rt>xì</rt>更<rt>gèng</rt>亲<rt>qīn</rt>近<rt>jìn</rt>。<rt>.</rt>
+  </ruby>
+  <button onclick="playAudio('42.mp3')">播放录音</button>
+  <button onclick="stopAudio()">停止播放</button>
+  <audio id="audio_answer_42" src="42.mp3"></audio>
+</blockquote>
+
+<p>
+  <ruby>
+    四<rt>sì</rt>，<rt>,</rt>你<rt>nǐ</rt>觉<rt>jué</rt>得<rt>de</rt>家<rt>jiā</rt>长<rt>zhǎng</rt>应<rt>yīng</rt>该<rt>gāi</rt>怎<rt>zěn</rt>么<rt>me</rt>做<rt>zuò</rt>才<rt>cái</rt>可<rt>kě</rt>以<rt>yǐ</rt>鼓<rt>gǔ</rt>励<rt>lì</rt>同<rt>tóng</rt>学<rt>xué</rt>们<rt>men</rt>做<rt>zuò</rt>家<rt>jiā</rt>务<rt>wù</rt>？<rt>?</rt>
+  </ruby>
+</p>
+
+<blockquote>
+  <ruby>
+    T<rt>T</rt>:<rt>:</rt>我<rt>wǒ</rt>觉<rt>jué</rt>得<rt>de</rt>家<rt>jiā</rt>长<rt>zhǎng</rt>可<rt>kě</rt>以<rt>yǐ</rt>教<rt>jiào</rt>育<rt>yù</rt>同<rt>tóng</rt>学<rt>xué</rt>们<rt>men</rt>做<rt>zuò</rt>家<rt>jiā</rt>务<rt>wù</rt>不<rt>bù</rt>是<rt>shì</rt>妈<rt>mā</rt>妈<rt>ma</rt>一<rt>yī</rt>个<rt>gè</rt>人<rt>rén</rt>的<rt>de</rt>事<rt>shì</rt>，<rt>,</rt>
+  </ruby><br>
+  <ruby>
+    是<rt>shì</rt>每<rt>měi</rt>个<rt>gè</rt>家<rt>jiā</rt>人<rt>rén</rt>都<rt>dōu</rt>要<rt>yào</rt>做<rt>zuò</rt>的<rt>de</rt>，<rt>,</rt>是<rt>shì</rt>每<rt>měi</rt>个<rt>gè</rt>人<rt>rén</rt>的<rt>de</rt>责<rt>zé</rt>任<rt>rèn</rt>。<rt>.</rt>
+  </ruby><br>
+  <ruby>
+    同<rt>tóng</rt>学<rt>xué</rt>们<rt>men</rt>要<rt>yào</rt>做<rt>zuò</rt>自<rt>zì</rt>己<rt>jǐ</rt>应<rt>yīng</rt>该<rt>gāi</rt>做<rt>zuò</rt>的<rt>de</rt>事<rt>shì</rt>，<rt>,</rt>
+  </ruby><br>
+  <ruby>
+    比<rt>bǐ</rt>如<rt>rú</rt>打<rt>dǎ</rt>扫<rt>sǎo</rt>自<rt>zì</rt>己<rt>jǐ</rt>的<rt>de</rt>房<rt>fáng</rt>间<rt>jiān</rt>，<rt>,</rt>清<rt>qīng</rt>洗<rt>xǐ</rt>自<rt>zì</rt>己<rt>jǐ</rt>的<rt>de</rt>衣<rt>yī</rt>服<rt>fu</rt>。<rt>.</rt>
+  </ruby><br>
+  <ruby>
+    另<rt>lìng</rt>外<rt>wài</rt>，<rt>,</rt>家<rt>jiā</rt>长<rt>zhǎng</rt>也<rt>yě</rt>要<rt>yào</rt>以<rt>yǐ</rt>身<rt>shēn</rt>作<rt>zuò</rt>则<rt>zé</rt>，<rt>,</rt>
+  </ruby><br>
+  <ruby>
+    自<rt>zì</rt>己<rt>jǐ</rt>要<rt>yào</rt>做<rt>zuò</rt>些<rt>xiē</rt>家<rt>jiā</rt>务<rt>wù</rt>，<rt>,</rt>
+  </ruby><br>
+  <ruby>
+    不<rt>bù</rt>要<rt>yào</rt>把<rt>bǎ</rt>所<rt>suǒ</rt>有<rt>yǒu</rt>家<rt>jiā</rt>务<rt>wù</rt>推<rt>tuī</rt>给<rt>gěi</rt>女<rt>nǚ</rt>佣<rt>yōng</rt>或<rt>huò</rt>者<rt>zhě</rt>妈<rt>mā</rt>妈<rt>ma</rt>一<rt>yī</rt>个<rt>gè</rt>人<rt>rén</rt>做<rt>zuò</rt>。<rt>.</rt>
+  </ruby><br>
+  <ruby>
+    这<rt>zhè</rt>样<rt>yàng</rt>，<rt>,</rt>同<rt>tóng</rt>学<rt>xué</rt>们<rt>men</rt>看<rt>kàn</rt>到<rt>dào</rt>了<rt>le</rt>，<rt>,</rt>就<rt>jiù</rt>有<rt>yǒu</rt>有<rt>yǒu</rt>样<rt>yàng</rt>学<rt>xué</rt>样<rt>yàng</rt>，<rt>,</rt>
+  </ruby><br>
+  <ruby>
+    开<rt>kāi</rt>始<rt>shǐ</rt>做<rt>zuò</rt>家<rt>jiā</rt>务<rt>wù</rt>。<rt>.</rt>
+  </ruby>
+  <button onclick="playAudio('43.mp3')">播放录音</button>
+  <button onclick="stopAudio()">停止播放</button>
+  <audio id="audio_answer_43" src="43.mp3"></audio>
+</blockquote>
+
+    </div>
+	
+    <h1><ruby>口<rt>kǒu</rt>试<rt>shì</rt>对<rt>duì</rt>话<rt>huà</rt>题<rt>tí</rt>目<rt>mù</rt>及<rt>jí</rt>答<rt>dá</rt>案<rt>àn</rt>（13）庆<rt>qìng</rt>祝<rt>zhù</rt>国<rt>guó</rt>庆<rt>qìng</rt></ruby></h1>
+
+    <div class="qa">	
+<p>
+  <ruby>
+    一<rt>yī</rt>．<rt>.</rt>同<rt>tóng</rt>学<rt>xué</rt>，<rt>,</rt>请<rt>qǐng</rt>你<rt>nǐ</rt>描<rt>miáo</rt>述<rt>shù</rt>录<rt>lù</rt>像<rt>xiàng</rt>中<rt>zhōng</rt>令<rt>lìng</rt>你<rt>nǐ</rt>印<rt>yìn</rt>象<rt>xiàng</rt>深<rt>shēn</rt>刻<rt>kè</rt>的<rt>de</rt>一<rt>yī</rt>件<rt>jiàn</rt>事<rt>shì</rt>。<rt>.</rt>
+  </ruby>
+</p>
+
+<blockquote>
+  <ruby>
+    T<rt>T</rt>:<rt>:</rt>在<rt>zài</rt>刚<rt>gāng</rt>才<rt>cái</rt>的<rt>de</rt>录<rt>lù</rt>像<rt>xiàng</rt>中<rt>zhōng</rt>，<rt>,</rt>我<rt>wǒ</rt>看<rt>kàn</rt>到<rt>dào</rt>三<rt>sān</rt>位<rt>wèi</rt>小<rt>xiǎo</rt>女<rt>nǚ</rt>孩<rt>hái</rt>和<rt>hé</rt>一<rt>yī</rt>位<rt>wèi</rt>小<rt>xiǎo</rt>男<rt>nán</rt>孩<rt>hái</rt>，<rt>,</rt>
+  </ruby><br>
+  <ruby>
+    他<rt>tā</rt>们<rt>men</rt>在<rt>zài</rt>组<rt>zǔ</rt>屋<rt>wū</rt>楼<rt>lóu</rt>下<rt>xià</rt>的<rt>de</rt>桌<rt>zhuō</rt>子<rt>zi</rt>边<rt>biān</rt>，<rt>,</rt>一<rt>yī</rt>边<rt>biān</rt>谈<rt>tán</rt>天<rt>tiān</rt>，<rt>,</rt>一<rt>yī</rt>边<rt>biān</rt>吃<rt>chī</rt>东<rt>dōng</rt>西<rt>xi</rt>。<rt>.</rt>
+  </ruby><br>
+  <ruby>
+    他<rt>tā</rt>们<rt>men</rt>吃<rt>chī</rt>完<rt>wán</rt>后<rt>hòu</rt>，<rt>,</rt>决<rt>jué</rt>定<rt>dìng</rt>离<rt>lí</rt>开<rt>kāi</rt>。<rt>.</rt>
+  </ruby><br>
+  <ruby>
+    这<rt>zhè</rt>时<rt>shí</rt>，<rt>,</rt>一<rt>yī</rt>位<rt>wèi</rt>小<rt>xiǎo</rt>女<rt>nǚ</rt>孩<rt>hái</rt>拿<rt>ná</rt>出<rt>chū</rt>一<rt>yī</rt>个<rt>gè</rt>塑<rt>sù</rt>料<rt>liào</rt>袋<rt>dài</rt>，<rt>,</rt>
+  </ruby><br>
+  <ruby>
+    把<rt>bǎ</rt>垃<rt>lā</rt>圾<rt>jī</rt>全<rt>quán</rt>放<rt>fàng</rt>进<rt>jìn</rt>袋<rt>dài</rt>子<rt>zi</rt>里<rt>lǐ</rt>，<rt>,</rt>
+  </ruby><br>
+  <ruby>
+    最<rt>zuì</rt>后<rt>hòu</rt>，<rt>,</rt>把<rt>bǎ</rt>袋<rt>dài</rt>子<rt>zi</rt>丢<rt>diū</rt>到<rt>dào</rt>垃<rt>lā</rt>圾<rt>jī</rt>桶<rt>tǒng</rt>里<rt>lǐ</rt>。<rt>.</rt>
+  </ruby><br>
+  <ruby>
+    我<rt>wǒ</rt>看<rt>kàn</rt>到<rt>dào</rt>了<rt>le</rt>她<rt>tā</rt>做<rt>zuò</rt>的<rt>de</rt>事<rt>shì</rt>后<rt>hòu</rt>，<rt>,</rt>
+  </ruby><br>
+  <ruby>
+    我<rt>wǒ</rt>觉<rt>jué</rt>得<rt>de</rt>很<rt>hěn</rt>感<rt>gǎn</rt>动<rt>dòng</rt>，<rt>,</rt>
+  </ruby><br>
+  <ruby>
+    因<rt>yīn</rt>为<rt>wèi</rt>她<rt>tā</rt>为<rt>wèi</rt>别<rt>bié</rt>人<rt>rén</rt>着<rt>zhuó</rt>想<rt>xiǎng</rt>，<rt>,</rt>
+  </ruby><br>
+  <ruby>
+    保<rt>bǎo</rt>持<rt>chí</rt>了<rt>le</rt>环<rt>huán</rt>境<rt>jìng</rt>的<rt>de</rt>干<rt>gān</rt>净<rt>jìng</rt>。<rt>.</rt>
+  </ruby>
+  <button onclick="playAudio('44.mp3')">播放录音</button>
+  <button onclick="stopAudio()">停止播放</button>
+  <audio id="audio_answer_44" src="44.mp3"></audio>
+</blockquote>	
+	
+	<p>
+  <ruby>
+    二<rt>èr</rt>．<rt>.</rt>请<rt>qǐng</rt>你<rt>nǐ</rt>分<rt>fēn</rt>享<rt>xiǎng</rt>一<rt>yī</rt>件<rt>jiàn</rt>事<rt>shì</rt>，<rt>,</rt>这<rt>zhè</rt>件<rt>jiàn</rt>事<rt>shì</rt>让<rt>ràng</rt>你<rt>nǐ</rt>觉<rt>jué</rt>得<rt>de</rt>在<rt>zài</rt>公<rt>gōng</rt>共<rt>gòng</rt>场<rt>chǎng</rt>所<rt>suǒ</rt>，<rt>,</rt>大<rt>dà</rt>家<rt>jiā</rt>应<rt>yīng</rt>该<rt>gāi</rt>有<rt>yǒu</rt>公<rt>gōng</rt>德<rt>dé</rt>心<rt>xīn</rt>。<rt>.</rt>
+  </ruby>
+</p>
+
+<blockquote>
+  <ruby>
+    T<rt>T</rt>:<rt>:</rt>我<rt>wǒ</rt>还<rt>hái</rt>记<rt>jì</rt>得<rt>de</rt>两<rt>liǎng</rt>年<rt>nián</rt>前<rt>qián</rt>，<rt>,</rt>我<rt>wǒ</rt>的<rt>de</rt>家<rt>jiā</rt>长<rt>zhǎng</rt>带<rt>dài</rt>我<rt>wǒ</rt>和<rt>hé</rt>我<rt>wǒ</rt>的<rt>de</rt>妹<rt>mèi</rt>妹<rt>mei</rt>去<rt>qù</rt>一<rt>yī</rt>个<rt>gè</rt>公<rt>gōng</rt>园<rt>yuán</rt>里<rt>lǐ</rt>玩<rt>wán</rt>耍<rt>shuǎ</rt>、<rt>,</rt>野<rt>yě</rt>餐<rt>cān</rt>。<rt>.</rt>
+  </ruby><br>
+  <ruby>
+    我<rt>wǒ</rt>和<rt>hé</rt>妹<rt>mèi</rt>妹<rt>mei</rt>玩<rt>wán</rt>耍<rt>shuǎ</rt>后<rt>hòu</rt>回<rt>huí</rt>来<rt>lái</rt>，<rt>,</rt>爸<rt>bà</rt>爸<rt>ba</rt>、<rt>,</rt>妈<rt>mā</rt>妈<rt>ma</rt>要<rt>yào</rt>准<rt>zhǔn</rt>备<rt>bèi</rt>吃<rt>chī</rt>晚<rt>wǎn</rt>餐<rt>cān</rt>时<rt>shí</rt>，<rt>,</rt>
+  </ruby><br>
+  <ruby>
+    看<rt>kàn</rt>到<rt>dào</rt>一<rt>yī</rt>位<rt>wèi</rt>年<rt>nián</rt>轻<rt>qīng</rt>人<rt>rén</rt>，<rt>,</rt>吃<rt>chī</rt>完<rt>wán</rt>了<rt>le</rt>东<rt>dōng</rt>西<rt>xi</rt>后<rt>hòu</rt>，<rt>,</rt>
+  </ruby><br>
+  <ruby>
+    没<rt>méi</rt>有<rt>yǒu</rt>公<rt>gōng</rt>德<rt>dé</rt>心<rt>xīn</rt>，<rt>,</rt>把<rt>bǎ</rt>吃<rt>chī</rt>剩<rt>shèng</rt>的<rt>de</rt>东<rt>dōng</rt>西<rt>xi</rt>和<rt>hé</rt>其<rt>qí</rt>他<rt>tā</rt>垃<rt>lā</rt>圾<rt>jī</rt>随<rt>suí</rt>手<rt>shǒu</rt>丢<rt>diū</rt>在<rt>zài</rt>公<rt>gōng</rt>园<rt>yuán</rt>的<rt>de</rt>地<rt>dì</rt>上<rt>shàng</rt>，<rt>,</rt>
+  </ruby><br>
+  <ruby>
+    我<rt>wǒ</rt>们<rt>men</rt>看<rt>kàn</rt>了<rt>le</rt>以<rt>yǐ</rt>后<rt>hòu</rt>，<rt>,</rt>完<rt>wán</rt>全<rt>quán</rt>没<rt>méi</rt>有<rt>yǒu</rt>吃<rt>chī</rt>饭<rt>fàn</rt>的<rt>de</rt>胃<rt>wèi</rt>口<rt>kǒu</rt>。<rt>.</rt>
+  </ruby><br>
+  <ruby>
+    我<rt>wǒ</rt>的<rt>de</rt>爸<rt>bà</rt>爸<rt>ba</rt>看<rt>kàn</rt>到<rt>dào</rt>后<rt>hòu</rt>，<rt>,</rt>很<rt>hěn</rt>生<rt>shēng</rt>气<rt>qì</rt>，<rt>,</rt>走<rt>zǒu</rt>上<rt>shàng</rt>去<rt>qù</rt>跟<rt>gēn</rt>那<rt>nà</rt>位<rt>wèi</rt>年<rt>nián</rt>轻<rt>qīng</rt>人<rt>rén</rt>说<rt>shuō</rt>，<rt>,</rt>
+  </ruby><br>
+  <ruby>
+    他<rt>tā</rt>做<rt>zuò</rt>的<rt>de</rt>不<rt>bù</rt>对<rt>duì</rt>，<rt>,</rt>应<rt>yīng</rt>该<rt>gāi</rt>遵<rt>zūn</rt>守<rt>shǒu</rt>公<rt>gōng</rt>园<rt>yuán</rt>的<rt>de</rt>规<rt>guī</rt>定<rt>dìng</rt>，<rt>,</rt>
+  </ruby><br>
+  <ruby>
+    把<rt>bǎ</rt>垃<rt>lā</rt>圾<rt>jī</rt>丢<rt>diū</rt>去<rt>qù</rt>垃<rt>lā</rt>圾<rt>jī</rt>箱<rt>xiāng</rt>，<rt>,</rt>
+  </ruby><br>
+  <ruby>
+    不<rt>bù</rt>然<rt>rán</rt>，<rt>,</rt>会<rt>huì</rt>破<rt>pò</rt>坏<rt>huài</rt>我<rt>wǒ</rt>们<rt>men</rt>的<rt>de</rt>环<rt>huán</rt>境<rt>jìng</rt>，<rt>,</rt>
+  </ruby><br>
+  <ruby>
+    也<rt>yě</rt>会<rt>huì</rt>给<rt>gěi</rt>别<rt>bié</rt>人<rt>rén</rt>带<rt>dài</rt>来<rt>lái</rt>不<rt>bù</rt>便<rt>biàn</rt>。<rt>.</rt>
+  </ruby><br>
+  <ruby>
+    所<rt>suǒ</rt>以<rt>yǐ</rt>，<rt>,</rt>通<rt>tōng</rt>过<rt>guò</rt>这<rt>zhè</rt>件<rt>jiàn</rt>事<rt>shì</rt>，<rt>,</rt>我<rt>wǒ</rt>明<rt>míng</rt>白<rt>bái</rt>了<rt>le</rt>在<rt>zài</rt>公<rt>gōng</rt>共<rt>gòng</rt>场<rt>chǎng</rt>所<rt>suǒ</rt>，<rt>,</rt>
+  </ruby><br>
+  <ruby>
+    应<rt>yīng</rt>该<rt>gāi</rt>有<rt>yǒu</rt>公<rt>gōng</rt>德<rt>dé</rt>心<rt>xīn</rt>，<rt>,</rt>多<rt>duō</rt>为<rt>wèi</rt>他<rt>tā</rt>人<rt>rén</rt>着<rt>zhuó</rt>想<rt>xiǎng</rt>。<rt>.</rt>
+  </ruby>
+  <button onclick="playAudio('45.mp3')">播放录音</button>
+  <button onclick="stopAudio()">停止播放</button>
+  <audio id="audio_answer_45" src="45.mp3"></audio>
+</blockquote>
+	
+	<p>
+  <ruby>
+    三<rt>sān</rt>．<rt>.</rt>如<rt>rú</rt>果<rt>guǒ</rt>你<rt>nǐ</rt>是<rt>shì</rt>录<rt>lù</rt>像<rt>xiàng</rt>中<rt>zhōng</rt>的<rt>de</rt>人<rt>rén</rt>物<rt>wù</rt>，<rt>,</rt>你<rt>nǐ</rt>看<rt>kàn</rt>到<rt>dào</rt>录<rt>lù</rt>像<rt>xiàng</rt>中<rt>zhōng</rt>有<rt>yǒu</rt>人<rt>rén</rt>乱<rt>luàn</rt>丢<rt>diū</rt>垃<rt>lā</rt>圾<rt>jī</rt>，<rt>,</rt>你<rt>nǐ</rt>会<rt>huì</rt>怎<rt>zěn</rt>么<rt>me</rt>做<rt>zuò</rt>？<rt>?</rt>
+  </ruby>
+</p>
+
+<blockquote>
+  <ruby>
+    T<rt>T</rt>:<rt>:</rt>我<rt>wǒ</rt>会<rt>huì</rt>，<rt>,</rt>第<rt>dì</rt>一<rt>yī</rt>，<rt>,</rt>阻<rt>zǔ</rt>止<rt>zhǐ</rt>乱<rt>luàn</rt>丢<rt>diū</rt>垃<rt>lā</rt>圾<rt>jī</rt>的<rt>de</rt>人<rt>rén</rt>这<rt>zhè</rt>么<rt>me</rt>做<rt>zuò</rt>，<rt>,</rt>
+  </ruby><br>
+  <ruby>
+    然<rt>rán</rt>后<rt>hòu</rt>，<rt>,</rt>我<rt>wǒ</rt>会<rt>huì</rt>告<rt>gào</rt>诉<rt>sù</rt>他<rt>tā</rt>这<rt>zhè</rt>么<rt>me</rt>做<rt>zuò</rt>是<rt>shì</rt>不<rt>bù</rt>对<rt>duì</rt>的<rt>de</rt>。<rt>.</rt>
+  </ruby><br>
+  <ruby>
+    我<rt>wǒ</rt>们<rt>men</rt>应<rt>yīng</rt>该<rt>gāi</rt>有<rt>yǒu</rt>公<rt>gōng</rt>德<rt>dé</rt>心<rt>xīn</rt>，<rt>,</rt>多<rt>duō</rt>为<rt>wèi</rt>他<rt>tā</rt>人<rt>rén</rt>着<rt>zhuó</rt>想<rt>xiǎng</rt>。<rt>.</rt>
+  </ruby><br>
+  <ruby>
+    如<rt>rú</rt>果<rt>guǒ</rt>，<rt>,</rt>他<rt>tā</rt>不<rt>bù</rt>听<rt>tīng</rt>我<rt>wǒ</rt>的<rt>de</rt>劝<rt>quàn</rt>告<rt>gào</rt>，<rt>,</rt>
+  </ruby><br>
+  <ruby>
+    我<rt>wǒ</rt>会<rt>huì</rt>告<rt>gào</rt>诉<rt>sù</rt>相<rt>xiāng</rt>关<rt>guān</rt>管<rt>guǎn</rt>理<rt>lǐ</rt>人<rt>rén</rt>员<rt>yuán</rt>，<rt>,</rt>
+  </ruby><br>
+  <ruby>
+    让<rt>ràng</rt>他<rt>tā</rt>们<rt>men</rt>批<rt>pī</rt>评<rt>píng</rt>这<rt>zhè</rt>种<rt>zhǒng</rt>人<rt>rén</rt>，<rt>,</rt>
+  </ruby><br>
+  <ruby>
+    使<rt>shǐ</rt>他<rt>tā</rt>们<rt>men</rt>改<rt>gǎi</rt>变<rt>biàn</rt>没<rt>méi</rt>有<rt>yǒu</rt>公<rt>gōng</rt>德<rt>dé</rt>心<rt>xīn</rt>的<rt>de</rt>行<rt>xíng</rt>为<rt>wéi</rt>。<rt>.</rt>
+  </ruby><br>
+  <ruby>
+    这<rt>zhè</rt>样<rt>yàng</rt>，<rt>,</rt>我<rt>wǒ</rt>们<rt>men</rt>可<rt>kě</rt>以<rt>yǐ</rt>有<rt>yǒu</rt>一<rt>yī</rt>个<rt>gè</rt>优<rt>yōu</rt>雅<rt>yǎ</rt>的<rt>de</rt>社<rt>shè</rt>会<rt>huì</rt>。<rt>.</rt>
+  </ruby>
+  <button onclick="playAudio('46.mp3')">播放录音</button>
+  <button onclick="stopAudio()">停止播放</button>
+  <audio id="audio_answer_46" src="46.mp3"></audio>
+</blockquote>
+	
+	<p>
+  <ruby>
+    四<rt>sì</rt>．<rt>.</rt>家<rt>jiā</rt>长<rt>zhǎng</rt>应<rt>yīng</rt>该<rt>gāi</rt>怎<rt>zěn</rt>样<rt>yàng</rt>做<rt>zuò</rt>，<rt>,</rt>才<rt>cái</rt>可<rt>kě</rt>以<rt>yǐ</rt>鼓<rt>gǔ</rt>励<rt>lì</rt>同<rt>tóng</rt>学<rt>xué</rt>们<rt>men</rt>成<rt>chéng</rt>为<rt>wéi</rt>有<rt>yǒu</rt>公<rt>gōng</rt>德<rt>dé</rt>心<rt>xīn</rt>的<rt>de</rt>人<rt>rén</rt>？<rt>?</rt>
+  </ruby>
+</p>
+
+<blockquote>
+  <ruby>
+    T<rt>T</rt>:<rt>:</rt>我<rt>wǒ</rt>觉<rt>jué</rt>得<rt>de</rt>家<rt>jiā</rt>长<rt>zhǎng</rt>可<rt>kě</rt>以<rt>yǐ</rt>，<rt>,</rt>第<rt>dì</rt>一<rt>yī</rt>，<rt>,</rt>教<rt>jiào</rt>育<rt>yù</rt>我<rt>wǒ</rt>们<rt>men</rt>，<rt>,</rt>怎<rt>zěn</rt>样<rt>yàng</rt>做<rt>zuò</rt>个<rt>gè</rt>有<rt>yǒu</rt>公<rt>gōng</rt>德<rt>dé</rt>心<rt>xīn</rt>的<rt>de</rt>人<rt>rén</rt>，<rt>,</rt>
+  </ruby><br>
+  <ruby>
+    比<rt>bǐ</rt>如<rt>rú</rt>，<rt>,</rt>在<rt>zài</rt>公<rt>gōng</rt>共<rt>gòng</rt>场<rt>chǎng</rt>所<rt>suǒ</rt>，<rt>,</rt>我<rt>wǒ</rt>们<rt>men</rt>不<rt>bù</rt>可<rt>kě</rt>以<rt>yǐ</rt>只<rt>zhǐ</rt>想<rt>xiǎng</rt>到<rt>dào</rt>自<rt>zì</rt>己<rt>jǐ</rt>，<rt>,</rt>
+  </ruby><br>
+  <ruby>
+    也<rt>yě</rt>要<rt>yào</rt>替<rt>tì</rt>别<rt>bié</rt>人<rt>rén</rt>着<rt>zhuó</rt>想<rt>xiǎng</rt>，<rt>,</rt>要<rt>yào</rt>尊<rt>zūn</rt>重<rt>zhòng</rt>别<rt>bié</rt>人<rt>rén</rt>和<rt>hé</rt>遵<rt>zūn</rt>守<rt>shǒu</rt>公<rt>gōng</rt>共<rt>gòng</rt>场<rt>chǎng</rt>所<rt>suǒ</rt>的<rt>de</rt>规<rt>guī</rt>则<rt>zé</rt>。<rt>.</rt>
+  </ruby><br>
+  <ruby>
+    第<rt>dì</rt>二<rt>èr</rt>，<rt>,</rt>家<rt>jiā</rt>长<rt>zhǎng</rt>可<rt>kě</rt>以<rt>yǐ</rt>以<rt>yǐ</rt>身<rt>shēn</rt>作<rt>zuò</rt>则<rt>zé</rt>，<rt>,</rt>
+  </ruby><br>
+  <ruby>
+    为<rt>wèi</rt>同<rt>tóng</rt>学<rt>xué</rt>们<rt>men</rt>做<rt>zuò</rt>个<rt>gè</rt>好<rt>hǎo</rt>榜<rt>bǎng</rt>样<rt>yàng</rt>，<rt>,</rt>
+  </ruby><br>
+  <ruby>
+    他<rt>tā</rt>们<rt>men</rt>可<rt>kě</rt>以<rt>yǐ</rt>在<rt>zài</rt>公<rt>gōng</rt>共<rt>gòng</rt>场<rt>chǎng</rt>所<rt>suǒ</rt>做<rt>zuò</rt>个<rt>gè</rt>有<rt>yǒu</rt>公<rt>gōng</rt>德<rt>dé</rt>心<rt>xīn</rt>的<rt>de</rt>人<rt>rén</rt>，<rt>,</rt>
+  </ruby><br>
+  <ruby>
+    为<rt>wèi</rt>他<rt>tā</rt>人<rt>rén</rt>着<rt>zhuó</rt>想<rt>xiǎng</rt>，<rt>,</rt>
+  </ruby><br>
+  <ruby>
+    我<rt>wǒ</rt>们<rt>men</rt>看<rt>kàn</rt>到<rt>dào</rt>后<rt>hòu</rt>，<rt>,</rt>会<rt>huì</rt>跟<rt>gēn</rt>他<rt>tā</rt>们<rt>men</rt>学<rt>xué</rt>习<rt>xí</rt>，<rt>,</rt>
+  </ruby><br>
+  <ruby>
+    成<rt>chéng</rt>为<rt>wéi</rt>一<rt>yī</rt>个<rt>gè</rt>有<rt>yǒu</rt>公<rt>gōng</rt>德<rt>dé</rt>心<rt>xīn</rt>的<rt>de</rt>人<rt>rén</rt>。<rt>.</rt>
+  </ruby>
+  <button onclick="playAudio('47.mp3')">播放录音</button>
+  <button onclick="stopAudio()">停止播放</button>
+  <audio id="audio_answer_47" src="47.mp3"></audio>
+</blockquote>
+	
+	
+	
+	</div>
+	
+    <h1><ruby>口<rt>kǒu</rt>试<rt>shì</rt>对<rt>duì</rt>话<rt>huà</rt>题<rt>tí</rt>目<rt>mù</rt>及<rt>jí</rt>答<rt>dá</rt>案<rt>àn</rt>（7）庆<rt>qìng</rt>祝<rt>zhù</rt>国<rt>guó</rt>庆<rt>qìng</rt></ruby></h1>
+
+    <div class="qa">
+        <p>1. <ruby>同<rt>tóng</rt>学<rt>xué</rt>，请<rt>qǐng</rt>你<rt>nǐ</rt>描<rt>miáo</rt>述<rt>shù</rt>在<rt>zài</rt>录<rt>lù</rt>像<rt>xiàng</rt>中<rt>zhōng</rt>看<rt>kàn</rt>到<rt>dào</rt>的<rt>de</rt>情<rt>qíng</rt>景<rt>jǐng</rt>。</ruby></p>
+        
+        <blockquote>
+            T:<ruby>我<rt>wǒ</rt>在<rt>zài</rt>录<rt>lù</rt>像<rt>xiàng</rt>中<rt>zhōng</rt>，看<rt>kàn</rt>到<rt>dào</rt>一<rt>yī</rt>位<rt>wèi</rt>男<rt>nán</rt>孩<rt>hái</rt>和<rt>hé</rt>他<rt>tā</rt>的<rt>de</rt>弟<rt>dì</rt>弟<rt>di</rt>，他<rt>tā</rt>在<rt>zài</rt>弟<rt>dì</rt>弟<rt>di</rt>脸<rt>liǎn</rt>上<rt>shàng</rt>贴<rt>tiē</rt>上<rt>shàng</rt>国<rt>guó</rt>旗<rt>qí</rt>贴<rt>tiē</rt>纸<rt>zhǐ</rt>，然<rt>rán</rt>后<rt>hòu</rt>，他<rt>tā</rt>们<rt>men</rt>和<rt>hé</rt>爸<rt>bà</rt>爸<rt>ba</rt>、妈<rt>mā</rt>妈<rt>ma</rt>穿<rt>chuān</rt>着<rt>zhe</rt>红<rt>hóng</rt>色<rt>sè</rt>和<rt>hé</rt>白<rt>bái</rt>色<rt>sè</rt>的<rt>de</rt>衣<rt>yī</rt>服<rt>fú</rt>，一<rt>yī</rt>起<rt>qǐ</rt>去<rt>qù</rt>看<rt>kàn</rt>国<rt>guó</rt>庆<rt>qìng</rt>表<rt>biǎo</rt>演<rt>yǎn</rt>。</ruby><br><br>
+            <ruby>在<rt>zài</rt>国<rt>guó</rt>庆<rt>qìng</rt>庆<rt>qìng</rt>典<rt>diǎn</rt>上<rt>shàng</rt>，我<rt>wǒ</rt>看<rt>kàn</rt>到<rt>dào</rt>人<rt>rén</rt>们<rt>men</rt>一<rt>yī</rt>起<rt>qǐ</rt>挥<rt>huī</rt>动<rt>dòng</rt>国<rt>guó</rt>旗<rt>qí</rt>，唱<rt>chàng</rt>爱<rt>ài</rt>国<rt>guó</rt>歌<rt>gē</rt>曲<rt>qǔ</rt>。</ruby><br><br>
+            <ruby>军<rt>jūn</rt>队<rt>duì</rt>开<rt>kāi</rt>始<rt>shǐ</rt>做<rt>zuò</rt>步<rt>bù</rt>操<rt>cāo</rt>表<rt>biǎo</rt>演<rt>yǎn</rt>。</ruby><br><br>
+            <ruby>直<rt>zhí</rt>升<rt>shēng</rt>机<rt>jī</rt>挂<rt>guà</rt>着<rt>zhe</rt>国<rt>guó</rt>旗<rt>qí</rt>在<rt>zài</rt>天<rt>tiān</rt>空<rt>kōng</rt>中<rt>zhōng</rt>飞<rt>fēi</rt>过<rt>guò</rt>。</ruby><br><br>
+            <ruby>一<rt>yī</rt>位<rt>wèi</rt>军<rt>jūn</rt>人<rt>rén</rt>从<rt>cóng</rt>直<rt>zhí</rt>升<rt>shēng</rt>机<rt>jī</rt>跳<rt>tiào</rt>进<rt>jìn</rt>水<rt>shuǐ</rt>里<rt>lǐ</rt>，也<rt>yě</rt>看<rt>kàn</rt>到<rt>dào</rt>两<rt>liǎng</rt>三<rt>sān</rt>只<rt>zhī</rt>船<rt>chuán</rt>在<rt>zài</rt>海<rt>hǎi</rt>上<rt>shàng</rt>表<rt>biǎo</rt>演<rt>yǎn</rt>。</ruby><br><br>
+            <ruby>表<rt>biǎo</rt>演<rt>yǎn</rt>结<rt>jié</rt>束<rt>shù</rt>后<rt>hòu</rt>，也<rt>yě</rt>放<rt>fàng</rt>了<rt>le</rt>烟<rt>yān</rt>火<rt>huǒ</rt>。</ruby><br><br>
+            <ruby>我<rt>wǒ</rt>看<rt>kàn</rt>了<rt>le</rt>后<rt>hòu</rt>感<rt>gǎn</rt>到<rt>dào</rt>自<rt>zì</rt>豪<rt>háo</rt>，我<rt>wǒ</rt>为<rt>wèi</rt>我<rt>wǒ</rt>的<rt>de</rt>国<rt>guó</rt>家<rt>jiā</rt>的<rt>de</rt>独<rt>dú</rt>立<rt>lì</rt>和<rt>hé</rt>生<rt>shēng</rt>日<rt>rì</rt>而<rt>ér</rt>骄<rt>jiāo</rt>傲<rt>ào</rt>。</ruby>
+			  <button onclick="playAudio('48.mp3')">播放录音</button>
+			  <button onclick="stopAudio()">停止播放</button>
+			  <audio id="audio_answer_48" src="48.mp3"></audio>
+        </blockquote>
+		
+<p>2. <ruby>你<rt>nǐ</rt>是<rt>shì</rt>如<rt>rú</rt>何<rt>hé</rt>庆<rt>qìng</rt>祝<rt>zhù</rt>国<rt>guó</rt>庆<rt>qìng</rt>节<rt>jié</rt>的<rt>de</rt>？<rt>？</rt>请<rt>qǐng</rt>分<rt>fēn</rt>享<rt>xiǎng</rt>你<rt>nǐ</rt>觉<rt>jué</rt>得<rt>dé</rt>印<rt>yìn</rt>象<rt>xiàng</rt>最<rt>zuì</rt>深<rt>shēn</rt>刻<rt>kè</rt>的<rt>de</rt>一<rt>yī</rt>次<rt>cì</rt>国<rt>guó</rt>庆<rt>qìng</rt>节<rt>jié</rt>。<rt>。</rt></ruby></p>
+
+<blockquote>
+    T:<ruby>我<rt>wǒ</rt>在<rt>zài</rt>学<rt>xué</rt>校<rt>xiào</rt>庆<rt>qìng</rt>祝<rt>zhù</rt>国<rt>guó</rt>庆<rt>qìng</rt>时<rt>shí</rt>，<rt>，</rt>老<rt>lǎo</rt>师<rt>shī</rt>们<rt>men</rt>会<rt>huì</rt>让<rt>ràng</rt>我<rt>wǒ</rt>们<rt>men</rt>穿<rt>chuān</rt>红<rt>hóng</rt>色<rt>sè</rt>和<rt>hé</rt>白<rt>bái</rt>色<rt>sè</rt>的<rt>de</rt>衣<rt>yī</rt>服<rt>fú</rt>，<rt>，</rt>老<rt>lǎo</rt>师<rt>shī</rt>也<rt>yě</rt>会<rt>huì</rt>发<rt>fā</rt>给<rt>gěi</rt>我<rt>wǒ</rt>们<rt>men</rt>小<rt>xiǎo</rt>国<rt>guó</rt>旗<rt>qí</rt>，<rt>，</rt>让<rt>ràng</rt>我<rt>wǒ</rt>们<rt>men</rt>在<rt>zài</rt>听<rt>tīng</rt>到<rt>dào</rt>爱<rt>ài</rt>国<rt>guó</rt>歌<rt>gē</rt>曲<rt>qǔ</rt>时<rt>shí</rt>，<rt>，</rt>挥<rt>huī</rt>动<rt>dòng</rt>小<rt>xiǎo</rt>国<rt>guó</rt>旗<rt>qí</rt>。<rt>。</rt></ruby><br><br>
+    <ruby>我<rt>wǒ</rt>们<rt>men</rt>也<rt>yě</rt>会<rt>huì</rt>在<rt>zài</rt>学<rt>xué</rt>校<rt>xiào</rt>表<rt>biǎo</rt>演<rt>yǎn</rt>和<rt>hé</rt>玩<rt>wán</rt>游<rt>yóu</rt>戏<rt>xì</rt>。<rt>。</rt></ruby><br><br>
+    <ruby>在<rt>zài</rt>家<rt>jiā</rt>里<rt>lǐ</rt>，<rt>，</rt>我<rt>wǒ</rt>们<rt>men</rt>的<rt>de</rt>亲<rt>qīn</rt>戚<rt>qi</rt>和<rt>hé</rt>朋<rt>péng</rt>友<rt>yǒu</rt>和<rt>hé</rt>我<rt>wǒ</rt>的<rt>de</rt>家<rt>jiā</rt>长<rt>zhǎng</rt>都<rt>dōu</rt>会<rt>huì</rt>在<rt>zài</rt>电<rt>diàn</rt>视<rt>shì</rt>上<rt>shàng</rt>看<rt>kàn</rt>国<rt>guó</rt>庆<rt>qìng</rt>庆<rt>qìng</rt>典<rt>diǎn</rt>的<rt>de</rt>表<rt>biǎo</rt>演<rt>yǎn</rt>。<rt>。</rt></ruby><br><br>
+    <ruby>我<rt>wǒ</rt>们<rt>men</rt>就<rt>jiù</rt>是<rt>shì</rt>这<rt>zhè</rt>样<rt>yàng</rt>庆<rt>qìng</rt>祝<rt>zhù</rt>国<rt>guó</rt>庆<rt>qìng</rt>节<rt>jié</rt>的<rt>de</rt>。<rt>。</rt></ruby>
+    <button onclick="playAudio('49.mp3')">播放录音</button>
+    <button onclick="stopAudio()">停止播放</button>
+    <audio id="audio_answer_49" src="49.mp3"></audio>
+</blockquote>		
+	<p>3. <ruby>你<rt>nǐ</rt>有<rt>yǒu</rt>庆<rt>qìng</rt>祝<rt>zhù</rt>过<rt>guò</rt>传<rt>chuán</rt>统<rt>tǒng</rt>节<rt>jié</rt>日<rt>rì</rt>吗<rt>ma</rt>？<rt>？</rt>你<rt>nǐ</rt>是<rt>shì</rt>怎<rt>zěn</rt>么<rt>me</rt>庆<rt>qìng</rt>祝<rt>zhù</rt>的<rt>de</rt>？<rt>？</rt></ruby></p>
+
+<blockquote>
+    T:<ruby>我<rt>wǒ</rt>庆<rt>qìng</rt>祝<rt>zhù</rt>华<rt>huá</rt>人<rt>rén</rt>新<rt>xīn</rt>年<rt>nián</rt>。<rt>。</rt>新<rt>xīn</rt>年<rt>nián</rt>时<rt>shí</rt>，<rt>，</rt>我<rt>wǒ</rt>会<rt>huì</rt>去<rt>qù</rt>亲<rt>qīn</rt>戚<rt>qi</rt>好<rt>hǎo</rt>友<rt>yǒu</rt>家<rt>jiā</rt>去<rt>qù</rt>拜<rt>bài</rt>望<rt>wàng</rt>他<rt>tā</rt>们<rt>men</rt>，<rt>，</rt>我<rt>wǒ</rt>除<rt>chú</rt>了<rt>le</rt>带<rt>dài</rt>礼<rt>lǐ</rt>物<rt>wù</rt>还<rt>hái</rt>会<rt>huì</rt>带<rt>dài</rt>两<rt>liǎng</rt>个<rt>gè</rt>柑<rt>gān</rt>橘<rt>jú</rt>去<rt>qù</rt>拜<rt>bài</rt>年<rt>nián</rt>，<rt>，</rt>我<rt>wǒ</rt>的<rt>de</rt>长<rt>zhǎng</rt>辈<rt>bèi</rt>们<rt>men</rt>会<rt>huì</rt>给<rt>gěi</rt>我<rt>wǒ</rt>红<rt>hóng</rt>包<rt>bāo</rt>。<rt>。</rt></ruby><br><br>
+    <ruby>我<rt>wǒ</rt>们<rt>men</rt>会<rt>huì</rt>一<rt>yī</rt>起<rt>qǐ</rt>吃<rt>chī</rt>团<rt>tuán</rt>圆<rt>yuán</rt>饭<rt>fàn</rt>。<rt>。</rt>我<rt>wǒ</rt>们<rt>men</rt>也<rt>yě</rt>会<rt>huì</rt>一<rt>yī</rt>起<rt>qǐ</rt>捞<rt>lāo</rt>鱼<rt>yú</rt>生<rt>shēng</rt>，<rt>，</rt>非<rt>fēi</rt>常<rt>cháng</rt>开<rt>kāi</rt>心<rt>xīn</rt>。<rt>。</rt></ruby><br><br>
+    <ruby>我<rt>wǒ</rt>们<rt>men</rt>也<rt>yě</rt>会<rt>huì</rt>在<rt>zài</rt>电<rt>diàn</rt>视<rt>shì</rt>上<rt>shàng</rt>看<rt>kàn</rt>舞<rt>wǔ</rt>狮<rt>shī</rt>舞<rt>wǔ</rt>龙<rt>lóng</rt>的<rt>de</rt>表<rt>biǎo</rt>演<rt>yǎn</rt>，<rt>，</rt>我<rt>wǒ</rt>们<rt>men</rt>也<rt>yě</rt>为<rt>wèi</rt>庆<rt>qìng</rt>祝<rt>zhù</rt>新<rt>xīn</rt>的<rt>de</rt>一<rt>yī</rt>年<rt>nián</rt>的<rt>de</rt>到<rt>dào</rt>来<rt>lái</rt>而<rt>ér</rt>互<rt>hù</rt>相<rt>xiāng</rt>祝<rt>zhù</rt>福<rt>fú</rt>。<rt>。</rt></ruby>
+    <button onclick="playAudio('50.mp3')">播放录音</button>
+    <button onclick="stopAudio()">停止播放</button>
+    <audio id="audio_answer_50" src="50.mp3"></audio>
+</blockquote>	
+	<p>4. <ruby>你<rt>nǐ</rt>觉<rt>jué</rt>得<rt>de</rt>庆<rt>qìng</rt>祝<rt>zhù</rt>传<rt>chuán</rt>统<rt>tǒng</rt>节<rt>jié</rt>日<rt>rì</rt>重<rt>zhòng</rt>要<rt>yào</rt>吗<rt>ma</rt>？<rt>？</rt>为<rt>wèi</rt>什<rt>shén</rt>么<rt>me</rt>？<rt>？</rt></ruby></p>
+
+<blockquote>
+    T:<ruby>我<rt>wǒ</rt>觉<rt>jué</rt>得<rt>de</rt>庆<rt>qìng</rt>祝<rt>zhù</rt>传<rt>chuán</rt>统<rt>tǒng</rt>节<rt>jié</rt>日<rt>rì</rt>很<rt>hěn</rt>重<rt>zhòng</rt>要<rt>yào</rt>。<rt>。</rt>因<rt>yīn</rt>为<rt>wèi</rt>，<rt>，</rt>庆<rt>qìng</rt>祝<rt>zhù</rt>传<rt>chuán</rt>统<rt>tǒng</rt>节<rt>jié</rt>日<rt>rì</rt>可<rt>kě</rt>以<rt>yǐ</rt>把<rt>bǎ</rt>我<rt>wǒ</rt>们<rt>men</rt>的<rt>de</rt>文<rt>wén</rt>化<rt>huà</rt>传<rt>chuán</rt>给<rt>gěi</rt>下<rt>xià</rt>一<rt>yī</rt>代<rt>dài</rt>。<rt>。</rt></ruby><br><br>
+    <ruby>另<rt>lìng</rt>外<rt>wài</rt>，<rt>，</rt>可<rt>kě</rt>以<rt>yǐ</rt>拉<rt>lā</rt>进<rt>jìn</rt>我<rt>wǒ</rt>们<rt>men</rt>的<rt>de</rt>关<rt>guān</rt>系<rt>xì</rt>，<rt>，</rt>使<rt>shǐ</rt>我<rt>wǒ</rt>们<rt>men</rt>的<rt>de</rt>关<rt>guān</rt>系<rt>xì</rt>更<rt>gèng</rt>亲<rt>qīn</rt>密<rt>mì</rt>。<rt>。</rt></ruby><br><br>
+    <ruby>比<rt>bǐ</rt>如<rt>rú</rt>我<rt>wǒ</rt>们<rt>men</rt>平<rt>píng</rt>时<rt>shí</rt>忙<rt>máng</rt>于<rt>yú</rt>工<rt>gōng</rt>作<rt>zuò</rt>和<rt>hé</rt>学<rt>xué</rt>业<rt>yè</rt>，<rt>，</rt>大<rt>dà</rt>家<rt>jiā</rt>很<rt>hěn</rt>少<rt>shǎo</rt>相<rt>xiāng</rt>聚<rt>jù</rt>。<rt>。</rt></ruby><br><br>
+    <ruby>当<rt>dāng</rt>华<rt>huá</rt>人<rt>rén</rt>新<rt>xīn</rt>年<rt>nián</rt>的<rt>de</rt>时<rt>shí</rt>候<rt>hou</rt>，<rt>，</rt>合<rt>hé</rt>家<rt>jiā</rt>团<rt>tuán</rt>圆<rt>yuán</rt>是<rt>shì</rt>庆<rt>qìng</rt>祝<rt>zhù</rt>这<rt>zhè</rt>个<rt>gè</rt>节<rt>jié</rt>日<rt>rì</rt>不<rt>bù</rt>可<rt>kě</rt>少<rt>shǎo</rt>的<rt>de</rt>一<rt>yī</rt>部<rt>bù</rt>分<rt>fēn</rt>，<rt>，</rt>它<rt>tā</rt>使<rt>shǐ</rt>我<rt>wǒ</rt>们<rt>men</rt>团<rt>tuán</rt>聚<rt>jù</rt>在<rt>zài</rt>一<rt>yī</rt>起<rt>qǐ</rt>，<rt>，</rt>分<rt>fēn</rt>享<rt>xiǎng</rt>美<rt>měi</rt>好<rt>hǎo</rt>的<rt>de</rt>时<rt>shí</rt>光<rt>guāng</rt>，<rt>，</rt>增<rt>zēng</rt>进<rt>jìn</rt>彼<rt>bǐ</rt>此<rt>cǐ</rt>的<rt>de</rt>感<rt>gǎn</rt>情<rt>qíng</rt>。<rt>。</rt></ruby>
+    <button onclick="playAudio('51.mp3')">播放录音</button>
+    <button onclick="stopAudio()">停止播放</button>
+    <audio id="audio_answer_51" src="51.mp3"></audio>
+</blockquote>	
+	<p>5. <ruby>你<rt>nǐ</rt>觉<rt>jué</rt>得<rt>de</rt>家<rt>jiā</rt>长<rt>zhǎng</rt>应<rt>yīng</rt>该<rt>gāi</rt>怎<rt>zěn</rt>样<rt>yàng</rt>鼓<rt>gǔ</rt>励<rt>lì</rt>同<rt>tóng</rt>学<rt>xué</rt>们<rt>men</rt>重<rt>zhòng</rt>视<rt>shì</rt>传<rt>chuán</rt>统<rt>tǒng</rt>节<rt>jié</rt>日<rt>rì</rt>。<rt>。</rt></ruby></p>
+
+<blockquote>
+    T:<ruby>我<rt>wǒ</rt>觉<rt>jué</rt>得<rt>de</rt>家<rt>jiā</rt>长<rt>zhǎng</rt>可<rt>kě</rt>以<rt>yǐ</rt>以<rt>yǐ</rt>身<rt>shēn</rt>作<rt>zuò</rt>则<rt>zé</rt>，<rt>，</rt>在<rt>zài</rt>传<rt>chuán</rt>统<rt>tǒng</rt>节<rt>jié</rt>日<rt>rì</rt>时<rt>shí</rt>，<rt>，</rt>开<rt>kāi</rt>心<rt>xīn</rt>地<rt>de</rt>庆<rt>qìng</rt>祝<rt>zhù</rt>传<rt>chuán</rt>统<rt>tǒng</rt>节<rt>jié</rt>日<rt>rì</rt>，<rt>，</rt>安<rt>ān</rt>排<rt>pái</rt>一<rt>yī</rt>些<rt>xiē</rt>有<rt>yǒu</rt>趣<rt>qù</rt>有<rt>yǒu</rt>意<rt>yì</rt>义<rt>yì</rt>的<rt>de</rt>活<rt>huó</rt>动<rt>dòng</rt>，<rt>，</rt>同<rt>tóng</rt>学<rt>xué</rt>们<rt>men</rt>会<rt>huì</rt>更<rt>gèng</rt>喜<rt>xǐ</rt>欢<rt>huān</rt>庆<rt>qìng</rt>祝<rt>zhù</rt>传<rt>chuán</rt>统<rt>tǒng</rt>节<rt>jié</rt>日<rt>rì</rt>。<rt>。</rt></ruby><br><br>
+    <ruby>家<rt>jiā</rt>长<rt>zhǎng</rt>也<rt>yě</rt>可<rt>kě</rt>以<rt>yǐ</rt>跟<rt>gēn</rt>我<rt>wǒ</rt>们<rt>men</rt>分<rt>fēn</rt>享<rt>xiǎng</rt>传<rt>chuán</rt>统<rt>tǒng</rt>节<rt>jié</rt>日<rt>rì</rt>的<rt>de</rt>传<rt>chuán</rt>说<rt>shuō</rt>，<rt>，</rt>风<rt>fēng</rt>俗<rt>sú</rt>习<rt>xí</rt>惯<rt>guàn</rt>，<rt>，</rt>让<rt>ràng</rt>我<rt>wǒ</rt>们<rt>men</rt>对<rt>duì</rt>传<rt>chuán</rt>统<rt>tǒng</rt>节<rt>jié</rt>日<rt>rì</rt>更<rt>gèng</rt>有<rt>yǒu</rt>兴<rt>xìng</rt>趣<rt>qù</rt>，<rt>，</rt>更<rt>gèng</rt>喜<rt>xǐ</rt>欢<rt>huān</rt>过<rt>guò</rt>传<rt>chuán</rt>统<rt>tǒng</rt>节<rt>jié</rt>日<rt>rì</rt>。<rt>。</rt></ruby>
+    <button onclick="playAudio('52.mp3')">播放录音</button>
+    <button onclick="stopAudio()">停止播放</button>
+    <audio id="audio_answer_52" src="52.mp3"></audio>
+</blockquote>	
+		
+    </div>
+    <h1><ruby>口<rt>kǒu</rt>试<rt>shì</rt>对<rt>duì</rt>话<rt>huà</rt>题<rt>tí</rt>目<rt>mù</rt>及<rt>jí</rt>答<rt>dá</rt>案<rt>àn</rt>（学<rt>xué</rt>习<rt>xí</rt>之<rt>zhī</rt>旅<rt>lǚ</rt>）</ruby></h1>
+
+    <div class="qa">
+        <p>1. <ruby>同<rt>tóng</rt>学<rt>xué</rt>，刚<rt>gāng</rt>才<rt>cái</rt>的<rt>de</rt>录<rt>lù</rt>像<rt>xiàng</rt>中<rt>zhōng</rt>，哪<rt>nǎ</rt>些<rt>xiē</rt>情<rt>qíng</rt>景<rt>jǐng</rt>令<rt>lìng</rt>你<rt>nǐ</rt>印<rt>yìn</rt>象<rt>xiàng</rt>深<rt>shēn</rt>刻<rt>kè</rt>？</ruby></p>
+        
+        <blockquote>
+            T.<ruby>在<rt>zài</rt>刚<rt>gāng</rt>才<rt>cái</rt>的<rt>de</rt>录<rt>lù</rt>像<rt>xiàng</rt>中<rt>zhōng</rt>，发<rt>fā</rt>生<rt>shēng</rt>在<rt>zài</rt>公<rt>gōng</rt>园<rt>yuán</rt>里<rt>lǐ</rt>的<rt>de</rt>情<rt>qíng</rt>景<rt>jǐng</rt>令<rt>lìng</rt>我<rt>wǒ</rt>印<rt>yìn</rt>象<rt>xiàng</rt>深<rt>shēn</rt>刻<rt>kè</rt>。</ruby><br><br>
+            <ruby>在<rt>zài</rt>公<rt>gōng</rt>园<rt>yuán</rt>里<rt>lǐ</rt>，同<rt>tóng</rt>学<rt>xué</rt>们<rt>men</rt>跟<rt>gēn</rt>着<rt>zhe</rt>老<rt>lǎo</rt>师<rt>shī</rt>上<rt>shàng</rt>科<rt>kē</rt>学<rt>xué</rt>课<rt>kè</rt>，他<rt>tā</rt>们<rt>men</rt>学<rt>xué</rt>习<rt>xí</rt>不<rt>bù</rt>同<rt>tóng</rt>的<rt>de</rt>植<rt>zhí</rt>物<rt>wù</rt>，学<rt>xué</rt>生<rt>shēng</rt>们<rt>men</rt>学<rt>xué</rt>习<rt>xí</rt>得<rt>de</rt>比<rt>bǐ</rt>在<rt>zài</rt>课<rt>kè</rt>室<rt>shì</rt>好<rt>hǎo</rt>，因<rt>yīn</rt>为<rt>wèi</rt>他<rt>tā</rt>们<rt>men</rt>觉<rt>jué</rt>得<rt>de</rt>这<rt>zhè</rt>样<rt>yàng</rt>学<rt>xué</rt>习<rt>xí</rt>更<rt>gèng</rt>有<rt>yǒu</rt>趣<rt>qù</rt>。</ruby><br><br>
+            <ruby>有<rt>yǒu</rt>些<rt>xiē</rt>同<rt>tóng</rt>学<rt>xué</rt>把<rt>bǎ</rt>看<rt>kàn</rt>到<rt>dào</rt>的<rt>de</rt>东<rt>dōng</rt>西<rt>xī</rt>拍<rt>pāi</rt>下<rt>xià</rt>来<rt>lái</rt>，当<rt>dāng</rt>做<rt>zuò</rt>笔<rt>bǐ</rt>记<rt>jì</rt>。</ruby><br><br>
+            <ruby>有<rt>yǒu</rt>的<rt>de</rt>仔<rt>zǐ</rt>细<rt>xì</rt>观<rt>guān</rt>察<rt>chá</rt>植<rt>zhí</rt>物<rt>wù</rt>的<rt>de</rt>叶<rt>yè</rt>子<rt>zi</rt>，还<rt>hái</rt>有<rt>yǒu</rt>的<rt>de</rt>用<rt>yòng</rt>手<rt>shǒu</rt>触<rt>chù</rt>摸<rt>mō</rt>植<rt>zhí</rt>物<rt>wù</rt>的<rt>de</rt>叶<rt>yè</rt>子<rt>zi</rt>。</ruby><br><br>
+            <ruby>我<rt>wǒ</rt>看<rt>kàn</rt>了<rt>le</rt>以<rt>yǐ</rt>后<rt>hòu</rt>也<rt>yě</rt>觉<rt>jué</rt>得<rt>de</rt>很<rt>hěn</rt>兴<rt>xīng</rt>奋<rt>fèn</rt>。</ruby><br><br>
+            <ruby>因<rt>yīn</rt>为<rt>wèi</rt>这<rt>zhè</rt>样<rt>yàng</rt>的<rt>de</rt>环<rt>huán</rt>境<rt>jìng</rt>让<rt>ràng</rt>同<rt>tóng</rt>学<rt>xué</rt>们<rt>men</rt>更<rt>gèng</rt>喜<rt>xǐ</rt>欢<rt>huān</rt>学<rt>xué</rt>习<rt>xí</rt>。</ruby><br><br>
+            <ruby>总<rt>zǒng</rt>得<rt>de</rt>来<rt>lái</rt>说<rt>shuō</rt>，我<rt>wǒ</rt>觉<rt>jué</rt>得<rt>de</rt>户<rt>hù</rt>外<rt>wài</rt>学<rt>xué</rt>习<rt>xí</rt>为<rt>wèi</rt>同<rt>tóng</rt>学<rt>xué</rt>们<rt>men</rt>建<rt>jiàn</rt>立<rt>lì</rt>了<rt>le</rt>一<rt>yī</rt>种<rt>zhǒng</rt>新<rt>xīn</rt>的<rt>de</rt>学<rt>xué</rt>习<rt>xí</rt>方<rt>fāng</rt>式<rt>shì</rt>，这<rt>zhè</rt>样<rt>yàng</rt>方<rt>fāng</rt>式<rt>shì</rt>很<rt>hěn</rt>受<rt>shòu</rt>大<rt>dà</rt>家<rt>jiā</rt>的<rt>de</rt>喜<rt>xǐ</rt>欢<rt>huān</rt>。</ruby>
+						  <button onclick="playAudio('53.mp3')">播放录音</button>
+			  <button onclick="stopAudio()">停止播放</button>
+			  <audio id="audio_answer_53" src="53.mp3"></audio>
+        </blockquote>
+<p>2. <ruby>请<rt>qǐng</rt>你<rt>nǐ</rt>描<rt>miáo</rt>述<rt>shù</rt>一<rt>yī</rt>次<rt>cì</rt>你<rt>nǐ</rt>自<rt>zì</rt>己<rt>jǐ</rt>的<rt>de</rt>学<rt>xué</rt>习<rt>xí</rt>之<rt>zhī</rt>旅<rt>lǚ</rt>。<rt>。</rt></ruby></p>
+
+<blockquote>
+    T:<ruby>有<rt>yǒu</rt>一<rt>yī</rt>次<rt>cì</rt>，<rt>，</rt>我<rt>wǒ</rt>的<rt>de</rt>科<rt>kē</rt>学<rt>xué</rt>老<rt>lǎo</rt>师<rt>shī</rt>带<rt>dài</rt>我<rt>wǒ</rt>们<rt>men</rt>到<rt>dào</rt>科<rt>kē</rt>学<rt>xué</rt>馆<rt>guǎn</rt>，<rt>，</rt>在<rt>zài</rt>那<rt>nà</rt>里<rt>lǐ</rt>，<rt>，</rt>我<rt>wǒ</rt>看<rt>kàn</rt>到<rt>dào</rt>动<rt>dòng</rt>物<rt>wù</rt>骨<rt>gǔ</rt>头<rt>tou</rt>的<rt>de</rt>展<rt>zhǎn</rt>览<rt>lǎn</rt>，<rt>，</rt>让<rt>ràng</rt>我<rt>wǒ</rt>对<rt>duì</rt>科<rt>kē</rt>学<rt>xué</rt>很<rt>hěn</rt>有<rt>yǒu</rt>兴<rt>xìng</rt>趣<rt>qù</rt>。<rt>。</rt></ruby><br><br>
+    <ruby>我<rt>wǒ</rt>也<rt>yě</rt>看<rt>kàn</rt>到<rt>dào</rt>了<rt>le</rt>不<rt>bù</rt>同<rt>tóng</rt>的<rt>de</rt>展<rt>zhǎn</rt>示<rt>shì</rt>，<rt>，</rt>那<rt>nà</rt>些<rt>xiē</rt>展<rt>zhǎn</rt>示<rt>shì</rt>很<rt>hěn</rt>有<rt>yǒu</rt>趣<rt>qù</rt>。<rt>。</rt>让<rt>ràng</rt>我<rt>wǒ</rt>很<rt>hěn</rt>想<rt>xiǎng</rt>学<rt>xué</rt>习<rt>xí</rt>科<rt>kē</rt>学<rt>xué</rt>。<rt>。</rt></ruby><br><br>
+    <ruby>我<rt>wǒ</rt>也<rt>yě</rt>在<rt>zài</rt>那<rt>nà</rt>里<rt>lǐ</rt>做<rt>zuò</rt>了<rt>le</rt>很<rt>hěn</rt>多<rt>duō</rt>笔<rt>bǐ</rt>记<rt>jì</rt>，<rt>，</rt>让<rt>ràng</rt>我<rt>wǒ</rt>学<rt>xué</rt>习<rt>xí</rt>了<rt>le</rt>很<rt>hěn</rt>多<rt>duō</rt>新<rt>xīn</rt>知<rt>zhī</rt>识<rt>shi</rt>。<rt>。</rt></ruby><br><br>
+    <ruby>总<rt>zǒng</rt>的<rt>de</rt>来<rt>lái</rt>说<rt>shuō</rt>，<rt>，</rt>我<rt>wǒ</rt>觉<rt>jué</rt>得<rt>de</rt>学<rt>xué</rt>习<rt>xí</rt>之<rt>zhī</rt>旅<rt>lǚ</rt>可<rt>kě</rt>以<rt>yǐ</rt>让<rt>ràng</rt>我<rt>wǒ</rt>们<rt>men</rt>对<rt>duì</rt>学<rt>xué</rt>习<rt>xí</rt>更<rt>gèng</rt>有<rt>yǒu</rt>兴<rt>xìng</rt>趣<rt>qù</rt>，<rt>，</rt>并<rt>bìng</rt>且<rt>qiě</rt>可<rt>kě</rt>以<rt>yǐ</rt>学<rt>xué</rt>到<rt>dào</rt>课<rt>kè</rt>本<rt>běn</rt>里<rt>lǐ</rt>没<rt>méi</rt>有<rt>yǒu</rt>的<rt>de</rt>很<rt>hěn</rt>多<rt>duō</rt>新<rt>xīn</rt>知<rt>zhī</rt>识<rt>shi</rt>。<rt>。</rt></ruby><br><br>
+    <ruby>学<rt>xué</rt>校<rt>xiào</rt>应<rt>yīng</rt>该<rt>gāi</rt>多<rt>duō</rt>举<rt>jǔ</rt>行<rt>xíng</rt>学<rt>xué</rt>习<rt>xí</rt>之<rt>zhī</rt>旅<rt>lǚ</rt>这<rt>zhè</rt>样<rt>yàng</rt>的<rt>de</rt>活<rt>huó</rt>动<rt>dòng</rt>，<rt>，</rt>让<rt>ràng</rt>我<rt>wǒ</rt>们<rt>men</rt>的<rt>de</rt>学<rt>xué</rt>习<rt>xí</rt>更<rt>gèng</rt>有<rt>yǒu</rt>效<rt>xiào</rt>。<rt>。</rt></ruby>
+    <button onclick="playAudio('54.mp3')">播放录音</button>
+    <button onclick="stopAudio()">停止播放</button>
+    <audio id="audio_answer_54" src="54.mp3"></audio>
+</blockquote>		
+		<p>3. <ruby>你<rt>nǐ</rt>认<rt>rèn</rt>为<rt>wéi</rt>我<rt>wǒ</rt>们<rt>men</rt>为<rt>wèi</rt>什<rt>shén</rt>么<rt>me</rt>要<rt>yào</rt>举<rt>jǔ</rt>行<rt>xíng</rt>学<rt>xué</rt>习<rt>xí</rt>之<rt>zhī</rt>旅<rt>lǚ</rt>？<rt>？</rt></ruby></p>
+
+<blockquote>
+    T:<ruby>我<rt>wǒ</rt>觉<rt>jué</rt>得<rt>de</rt>学<rt>xué</rt>习<rt>xí</rt>之<rt>zhī</rt>旅<rt>lǚ</rt>有<rt>yǒu</rt>很<rt>hěn</rt>多<rt>duō</rt>好<rt>hǎo</rt>处<rt>chù</rt>，<rt>，</rt>第<rt>dì</rt>一<rt>yī</rt>，<rt>，</rt>学<rt>xué</rt>习<rt>xí</rt>之<rt>zhī</rt>旅<rt>lǚ</rt>可<rt>kě</rt>以<rt>yǐ</rt>让<rt>ràng</rt>我<rt>wǒ</rt>们<rt>men</rt>对<rt>duì</rt>那<rt>nà</rt>个<rt>gè</rt>科<rt>kē</rt>目<rt>mù</rt>更<rt>gèng</rt>有<rt>yǒu</rt>兴<rt>xìng</rt>趣<rt>qù</rt>，<rt>，</rt>让<rt>ràng</rt>我<rt>wǒ</rt>们<rt>men</rt>更<rt>gèng</rt>想<rt>xiǎng</rt>学<rt>xué</rt>习<rt>xí</rt>。<rt>。</rt></ruby><br><br>
+    <ruby>第<rt>dì</rt>二<rt>èr</rt>，<rt>，</rt>我<rt>wǒ</rt>们<rt>men</rt>可<rt>kě</rt>以<rt>yǐ</rt>学<rt>xué</rt>到<rt>dào</rt>更<rt>gèng</rt>多<rt>duō</rt>的<rt>de</rt>新<rt>xīn</rt>知<rt>zhī</rt>识<rt>shi</rt>，<rt>，</rt>因<rt>yīn</rt>为<rt>wèi</rt>我<rt>wǒ</rt>们<rt>men</rt>可<rt>kě</rt>以<rt>yǐ</rt>看<rt>kàn</rt>到<rt>dào</rt>真<rt>zhēn</rt>实<rt>shí</rt>的<rt>de</rt>东<rt>dōng</rt>西<rt>xi</rt>，<rt>，</rt>让<rt>ràng</rt>我<rt>wǒ</rt>们<rt>men</rt>可<rt>kě</rt>以<rt>yǐ</rt>更<rt>gèng</rt>好<rt>hǎo</rt>地<rt>de</rt>理<rt>lǐ</rt>解<rt>jiě</rt>，<rt>，</rt>记<rt>jì</rt>忆<rt>yì</rt>知<rt>zhī</rt>识<rt>shi</rt>。<rt>。</rt></ruby><br><br>
+    <ruby>第<rt>dì</rt>三<rt>sān</rt>，<rt>，</rt>学<rt>xué</rt>习<rt>xí</rt>之<rt>zhī</rt>旅<rt>lǚ</rt>的<rt>de</rt>环<rt>huán</rt>境<rt>jìng</rt>非<rt>fēi</rt>常<rt>cháng</rt>轻<rt>qīng</rt>松<rt>sōng</rt>，<rt>，</rt>所<rt>suǒ</rt>以<rt>yǐ</rt>，<rt>，</rt>我<rt>wǒ</rt>们<rt>men</rt>可<rt>kě</rt>以<rt>yǐ</rt>一<rt>yī</rt>边<rt>biān</rt>玩<rt>wán</rt>，<rt>，</rt>一<rt>yī</rt>边<rt>biān</rt>学<rt>xué</rt>到<rt>dào</rt>新<rt>xīn</rt>东<rt>dōng</rt>西<rt>xi</rt>。<rt>。</rt></ruby><br><br>
+    <ruby>总<rt>zǒng</rt>的<rt>de</rt>来<rt>lái</rt>说<rt>shuō</rt>，<rt>，</rt>学<rt>xué</rt>习<rt>xí</rt>既<rt>jì</rt>能<rt>néng</rt>引<rt>yǐn</rt>起<rt>qǐ</rt>同<rt>tóng</rt>学<rt>xué</rt>们<rt>men</rt>学<rt>xué</rt>习<rt>xí</rt>的<rt>de</rt>兴<rt>xìng</rt>趣<rt>qù</rt>，<rt>，</rt>也<rt>yě</rt>能<rt>néng</rt>让<rt>ràng</rt>他<rt>tā</rt>们<rt>men</rt>轻<rt>qīng</rt>松<rt>sōng</rt>地<rt>de</rt>学<rt>xué</rt>习<rt>xí</rt>，<rt>，</rt>所<rt>suǒ</rt>以<rt>yǐ</rt>，<rt>，</rt>我<rt>wǒ</rt>们<rt>men</rt>应<rt>yīng</rt>该<rt>gāi</rt>举<rt>jǔ</rt>行<rt>xíng</rt>学<rt>xué</rt>习<rt>xí</rt>之<rt>zhī</rt>旅<rt>lǚ</rt>。<rt>。</rt></ruby>
+    <button onclick="playAudio('55.mp3')">播放录音</button>
+    <button onclick="stopAudio()">停止播放</button>
+    <audio id="audio_answer_55" src="55.mp3"></audio>
+</blockquote>
+		
+	<p>4. <ruby>你<rt>nǐ</rt>认<rt>rèn</rt>为<rt>wéi</rt>学<rt>xué</rt>校<rt>xiào</rt>应<rt>yīng</rt>该<rt>gāi</rt>怎<rt>zěn</rt>样<rt>yàng</rt>做<rt>zuò</rt>才<rt>cái</rt>能<rt>néng</rt>使<rt>shǐ</rt>学<rt>xué</rt>习<rt>xí</rt>之<rt>zhī</rt>旅<rt>lǚ</rt>更<rt>gèng</rt>有<rt>yǒu</rt>趣<rt>qù</rt>？<rt>？</rt></ruby></p>
+
+<blockquote>
+    T:<ruby>我<rt>wǒ</rt>觉<rt>jué</rt>得<rt>de</rt>学<rt>xué</rt>校<rt>xiào</rt>可<rt>kě</rt>以<rt>yǐ</rt>让<rt>ràng</rt>学<rt>xué</rt>习<rt>xí</rt>之<rt>zhī</rt>旅<rt>lǚ</rt>有<rt>yǒu</rt>更<rt>gèng</rt>多<rt>duō</rt>展<rt>zhǎn</rt>览<rt>lǎn</rt>，<rt>，</rt>让<rt>ràng</rt>我<rt>wǒ</rt>们<rt>men</rt>学<rt>xué</rt>到<rt>dào</rt>更<rt>gèng</rt>多<rt>duō</rt>新<rt>xīn</rt>的<rt>de</rt>知<rt>zhī</rt>识<rt>shi</rt>。<rt>。</rt></ruby><br><br>
+    <ruby>学<rt>xué</rt>校<rt>xiào</rt>也<rt>yě</rt>可<rt>kě</rt>以<rt>yǐ</rt>让<rt>ràng</rt>我<rt>wǒ</rt>们<rt>men</rt>多<rt>duō</rt>做<rt>zuò</rt>活<rt>huó</rt>动<rt>dòng</rt>，<rt>，</rt>比<rt>bǐ</rt>如<rt>rú</rt>让<rt>ràng</rt>我<rt>wǒ</rt>们<rt>men</rt>可<rt>kě</rt>以<rt>yǐ</rt>摸<rt>mō</rt>到<rt>dào</rt>动<rt>dòng</rt>物<rt>wù</rt>和<rt>hé</rt>植<rt>zhí</rt>物<rt>wù</rt>，<rt>，</rt>让<rt>ràng</rt>我<rt>wǒ</rt>们<rt>men</rt>能<rt>néng</rt>更<rt>gèng</rt>真<rt>zhēn</rt>实<rt>shí</rt>地<rt>de</rt>感<rt>gǎn</rt>受<rt>shòu</rt>，<rt>，</rt>并<rt>bìng</rt>且<rt>qiě</rt>加<rt>jiā</rt>强<rt>qiáng</rt>我<rt>wǒ</rt>们<rt>men</rt>的<rt>de</rt>兴<rt>xìng</rt>趣<rt>qù</rt>。<rt>。</rt></ruby><br><br>
+    <ruby>还<rt>hái</rt>有<rt>yǒu</rt>，<rt>，</rt>我<rt>wǒ</rt>觉<rt>jué</rt>得<rt>de</rt>在<rt>zài</rt>学<rt>xué</rt>习<rt>xí</rt>之<rt>zhī</rt>旅<rt>lǚ</rt>之<rt>zhī</rt>前<rt>qián</rt>，<rt>，</rt>老<rt>lǎo</rt>师<rt>shī</rt>应<rt>yīng</rt>该<rt>gāi</rt>给<rt>gěi</rt>我<rt>wǒ</rt>们<rt>men</rt>一<rt>yī</rt>些<rt>xiē</rt>问<rt>wèn</rt>题<rt>tí</rt>，<rt>，</rt>让<rt>ràng</rt>我<rt>wǒ</rt>们<rt>men</rt>到<rt>dào</rt>了<rt>le</rt>学<rt>xué</rt>习<rt>xí</rt>之<rt>zhī</rt>旅<rt>lǚ</rt>后<rt>hòu</rt>，<rt>，</rt>自<rt>zì</rt>己<rt>jǐ</rt>找<rt>zhǎo</rt>答<rt>dá</rt>案<rt>àn</rt>，<rt>，</rt>并<rt>bìng</rt>且<rt>qiě</rt>把<rt>bǎ</rt>答<rt>dá</rt>案<rt>àn</rt>写<rt>xiě</rt>下<rt>xià</rt>来<rt>lái</rt>，<rt>，</rt>让<rt>ràng</rt>老<rt>lǎo</rt>师<rt>shī</rt>改<rt>gǎi</rt>正<rt>zhèng</rt>。<rt>。</rt></ruby><br><br>
+    <ruby>我<rt>wǒ</rt>觉<rt>jué</rt>得<rt>de</rt>这<rt>zhè</rt>样<rt>yàng</rt>的<rt>de</rt>学<rt>xué</rt>习<rt>xí</rt>方<rt>fāng</rt>法<rt>fǎ</rt>更<rt>gèng</rt>有<rt>yǒu</rt>效<rt>xiào</rt>。<rt>。</rt></ruby>
+    <button onclick="playAudio('56.mp3')">播放录音</button>
+    <button onclick="stopAudio()">停止播放</button>
+    <audio id="audio_answer_56" src="56.mp3"></audio>
+</blockquote>	
+		
+		
+		
+    </div>
+    <h1><ruby>口<rt>kǒu</rt>试<rt>shì</rt>对<rt>duì</rt>话<rt>huà</rt>题<rt>tí</rt>目<rt>mù</rt>及<rt>jí</rt>答<rt>dá</rt>案<rt>àn</rt>（6）良<rt>liáng</rt>好<rt>hǎo</rt>的<rt>de</rt>学<rt>xué</rt>习<rt>xí</rt>习<rt>xí</rt>惯<rt>guàn</rt></ruby></h1>
+
+    <div class="qa">
+        <p>1. <ruby>同<rt>tóng</rt>学<rt>xué</rt>，请<rt>qǐng</rt>你<rt>nǐ</rt>描<rt>miáo</rt>述<rt>shù</rt>录<rt>lù</rt>像<rt>xiàng</rt>中<rt>zhōng</rt>令<rt>lìng</rt>你<rt>nǐ</rt>印<rt>yìn</rt>象<rt>xiàng</rt>深<rt>shēn</rt>刻<rt>kè</rt>的<rt>de</rt>一<rt>yī</rt>件<rt>jiàn</rt>事<rt>shì</rt>。</ruby></p>
+        
+        <blockquote>
+            T:<ruby>在<rt>zài</rt>录<rt>lù</rt>像<rt>xiàng</rt>中<rt>zhōng</rt>，我<rt>wǒ</rt>看<rt>kàn</rt>到<rt>dào</rt>一<rt>yī</rt>位<rt>wèi</rt>老<rt>lǎo</rt>师<rt>shī</rt>和<rt>hé</rt>很<rt>hěn</rt>多<rt>duō</rt>同<rt>tóng</rt>学<rt>xué</rt>们<rt>men</rt>，他<rt>tā</rt>们<rt>men</rt>正<rt>zhèng</rt>在<rt>zài</rt>课<rt>kè</rt>室<rt>shì</rt>里<rt>lǐ</rt>上<rt>shàng</rt>华<rt>huá</rt>文<rt>wén</rt>课<rt>kè</rt>。</ruby><br><br>
+            <ruby>一<rt>yī</rt>位<rt>wèi</rt>小<rt>xiǎo</rt>男<rt>nán</rt>孩<rt>hái</rt>，他<rt>tā</rt>上<rt>shàng</rt>课<rt>kè</rt>不<rt>bù</rt>专<rt>zhuān</rt>心<rt>xīn</rt>，老<rt>lǎo</rt>师<rt>shī</rt>讲<rt>jiǎng</rt>课<rt>kè</rt>时<rt>shí</rt>，他<rt>tā</rt>玩<rt>wán</rt>文<rt>wén</rt>具<rt>jù</rt>，老<rt>lǎo</rt>师<rt>shī</rt>让<rt>ràng</rt>同<rt>tóng</rt>学<rt>xué</rt>们<rt>men</rt>写<rt>xiě</rt>作<rt>zuò</rt>文<rt>wén</rt>时<rt>shí</rt>，他<rt>tā</rt>在<rt>zài</rt>稿<rt>gǎo</rt>纸<rt>zhǐ</rt>上<rt>shàng</rt>画<rt>huà</rt>画<rt>huà</rt>。</ruby><br><br>
+            <ruby>虽<rt>suī</rt>然<rt>rán</rt>，老<rt>lǎo</rt>师<rt>shī</rt>并<rt>bìng</rt>没<rt>méi</rt>有<rt>yǒu</rt>批<rt>pī</rt>评<rt>píng</rt>他<rt>tā</rt>，可<rt>kě</rt>能<rt>néng</rt>老<rt>lǎo</rt>师<rt>shī</rt>并<rt>bìng</rt>没<rt>méi</rt>有<rt>yǒu</rt>发<rt>fā</rt>现<rt>xiàn</rt>。</ruby><br><br>
+            <ruby>但<rt>dàn</rt>是<rt>shì</rt>我<rt>wǒ</rt>觉<rt>jué</rt>得<rt>de</rt>很<rt>hěn</rt>生<rt>shēng</rt>气<rt>qì</rt>，因<rt>yīn</rt>为<rt>wèi</rt>这<rt>zhè</rt>位<rt>wèi</rt>小<rt>xiǎo</rt>男<rt>nán</rt>孩<rt>hái</rt>根<rt>gēn</rt>本<rt>běn</rt>没<rt>méi</rt>有<rt>yǒu</rt>认<rt>rèn</rt>真<rt>zhēn</rt>学<rt>xué</rt>习<rt>xí</rt>，他<rt>tā</rt>这<rt>zhè</rt>样<rt>yàng</rt>不<rt>bù</rt>但<rt>dàn</rt>浪<rt>làng</rt>费<rt>fèi</rt>时<rt>shí</rt>间<rt>jiān</rt>，还<rt>hái</rt>会<rt>huì</rt>一<rt>yī</rt>无<rt>wú</rt>所<rt>suǒ</rt>成<rt>chéng</rt>。</ruby>
+						  <button onclick="playAudio('57.mp3')">播放录音</button>
+			  <button onclick="stopAudio()">停止播放</button>
+			  <audio id="audio_answer_57" src="57.mp3"></audio>
+        </blockquote>
+		
+		<p>2. <ruby>同<rt>tóng</rt>学<rt>xué</rt>，<rt>，</rt>请<rt>qǐng</rt>分<rt>fēn</rt>享<rt>xiǎng</rt>一<rt>yī</rt>件<rt>jiàn</rt>事<rt>shì</rt>，<rt>，</rt>通<rt>tōng</rt>过<rt>guò</rt>这<rt>zhè</rt>件<rt>jiàn</rt>事<rt>shì</rt>你<rt>nǐ</rt>明<rt>míng</rt>白<rt>bái</rt>了<rt>le</rt>学<rt>xué</rt>习<rt>xí</rt>要<rt>yào</rt>专<rt>zhuān</rt>心<rt>xīn</rt>。<rt>。</rt></ruby></p>
+
+<blockquote>
+    T:<ruby>有<rt>yǒu</rt>一<rt>yī</rt>次<rt>cì</rt>，<rt>，</rt>我<rt>wǒ</rt>在<rt>zài</rt>课<rt>kè</rt>室<rt>shì</rt>里<rt>lǐ</rt>，<rt>，</rt>看<rt>kàn</rt>到<rt>dào</rt>我<rt>wǒ</rt>的<rt>de</rt>朋<rt>péng</rt>友<rt>yǒu</rt>没<rt>méi</rt>有<rt>yǒu</rt>专<rt>zhuān</rt>心<rt>xīn</rt>听<rt>tīng</rt>课<rt>kè</rt>，<rt>，</rt>老<rt>lǎo</rt>师<rt>shī</rt>教<rt>jiāo</rt>完<rt>wán</rt>了<rt>le</rt>，<rt>，</rt>就<rt>jiù</rt>提<rt>tí</rt>问<rt>wèn</rt>题<rt>tí</rt>，<rt>，</rt>选<rt>xuǎn</rt>到<rt>dào</rt>我<rt>wǒ</rt>的<rt>de</rt>朋<rt>péng</rt>友<rt>yǒu</rt>回<rt>huí</rt>答<rt>dá</rt>问<rt>wèn</rt>题<rt>tí</rt>，<rt>，</rt>我<rt>wǒ</rt>的<rt>de</rt>朋<rt>péng</rt>友<rt>yǒu</rt>听<rt>tīng</rt>到<rt>dào</rt>老<rt>lǎo</rt>师<rt>shī</rt>叫<rt>jiào</rt>她<rt>tā</rt>，<rt>，</rt>很<rt>hěn</rt>着<rt>zháo</rt>急<rt>jí</rt>，<rt>，</rt>因<rt>yīn</rt>为<rt>wèi</rt>她<rt>tā</rt>什<rt>shén</rt>么<rt>me</rt>都<rt>dōu</rt>没<rt>méi</rt>有<rt>yǒu</rt>听<rt>tīng</rt>，<rt>，</rt>什<rt>shén</rt>么<rt>me</rt>都<rt>dōu</rt>不<rt>bù</rt>知<rt>zhī</rt>道<rt>dào</rt>，<rt>，</rt>所<rt>suǒ</rt>以<rt>yǐ</rt>她<rt>tā</rt>不<rt>bù</rt>知<rt>zhī</rt>道<rt>dào</rt>怎<rt>zěn</rt>么<rt>me</rt>回<rt>huí</rt>答<rt>dá</rt>。<rt>。</rt></ruby><br><br>
+    <ruby>老<rt>lǎo</rt>师<rt>shī</rt>批<rt>pī</rt>评<rt>píng</rt>了<rt>le</rt>她<rt>tā</rt>。<rt>。</rt>叫<rt>jiào</rt>她<rt>tā</rt>在<rt>zài</rt>休<rt>xiū</rt>息<rt>xī</rt>的<rt>de</rt>时<rt>shí</rt>候<rt>hòu</rt>，<rt>，</rt>留<rt>liú</rt>在<rt>zài</rt>课<rt>kè</rt>室<rt>shì</rt>学<rt>xué</rt>习<rt>xí</rt>。<rt>。</rt>通<rt>tōng</rt>过<rt>guò</rt>这<rt>zhè</rt>件<rt>jiàn</rt>事<rt>shì</rt>，<rt>，</rt>我<rt>wǒ</rt>明<rt>míng</rt>白<rt>bái</rt>了<rt>le</rt>学<rt>xué</rt>习<rt>xí</rt>时<rt>shí</rt>要<rt>yào</rt>专<rt>zhuān</rt>心<rt>xīn</rt>，<rt>，</rt>不<rt>bù</rt>可<rt>kě</rt>以<rt>yǐ</rt>分<rt>fēn</rt>心<rt>xīn</rt>。<rt>。</rt></ruby>
+    <button onclick="playAudio('58.mp3')">播放录音</button>
+    <button onclick="stopAudio()">停止播放</button>
+    <audio id="audio_answer_58" src="58.mp3"></audio>
+</blockquote>
+		<p>3. <ruby>你<rt>nǐ</rt>觉<rt>jué</rt>得<rt>de</rt>学<rt>xué</rt>习<rt>xí</rt>中<rt>zhōng</rt>除<rt>chú</rt>了<rt>le</rt>专<rt>zhuān</rt>心<rt>xīn</rt>，<rt>，</rt>我<rt>wǒ</rt>们<rt>men</rt>还<rt>hái</rt>应<rt>yīng</rt>该<rt>gāi</rt>需<rt>xū</rt>要<rt>yào</rt>哪<rt>nǎ</rt>些<rt>xiē</rt>良<rt>liáng</rt>好<rt>hǎo</rt>的<rt>de</rt>习<rt>xí</rt>惯<rt>guàn</rt>？<rt>？</rt>为<rt>wèi</rt>什<rt>shén</rt>么<rt>me</rt>？<rt>？</rt></ruby></p>
+
+<blockquote>
+    T:<ruby>我<rt>wǒ</rt>觉<rt>jué</rt>得<rt>de</rt>在<rt>zài</rt>学<rt>xué</rt>习<rt>xí</rt>中<rt>zhōng</rt>除<rt>chú</rt>了<rt>le</rt>专<rt>zhuān</rt>心<rt>xīn</rt>，<rt>，</rt>我<rt>wǒ</rt>们<rt>men</rt>还<rt>hái</rt>要<rt>yào</rt>有<rt>yǒu</rt>耐<rt>nài</rt>心<rt>xīn</rt>。<rt>。</rt>因<rt>yīn</rt>为<rt>wèi</rt>，<rt>，</rt>我<rt>wǒ</rt>们<rt>men</rt>学<rt>xué</rt>习<rt>xí</rt>的<rt>de</rt>时<rt>shí</rt>候<rt>hòu</rt>，<rt>，</rt>常<rt>cháng</rt>常<rt>cháng</rt>会<rt>huì</rt>遇<rt>yù</rt>到<rt>dào</rt>困<rt>kùn</rt>难<rt>nán</rt>，<rt>，</rt>不<rt>bù</rt>会<rt>huì</rt>的<rt>de</rt>问<rt>wèn</rt>题<rt>tí</rt>，<rt>，</rt>如<rt>rú</rt>果<rt>guǒ</rt>我<rt>wǒ</rt>们<rt>men</rt>有<rt>yǒu</rt>耐<rt>nài</rt>心<rt>xīn</rt>，<rt>，</rt>我<rt>wǒ</rt>们<rt>men</rt>就<rt>jiù</rt>会<rt>huì</rt>克<rt>kè</rt>服<rt>fú</rt>困<rt>kùn</rt>难<rt>nán</rt>，<rt>，</rt>一<rt>yī</rt>点<rt>diǎn</rt>一<rt>yī</rt>点<rt>diǎn</rt>学<rt>xué</rt>下<rt>xià</rt>去<rt>qù</rt>，<rt>，</rt>而<rt>ér</rt>不<rt>bù</rt>会<rt>huì</rt>不<rt>bù</rt>耐<rt>nài</rt>烦<rt>fán</rt>，<rt>，</rt>放<rt>fàng</rt>弃<rt>qì</rt>学<rt>xué</rt>习<rt>xí</rt>。<rt>。</rt>所<rt>suǒ</rt>以<rt>yǐ</rt>，<rt>，</rt>我<rt>wǒ</rt>觉<rt>jué</rt>得<rt>de</rt>，<rt>，</rt>除<rt>chú</rt>了<rt>le</rt>专<rt>zhuān</rt>心<rt>xīn</rt>，<rt>，</rt>耐<rt>nài</rt>心<rt>xīn</rt>也<rt>yě</rt>很<rt>hěn</rt>重<rt>zhòng</rt>要<rt>yào</rt>。<rt>。</rt></ruby>
+    <button onclick="playAudio('59.mp3')">播放录音</button>
+    <button onclick="stopAudio()">停止播放</button>
+    <audio id="audio_answer_59" src="59.mp3"></audio>
+</blockquote>
+		<p>4. <ruby>学<rt>xué</rt>校<rt>xiào</rt>应<rt>yīng</rt>该<rt>gāi</rt>怎<rt>zěn</rt>样<rt>yàng</rt>培<rt>péi</rt>养<rt>yǎng</rt>同<rt>tóng</rt>学<rt>xué</rt>们<rt>men</rt>专<rt>zhuān</rt>心<rt>xīn</rt>学<rt>xué</rt>习<rt>xí</rt>的<rt>de</rt>好<rt>hǎo</rt>习<rt>xí</rt>惯<rt>guàn</rt>。<rt>。</rt></ruby></p>
+
+<blockquote>
+    T:<ruby>学<rt>xué</rt>校<rt>xiào</rt>可<rt>kě</rt>以<rt>yǐ</rt>贴<rt>tiē</rt>海<rt>hǎi</rt>报<rt>bào</rt>，<rt>，</rt>提<rt>tí</rt>醒<rt>xǐng</rt>同<rt>tóng</rt>学<rt>xué</rt>们<rt>men</rt>要<rt>yào</rt>专<rt>zhuān</rt>心<rt>xīn</rt>学<rt>xué</rt>习<rt>xí</rt>。<rt>。</rt>学<rt>xué</rt>校<rt>xiào</rt>可<rt>kě</rt>以<rt>yǐ</rt>在<rt>zài</rt>上<rt>shàng</rt>好<rt>hǎo</rt>公<rt>gōng</rt>民<rt>mín</rt>课<rt>kè</rt>时<rt>shí</rt>，<rt>，</rt>教<rt>jiāo</rt>同<rt>tóng</rt>学<rt>xué</rt>们<rt>men</rt>怎<rt>zěn</rt>么<rt>me</rt>样<rt>yàng</rt>才<rt>cái</rt>能<rt>néng</rt>专<rt>zhuān</rt>心<rt>xīn</rt>学<rt>xué</rt>习<rt>xí</rt>，<rt>，</rt>不<rt>bù</rt>可<rt>kě</rt>以<rt>yǐ</rt>做<rt>zuò</rt>事<rt>shì</rt>时<rt>shí</rt>三<rt>sān</rt>心<rt>xīn</rt>二<rt>èr</rt>意<rt>yì</rt>。<rt>。</rt></ruby><br><br>
+    <ruby>老<rt>lǎo</rt>师<rt>shī</rt>们<rt>men</rt>可<rt>kě</rt>以<rt>yǐ</rt>批<rt>pī</rt>评<rt>píng</rt>没<rt>méi</rt>有<rt>yǒu</rt>专<rt>zhuān</rt>心<rt>xīn</rt>学<rt>xué</rt>习<rt>xí</rt>的<rt>de</rt>同<rt>tóng</rt>学<rt>xué</rt>，<rt>，</rt>也<rt>yě</rt>可<rt>kě</rt>以<rt>yǐ</rt>表<rt>biǎo</rt>扬<rt>yáng</rt>专<rt>zhuān</rt>心<rt>xīn</rt>学<rt>xué</rt>习<rt>xí</rt>的<rt>de</rt>同<rt>tóng</rt>学<rt>xué</rt>，<rt>，</rt>让<rt>ràng</rt>大<rt>dà</rt>家<rt>jiā</rt>学<rt>xué</rt>习<rt>xí</rt>他<rt>tā</rt>们<rt>men</rt>。<rt>。</rt>这<rt>zhè</rt>样<rt>yàng</rt>，<rt>，</rt>学<rt>xué</rt>校<rt>xiào</rt>就<rt>jiù</rt>可<rt>kě</rt>以<rt>yǐ</rt>鼓<rt>gǔ</rt>励<rt>lì</rt>同<rt>tóng</rt>学<rt>xué</rt>们<rt>men</rt>专<rt>zhuān</rt>心<rt>xīn</rt>学<rt>xué</rt>习<rt>xí</rt>了<rt>le</rt>。<rt>。</rt></ruby>
+    <button onclick="playAudio('60.mp3')">播放录音</button>
+    <button onclick="stopAudio()">停止播放</button>
+    <audio id="audio_answer_60" src="60.mp3"></audio>
+</blockquote>
+		
+    </div>	
+	
+	
+	
+	    <h1><ruby>口<rt>kǒu</rt>试<rt>shì</rt>对<rt>duì</rt>话<rt>huà</rt>题<rt>tí</rt>目<rt>mù</rt>及<rt>jí</rt>答<rt>dá</rt>案<rt>àn</rt>（11）良<rt>liáng</rt>好<rt>hǎo</rt>的<rt>de</rt>学<rt>xué</rt>习<rt>xí</rt>习<rt>xí</rt>惯<rt>guàn</rt></ruby></h1>
+
+    <div class="qa">
+	<p>1. <ruby>同<rt>tóng</rt>学<rt>xué</rt>，<rt>，</rt>请<rt>qǐng</rt>你<rt>nǐ</rt>描<rt>miáo</rt>述<rt>shù</rt>在<rt>zài</rt>录<rt>lù</rt>像<rt>xiàng</rt>中<rt>zhōng</rt>令<rt>lìng</rt>你<rt>nǐ</rt>印<rt>yìn</rt>象<rt>xiàng</rt>深<rt>shēn</rt>刻<rt>kè</rt>的<rt>de</rt>一<rt>yī</rt>件<rt>jiàn</rt>事<rt>shì</rt>。<rt>。</rt></ruby></p>
+
+<blockquote>
+    T:<ruby>在<rt>zài</rt>录<rt>lù</rt>像<rt>xiàng</rt>中<rt>zhōng</rt>，<rt>，</rt>令<rt>lìng</rt>我<rt>wǒ</rt>印<rt>yìn</rt>象<rt>xiàng</rt>最<rt>zuì</rt>深<rt>shēn</rt>刻<rt>kè</rt>的<rt>de</rt>是<rt>shì</rt>，<rt>，</rt>我<rt>wǒ</rt>看<rt>kàn</rt>到<rt>dào</rt>一<rt>yī</rt>位<rt>wèi</rt>大<rt>dà</rt>姐<rt>jiě</rt>姐<rt>jie</rt>，<rt>，</rt>拉<rt>lā</rt>着<rt>zhe</rt>旅<rt>lǚ</rt>行<rt>xíng</rt>箱<rt>xiāng</rt>，<rt>，</rt>到<rt>dào</rt>了<rt>le</rt>组<rt>zǔ</rt>屋<rt>wū</rt>的<rt>de</rt>走<rt>zǒu</rt>廊<rt>láng</rt>上<rt>shàng</rt>，<rt>，</rt>她<rt>tā</rt>去<rt>qù</rt>敲<rt>qiāo</rt>邻<rt>lín</rt>居<rt>jū</rt>的<rt>de</rt>门<rt>mén</rt>，<rt>，</rt>告<rt>gào</rt>诉<rt>sù</rt>邻<rt>lín</rt>居<rt>jū</rt>她<rt>tā</rt>要<rt>yào</rt>出<rt>chū</rt>国<rt>guó</rt>，<rt>，</rt>拜<rt>bài</rt>托<rt>tuō</rt>邻<rt>lín</rt>居<rt>jū</rt>帮<rt>bāng</rt>她<rt>tā</rt>浇<rt>jiāo</rt>花<rt>huā</rt>和<rt>hé</rt>收<rt>shōu</rt>报<rt>bào</rt>纸<rt>zhǐ</rt>。<rt>。</rt></ruby><br><br>
+    <ruby>她<rt>tā</rt>出<rt>chū</rt>国<rt>guó</rt>后<rt>hòu</rt>，<rt>，</rt>邻<rt>lín</rt>居<rt>jū</rt>每<rt>měi</rt>天<rt>tiān</rt>都<rt>dōu</rt>把<rt>bǎ</rt>在<rt>zài</rt>大<rt>dà</rt>姐<rt>jiě</rt>姐<rt>jie</rt>门<rt>mén</rt>口<rt>kǒu</rt>的<rt>de</rt>报<rt>bào</rt>纸<rt>zhǐ</rt>收<rt>shōu</rt>回<rt>huí</rt>来<rt>lái</rt>，<rt>，</rt>也<rt>yě</rt>把<rt>bǎ</rt>她<rt>tā</rt>的<rt>de</rt>植<rt>zhí</rt>物<rt>wù</rt>照<rt>zhào</rt>顾<rt>gù</rt>得<rt>de</rt>很<rt>hěn</rt>好<rt>hǎo</rt>。<rt>。</rt>大<rt>dà</rt>姐<rt>jiě</rt>姐<rt>jie</rt>回<rt>huí</rt>来<rt>lái</rt>后<rt>hòu</rt>，<rt>，</rt>看<rt>kàn</rt>到<rt>dào</rt>她<rt>tā</rt>的<rt>de</rt>植<rt>zhí</rt>物<rt>wù</rt>都<rt>dōu</rt>很<rt>hěn</rt>健<rt>jiàn</rt>康<rt>kāng</rt>，<rt>，</rt>她<rt>tā</rt>很<rt>hěn</rt>满<rt>mǎn</rt>意<rt>yì</rt>，<rt>，</rt>也<rt>yě</rt>把<rt>bǎ</rt>报<rt>bào</rt>纸<rt>zhǐ</rt>都<rt>dōu</rt>收<rt>shōu</rt>回<rt>huí</rt>来<rt>lái</rt>。<rt>。</rt></ruby><br><br>
+    <ruby>我<rt>wǒ</rt>看<rt>kàn</rt>了<rt>le</rt>以<rt>yǐ</rt>后<rt>hòu</rt>，<rt>，</rt>我<rt>wǒ</rt>觉<rt>jué</rt>得<rt>de</rt>很<rt>hěn</rt>开<rt>kāi</rt>心<rt>xīn</rt>。<rt>。</rt>他<rt>tā</rt>们<rt>men</rt>之<rt>zhī</rt>间<rt>jiān</rt>融<rt>róng</rt>洽<rt>qià</rt>相<rt>xiāng</rt>处<rt>chǔ</rt>的<rt>de</rt>情<rt>qíng</rt>景<rt>jǐng</rt>令<rt>lìng</rt>我<rt>wǒ</rt>印<rt>yìn</rt>象<rt>xiàng</rt>深<rt>shēn</rt>刻<rt>kè</rt>。<rt>。</rt>我<rt>wǒ</rt>觉<rt>jué</rt>得<rt>de</rt>我<rt>wǒ</rt>们<rt>men</rt>应<rt>yīng</rt>该<rt>gāi</rt>向<rt>xiàng</rt>他<rt>tā</rt>们<rt>men</rt>学<rt>xué</rt>习<rt>xí</rt>，<rt>，</rt>跟<rt>gēn</rt>邻<rt>lín</rt>居<rt>jū</rt>建<rt>jiàn</rt>立<rt>lì</rt>良<rt>liáng</rt>好<rt>hǎo</rt>的<rt>de</rt>关<rt>guān</rt>系<rt>xì</rt>。<rt>。</rt></ruby>
+    <button onclick="playAudio('61.mp3')">播放录音</button>
+    <button onclick="stopAudio()">停止播放</button>
+    <audio id="audio_answer_61" src="61.mp3"></audio>
+</blockquote>
+	<p>2. <ruby>你<rt>nǐ</rt>是<rt>shì</rt>怎<rt>zěn</rt>样<rt>yàng</rt>与<rt>yǔ</rt>你<rt>nǐ</rt>的<rt>de</rt>邻<rt>lín</rt>居<rt>jū</rt>相<rt>xiāng</rt>处<rt>chǔ</rt>的<rt>de</rt>？<rt>？</rt></ruby></p>
+
+<blockquote>
+    T:<ruby>我<rt>wǒ</rt>和<rt>hé</rt>我<rt>wǒ</rt>邻<rt>lín</rt>居<rt>jū</rt>的<rt>de</rt>孩<rt>hái</rt>子<rt>zi</rt>年<rt>nián</rt>龄<rt>líng</rt>相<rt>xiāng</rt>同<rt>tóng</rt>，<rt>，</rt>我<rt>wǒ</rt>们<rt>men</rt>是<rt>shì</rt>好<rt>hǎo</rt>朋<rt>péng</rt>友<rt>yǒu</rt>。<rt>。</rt>我<rt>wǒ</rt>会<rt>huì</rt>和<rt>hé</rt>他<rt>tā</rt>一<rt>yī</rt>起<rt>qǐ</rt>玩<rt>wán</rt>耍<rt>shuǎ</rt>，<rt>，</rt>有<rt>yǒu</rt>时<rt>shí</rt>我<rt>wǒ</rt>们<rt>men</rt>和<rt>hé</rt>其<rt>qí</rt>他<rt>tā</rt>孩<rt>hái</rt>子<rt>zi</rt>一<rt>yī</rt>起<rt>qǐ</rt>踢<rt>tī</rt>足<rt>zú</rt>球<rt>qiú</rt>。<rt>。</rt></ruby><br><br>
+    <ruby>有<rt>yǒu</rt>时<rt>shí</rt>候<rt>hòu</rt>，<rt>，</rt>我<rt>wǒ</rt>会<rt>huì</rt>去<rt>qù</rt>我<rt>wǒ</rt>的<rt>de</rt>邻<rt>lín</rt>居<rt>jū</rt>家<rt>jiā</rt>，<rt>，</rt>和<rt>hé</rt>我<rt>wǒ</rt>的<rt>de</rt>朋<rt>péng</rt>友<rt>yǒu</rt>一<rt>yī</rt>起<rt>qǐ</rt>玩<rt>wán</rt>电<rt>diàn</rt>脑<rt>nǎo</rt>游<rt>yóu</rt>戏<rt>xì</rt>。<rt>。</rt>他<rt>tā</rt>们<rt>men</rt>出<rt>chū</rt>国<rt>guó</rt>时<rt>shí</rt>，<rt>，</rt>我<rt>wǒ</rt>们<rt>men</rt>会<rt>huì</rt>帮<rt>bāng</rt>他<rt>tā</rt>们<rt>men</rt>照<rt>zhào</rt>顾<rt>gù</rt>他<rt>tā</rt>们<rt>men</rt>的<rt>de</rt>宠<rt>chǒng</rt>物<rt>wù</rt>狗<rt>gǒu</rt>，<rt>，</rt>为<rt>wèi</rt>它<rt>tā</rt>洗<rt>xǐ</rt>澡<rt>zǎo</rt>和<rt>hé</rt>喂<rt>wèi</rt>食<rt>shí</rt>物<rt>wù</rt>还<rt>hái</rt>有<rt>yǒu</rt>带<rt>dài</rt>它<rt>tā</rt>去<rt>qù</rt>楼<rt>lóu</rt>下<rt>xià</rt>走<rt>zǒu</rt>走<rt>zǒu</rt>。<rt>。</rt></ruby><br><br>
+    <ruby>总<rt>zǒng</rt>得<rt>de</rt>来<rt>lái</rt>说<rt>shuō</rt>，<rt>，</rt>我<rt>wǒ</rt>们<rt>men</rt>应<rt>yīng</rt>该<rt>gāi</rt>和<rt>hé</rt>我<rt>wǒ</rt>们<rt>men</rt>的<rt>de</rt>邻<rt>lín</rt>居<rt>jū</rt>保<rt>bǎo</rt>持<rt>chí</rt>良<rt>liáng</rt>好<rt>hǎo</rt>的<rt>de</rt>关<rt>guān</rt>系<rt>xì</rt>，<rt>，</rt>他<rt>tā</rt>们<rt>men</rt>遇<rt>yù</rt>到<rt>dào</rt>困<rt>kùn</rt>难<rt>nán</rt>时<rt>shí</rt>，<rt>，</rt>我<rt>wǒ</rt>们<rt>men</rt>应<rt>yīng</rt>该<rt>gāi</rt>伸<rt>shēn</rt>出<rt>chū</rt>援<rt>yuán</rt>手<rt>shǒu</rt>，<rt>，</rt>提<rt>tí</rt>供<rt>gōng</rt>帮<rt>bāng</rt>助<rt>zhù</rt>。<rt>。</rt></ruby>
+    <button onclick="playAudio('62.mp3')">播放录音</button>
+    <button onclick="stopAudio()">停止播放</button>
+    <audio id="audio_answer_62" src="62.mp3"></audio>
+</blockquote>
+	<p>3. <ruby>俗<rt>sú</rt>话<rt>huà</rt>说<rt>shuō</rt>：<rt>：</rt>"<rt>"</rt>远<rt>yuǎn</rt>亲<rt>qīn</rt>不<rt>bù</rt>如<rt>rú</rt>近<rt>jìn</rt>邻<rt>lín</rt>"<rt>"</rt>你<rt>nǐ</rt>是<rt>shì</rt>怎<rt>zěn</rt>么<rt>me</rt>理<rt>lǐ</rt>解<rt>jiě</rt>这<rt>zhè</rt>句<rt>jù</rt>话<rt>huà</rt>的<rt>de</rt>？<rt>？</rt></ruby></p>
+
+<blockquote>
+    T:<ruby>我<rt>wǒ</rt>觉<rt>jué</rt>得<rt>de</rt>"<rt>"</rt>远<rt>yuǎn</rt>亲<rt>qīn</rt>不<rt>bù</rt>如<rt>rú</rt>近<rt>jìn</rt>邻<rt>lín</rt>"<rt>"</rt>的<rt>de</rt>意<rt>yì</rt>思<rt>si</rt>是<rt>shì</rt>，<rt>，</rt>我<rt>wǒ</rt>们<rt>men</rt>应<rt>yīng</rt>该<rt>gāi</rt>和<rt>hé</rt>邻<rt>lín</rt>居<rt>jū</rt>保<rt>bǎo</rt>持<rt>chí</rt>良<rt>liáng</rt>好<rt>hǎo</rt>的<rt>de</rt>关<rt>guān</rt>系<rt>xì</rt>。<rt>。</rt>因<rt>yīn</rt>为<rt>wèi</rt>他<rt>tā</rt>们<rt>men</rt>比<rt>bǐ</rt>我<rt>wǒ</rt>们<rt>men</rt>的<rt>de</rt>远<rt>yuǎn</rt>亲<rt>qīn</rt>更<rt>gèng</rt>靠<rt>kào</rt>近<rt>jìn</rt>我<rt>wǒ</rt>们<rt>men</rt>，<rt>，</rt>如<rt>rú</rt>果<rt>guǒ</rt>我<rt>wǒ</rt>们<rt>men</rt>遇<rt>yù</rt>到<rt>dào</rt>困<rt>kùn</rt>难<rt>nán</rt>，<rt>，</rt>他<rt>tā</rt>们<rt>men</rt>可<rt>kě</rt>以<rt>yǐ</rt>比<rt>bǐ</rt>较<rt>jiào</rt>快<rt>kuài</rt>地<rt>de</rt>为<rt>wèi</rt>我<rt>wǒ</rt>们<rt>men</rt>提<rt>tí</rt>供<rt>gōng</rt>帮<rt>bāng</rt>助<rt>zhù</rt>。<rt>。</rt></ruby><br><br>
+    <ruby>另<rt>lìng</rt>外<rt>wài</rt>，<rt>，</rt>良<rt>liáng</rt>好<rt>hǎo</rt>的<rt>de</rt>邻<rt>lín</rt>里<rt>lǐ</rt>关<rt>guān</rt>系<rt>xì</rt>，<rt>，</rt>可<rt>kě</rt>以<rt>yǐ</rt>让<rt>ràng</rt>我<rt>wǒ</rt>们<rt>men</rt>有<rt>yǒu</rt>归<rt>guī</rt>属<rt>shǔ</rt>感<rt>gǎn</rt>。<rt>。</rt>让<rt>ràng</rt>我<rt>wǒ</rt>们<rt>men</rt>觉<rt>jué</rt>得<rt>de</rt>我<rt>wǒ</rt>们<rt>men</rt>属<rt>shǔ</rt>于<rt>yú</rt>我<rt>wǒ</rt>们<rt>men</rt>住<rt>zhù</rt>的<rt>de</rt>地<rt>dì</rt>方<rt>fāng</rt>，<rt>，</rt>让<rt>ràng</rt>我<rt>wǒ</rt>们<rt>men</rt>回<rt>huí</rt>到<rt>dào</rt>家<rt>jiā</rt>里<rt>lǐ</rt>后<rt>hòu</rt>，<rt>，</rt>比<rt>bǐ</rt>较<rt>jiào</rt>有<rt>yǒu</rt>安<rt>ān</rt>全<rt>quán</rt>感<rt>gǎn</rt>，<rt>，</rt>觉<rt>jué</rt>得<rt>de</rt>自<rt>zì</rt>己<rt>jǐ</rt>是<rt>shì</rt>那<rt>nà</rt>里<rt>lǐ</rt>的<rt>de</rt>一<rt>yī</rt>员<rt>yuán</rt>。<rt>。</rt></ruby><br><br>
+    <ruby>所<rt>suǒ</rt>以<rt>yǐ</rt>，<rt>，</rt>我<rt>wǒ</rt>同<rt>tóng</rt>意<rt>yì</rt>远<rt>yuǎn</rt>亲<rt>qīn</rt>不<rt>bù</rt>如<rt>rú</rt>近<rt>jìn</rt>邻<rt>lín</rt>这<rt>zhè</rt>句<rt>jù</rt>话<rt>huà</rt>。<rt>。</rt></ruby>
+    <button onclick="playAudio('63.mp3')">播放录音</button>
+    <button onclick="stopAudio()">停止播放</button>
+    <audio id="audio_answer_63" src="63.mp3"></audio>
+</blockquote>
+	<p>4. <ruby>你<rt>nǐ</rt>觉<rt>jué</rt>得<rt>de</rt>和<rt>hé</rt>邻<rt>lín</rt>居<rt>jū</rt>之<rt>zhī</rt>间<rt>jiān</rt>和<rt>hé</rt>睦<rt>mù</rt>相<rt>xiāng</rt>处<rt>chǔ</rt>重<rt>zhòng</rt>要<rt>yào</rt>吗<rt>ma</rt>？<rt>？</rt>为<rt>wèi</rt>什<rt>shén</rt>么<rt>me</rt>？<rt>？</rt></ruby></p>
+
+<blockquote>
+    T:<ruby>我<rt>wǒ</rt>觉<rt>jué</rt>得<rt>de</rt>邻<rt>lín</rt>里<rt>lǐ</rt>之<rt>zhī</rt>间<rt>jiān</rt>和<rt>hé</rt>睦<rt>mù</rt>相<rt>xiāng</rt>处<rt>chǔ</rt>很<rt>hěn</rt>重<rt>zhòng</rt>要<rt>yào</rt>，<rt>，</rt>因<rt>yīn</rt>为<rt>wèi</rt>，<rt>，</rt>"<rt>"</rt>远<rt>yuǎn</rt>亲<rt>qīn</rt>不<rt>bù</rt>如<rt>rú</rt>近<rt>jìn</rt>邻<rt>lín</rt>"<rt>"</rt>，<rt>，</rt>如<rt>rú</rt>果<rt>guǒ</rt>，<rt>，</rt>我<rt>wǒ</rt>们<rt>men</rt>遇<rt>yù</rt>到<rt>dào</rt>任<rt>rèn</rt>何<rt>hé</rt>困<rt>kùn</rt>难<rt>nán</rt>，<rt>，</rt>我<rt>wǒ</rt>们<rt>men</rt>的<rt>de</rt>邻<rt>lín</rt>居<rt>jū</rt>可<rt>kě</rt>以<rt>yǐ</rt>马<rt>mǎ</rt>上<rt>shàng</rt>帮<rt>bāng</rt>助<rt>zhù</rt>我<rt>wǒ</rt>们<rt>men</rt>。<rt>。</rt>比<rt>bǐ</rt>如<rt>rú</rt>，<rt>，</rt>我<rt>wǒ</rt>们<rt>men</rt>要<rt>yào</rt>出<rt>chū</rt>国<rt>guó</rt>，<rt>，</rt>邻<rt>lín</rt>居<rt>jū</rt>就<rt>jiù</rt>可<rt>kě</rt>以<rt>yǐ</rt>帮<rt>bāng</rt>助<rt>zhù</rt>我<rt>wǒ</rt>们<rt>men</rt>照<rt>zhào</rt>顾<rt>gù</rt>我<rt>wǒ</rt>们<rt>men</rt>的<rt>de</rt>宠<rt>chǒng</rt>物<rt>wù</rt>或<rt>huò</rt>者<rt>zhě</rt>花<rt>huā</rt>草<rt>cǎo</rt>。<rt>。</rt></ruby><br><br>
+    <ruby>另<rt>lìng</rt>外<rt>wài</rt>，<rt>，</rt>如<rt>rú</rt>果<rt>guǒ</rt>邻<rt>lín</rt>里<rt>lǐ</rt>之<rt>zhī</rt>间<rt>jiān</rt>无<rt>wú</rt>法<rt>fǎ</rt>和<rt>hé</rt>睦<rt>mù</rt>相<rt>xiāng</rt>处<rt>chǔ</rt>，<rt>，</rt>我<rt>wǒ</rt>们<rt>men</rt>住<rt>zhù</rt>在<rt>zài</rt>家<rt>jiā</rt>里<rt>lǐ</rt>时<rt>shí</rt>，<rt>，</rt>可<rt>kě</rt>能<rt>néng</rt>没<rt>méi</rt>有<rt>yǒu</rt>那<rt>nà</rt>么<rt>me</rt>放<rt>fàng</rt>松<rt>sōng</rt>，<rt>，</rt>也<rt>yě</rt>可<rt>kě</rt>能<rt>néng</rt>会<rt>huì</rt>跟<rt>gēn</rt>邻<rt>lín</rt>居<rt>jū</rt>吵<rt>chǎo</rt>架<rt>jià</rt>，<rt>，</rt>让<rt>ràng</rt>我<rt>wǒ</rt>们<rt>men</rt>的<rt>de</rt>生<rt>shēng</rt>活<rt>huó</rt>过<rt>guò</rt>得<rt>de</rt>很<rt>hěn</rt>不<rt>bù</rt>愉<rt>yú</rt>快<rt>kuài</rt>。<rt>。</rt>所<rt>suǒ</rt>以<rt>yǐ</rt>，<rt>，</rt>邻<rt>lín</rt>里<rt>lǐ</rt>之<rt>zhī</rt>间<rt>jiān</rt>和<rt>hé</rt>睦<rt>mù</rt>相<rt>xiāng</rt>处<rt>chǔ</rt>很<rt>hěn</rt>重<rt>zhòng</rt>要<rt>yào</rt>。<rt>。</rt></ruby>
+    <button onclick="playAudio('64.mp3')">播放录音</button>
+    <button onclick="stopAudio()">停止播放</button>
+    <audio id="audio_answer_64" src="64.mp3"></audio>
+</blockquote>
+	<p>5. <ruby>你<rt>nǐ</rt>觉<rt>jué</rt>得<rt>de</rt>家<rt>jiā</rt>长<rt>zhǎng</rt>应<rt>yīng</rt>该<rt>gāi</rt>怎<rt>zěn</rt>么<rt>me</rt>做<rt>zuò</rt>才<rt>cái</rt>可<rt>kě</rt>以<rt>yǐ</rt>鼓<rt>gǔ</rt>励<rt>lì</rt>我<rt>wǒ</rt>们<rt>men</rt>和<rt>hé</rt>邻<rt>lín</rt>居<rt>jū</rt>和<rt>hé</rt>睦<rt>mù</rt>相<rt>xiāng</rt>处<rt>chǔ</rt>？<rt>？</rt></ruby></p>
+
+<blockquote>
+    T:<ruby>我<rt>wǒ</rt>觉<rt>jué</rt>得<rt>de</rt>家<rt>jiā</rt>长<rt>zhǎng</rt>首<rt>shǒu</rt>先<rt>xiān</rt>可<rt>kě</rt>以<rt>yǐ</rt>教<rt>jiào</rt>育<rt>yù</rt>我<rt>wǒ</rt>们<rt>men</rt>，<rt>，</rt>我<rt>wǒ</rt>们<rt>men</rt>应<rt>yīng</rt>该<rt>gāi</rt>和<rt>hé</rt>邻<rt>lín</rt>居<rt>jū</rt>好<rt>hǎo</rt>好<rt>hǎo</rt>相<rt>xiāng</rt>处<rt>chǔ</rt>，<rt>，</rt>还<rt>hái</rt>有<rt>yǒu</rt>怎<rt>zěn</rt>样<rt>yàng</rt>才<rt>cái</rt>可<rt>kě</rt>以<rt>yǐ</rt>跟<rt>gēn</rt>邻<rt>lín</rt>居<rt>jū</rt>好<rt>hǎo</rt>好<rt>hǎo</rt>相<rt>xiāng</rt>处<rt>chǔ</rt>。<rt>。</rt>比<rt>bǐ</rt>如<rt>rú</rt>，<rt>，</rt>我<rt>wǒ</rt>们<rt>men</rt>见<rt>jiàn</rt>到<rt>dào</rt>邻<rt>lín</rt>居<rt>jū</rt>时<rt>shí</rt>，<rt>，</rt>我<rt>wǒ</rt>们<rt>men</rt>应<rt>yīng</rt>该<rt>gāi</rt>主<rt>zhǔ</rt>动<rt>dòng</rt>跟<rt>gēn</rt>他<rt>tā</rt>们<rt>men</rt>打<rt>dǎ</rt>招<rt>zhāo</rt>呼<rt>hu</rt>，<rt>，</rt>如<rt>rú</rt>果<rt>guǒ</rt>看<rt>kàn</rt>到<rt>dào</rt>邻<rt>lín</rt>居<rt>jū</rt>提<rt>tí</rt>着<rt>zhe</rt>重<rt>zhòng</rt>东<rt>dōng</rt>西<rt>xi</rt>时<rt>shí</rt>，<rt>，</rt>可<rt>kě</rt>以<rt>yǐ</rt>帮<rt>bāng</rt>助<rt>zhù</rt>他<rt>tā</rt>们<rt>men</rt>提<rt>tí</rt>东<rt>dōng</rt>西<rt>xi</rt>。<rt>。</rt></ruby><br><br>
+    <ruby>另<rt>lìng</rt>外<rt>wài</rt>，<rt>，</rt>家<rt>jiā</rt>长<rt>zhǎng</rt>应<rt>yīng</rt>该<rt>gāi</rt>以<rt>yǐ</rt>身<rt>shēn</rt>作<rt>zuò</rt>则<rt>zé</rt>，<rt>，</rt>为<rt>wèi</rt>我<rt>wǒ</rt>们<rt>men</rt>做<rt>zuò</rt>个<rt>gè</rt>好<rt>hǎo</rt>榜<rt>bǎng</rt>样<rt>yàng</rt>。<rt>。</rt>他<rt>tā</rt>们<rt>men</rt>应<rt>yīng</rt>该<rt>gāi</rt>和<rt>hé</rt>邻<rt>lín</rt>居<rt>jū</rt>好<rt>hǎo</rt>好<rt>hǎo</rt>相<rt>xiāng</rt>处<rt>chǔ</rt>，<rt>，</rt>多<rt>duō</rt>了<rt>liǎo</rt>解<rt>jiě</rt>、<rt>、</rt>理<rt>lǐ</rt>解<rt>jiě</rt>我<rt>wǒ</rt>们<rt>men</rt>的<rt>de</rt>邻<rt>lín</rt>居<rt>jū</rt>，<rt>，</rt>在<rt>zài</rt>他<rt>tā</rt>们<rt>men</rt>需<rt>xū</rt>要<rt>yào</rt>帮<rt>bāng</rt>助<rt>zhù</rt>的<rt>de</rt>时<rt>shí</rt>候<rt>hòu</rt>，<rt>，</rt>热<rt>rè</rt>情<rt>qíng</rt>地<rt>de</rt>伸<rt>shēn</rt>出<rt>chū</rt>援<rt>yuán</rt>手<rt>shǒu</rt>，<rt>，</rt>帮<rt>bāng</rt>助<rt>zhù</rt>他<rt>tā</rt>们<rt>men</rt>。<rt>。</rt>这<rt>zhè</rt>样<rt>yàng</rt>，<rt>，</rt>家<rt>jiā</rt>长<rt>zhǎng</rt>就<rt>jiù</rt>可<rt>kě</rt>以<rt>yǐ</rt>鼓<rt>gǔ</rt>励<rt>lì</rt>我<rt>wǒ</rt>们<rt>men</rt>跟<rt>gēn</rt>邻<rt>lín</rt>居<rt>jū</rt>好<rt>hǎo</rt>好<rt>hǎo</rt>相<rt>xiāng</rt>处<rt>chǔ</rt>。<rt>。</rt></ruby>
+    <button onclick="playAudio('65.mp3')">播放录音</button>
+    <button onclick="stopAudio()">停止播放</button>
+    <audio id="audio_answer_65" src="65.mp3"></audio>
+</blockquote>
+	
+	</div>
+	
+	    <h1><ruby>口<rt>kǒu</rt>试<rt>shì</rt>对<rt>duì</rt>话<rt>huà</rt>题<rt>tí</rt>目<rt>mù</rt>及<rt>jí</rt>答<rt>dá</rt>案<rt>àn</rt>（15）良<rt>liáng</rt>好<rt>hǎo</rt>的<rt>de</rt>学<rt>xué</rt>习<rt>xí</rt>习<rt>xí</rt>惯<rt>guàn</rt></ruby></h1>
+
+    <div class="qa">	
+	<p>1. <ruby>同<rt>tóng</rt>学<rt>xué</rt>，<rt>，</rt>请<rt>qǐng</rt>描<rt>miáo</rt>述<rt>shù</rt>在<rt>zài</rt>录<rt>lù</rt>像<rt>xiàng</rt>中<rt>zhōng</rt>值<rt>zhí</rt>得<rt>dé</rt>我<rt>wǒ</rt>们<rt>men</rt>学<rt>xué</rt>习<rt>xí</rt>的<rt>de</rt>一<rt>yí</rt>个<rt>gè</rt>行<rt>xíng</rt>为<rt>wéi</rt>。<rt>。</rt></ruby></p>
+
+<blockquote>
+    T:<ruby>在<rt>zài</rt>录<rt>lù</rt>像<rt>xiàng</rt>中<rt>zhōng</rt>，<rt>，</rt>我<rt>wǒ</rt>看<rt>kàn</rt>到<rt>dào</rt>两<rt>liǎng</rt>个<rt>gè</rt>孩<rt>hái</rt>子<rt>zi</rt>，<rt>，</rt>一<rt>yí</rt>个<rt>gè</rt>女<rt>nǚ</rt>孩<rt>hái</rt>，<rt>，</rt>一<rt>yí</rt>个<rt>gè</rt>男<rt>nán</rt>孩<rt>hái</rt>，<rt>，</rt>和<rt>hé</rt>爸<rt>bà</rt>爸<rt>ba</rt>妈<rt>mā</rt>妈<rt>ma</rt>一<rt>yì</rt>起<rt>qǐ</rt>去<rt>qù</rt>公<rt>gōng</rt>园<rt>yuán</rt>散<rt>sàn</rt>步<rt>bù</rt>，<rt>，</rt>他<rt>tā</rt>们<rt>men</rt>走<rt>zǒu</rt>了<rt>le</rt>一<rt>yí</rt>会<rt>huì</rt>儿<rt>er</rt>后<rt>hòu</rt>，<rt>，</rt>感<rt>gǎn</rt>到<rt>dào</rt>疲<rt>pí</rt>倦<rt>juàn</rt>，<rt>，</rt>就<rt>jiù</rt>坐<rt>zuò</rt>在<rt>zài</rt>路<rt>lù</rt>边<rt>biān</rt>的<rt>de</rt>长<rt>cháng</rt>椅<rt>yǐ</rt>上<rt>shàng</rt>，<rt>，</rt>一<rt>yì</rt>边<rt>biān</rt>休<rt>xiū</rt>息<rt>xi</rt>，<rt>，</rt>一<rt>yì</rt>边<rt>biān</rt>吃<rt>chī</rt>零<rt>líng</rt>食<rt>shí</rt>，<rt>，</rt>那<rt>nà</rt>位<rt>wèi</rt>男<rt>nán</rt>孩<rt>hái</rt>吃<rt>chī</rt>完<rt>wán</rt>后<rt>hòu</rt>，<rt>，</rt>把<rt>bǎ</rt>包<rt>bāo</rt>装<rt>zhuāng</rt>纸<rt>zhǐ</rt>丢<rt>diū</rt>在<rt>zài</rt>地<rt>dì</rt>上<rt>shàng</rt>，<rt>，</rt>爸<rt>bà</rt>爸<rt>ba</rt>看<rt>kàn</rt>到<rt>dào</rt>了<rt>le</rt>，<rt>，</rt>十<rt>shí</rt>分<rt>fēn</rt>惊<rt>jīng</rt>讶<rt>yà</rt>，<rt>，</rt>他<rt>tā</rt>告<rt>gào</rt>诉<rt>sù</rt>男<rt>nán</rt>孩<rt>hái</rt>这<rt>zhè</rt>样<rt>yàng</rt>做<rt>zuò</rt>是<rt>shì</rt>不<rt>bù</rt>对<rt>duì</rt>的<rt>de</rt>，<rt>，</rt>他<rt>tā</rt>提<rt>tí</rt>醒<rt>xǐng</rt>男<rt>nán</rt>孩<rt>hái</rt>应<rt>yīng</rt>该<rt>gāi</rt>把<rt>bǎ</rt>包<rt>bāo</rt>装<rt>zhuāng</rt>纸<rt>zhǐ</rt>丢<rt>diū</rt>到<rt>dào</rt>垃<rt>lā</rt>圾<rt>jī</rt>桶<rt>tǒng</rt>里<rt>lǐ</rt>。<rt>。</rt>男<rt>nán</rt>孩<rt>hái</rt>就<rt>jiù</rt>从<rt>cóng</rt>地<rt>dì</rt>上<rt>shàng</rt>把<rt>bǎ</rt>包<rt>bāo</rt>装<rt>zhuāng</rt>纸<rt>zhǐ</rt>捡<rt>jiǎn</rt>起<rt>qǐ</rt>来<rt>lái</rt>，<rt>，</rt>把<rt>bǎ</rt>它<rt>tā</rt>们<rt>men</rt>都<rt>dōu</rt>放<rt>fàng</rt>进<rt>jìn</rt>一<rt>yí</rt>个<rt>gè</rt>塑<rt>sù</rt>料<rt>liào</rt>袋<rt>dài</rt>，<rt>，</rt>丢<rt>diū</rt>到<rt>dào</rt>垃<rt>lā</rt>圾<rt>jī</rt>桶<rt>tǒng</rt>。<rt>。</rt></ruby><br><br>
+    <ruby>我<rt>wǒ</rt>看<rt>kàn</rt>到<rt>dào</rt>后<rt>hòu</rt>很<rt>hěn</rt>开<rt>kāi</rt>心<rt>xīn</rt>，<rt>，</rt>因<rt>yīn</rt>为<rt>wèi</rt>公<rt>gōng</rt>园<rt>yuán</rt>是<rt>shì</rt>公<rt>gōng</rt>共<rt>gòng</rt>场<rt>chǎng</rt>所<rt>suǒ</rt>，<rt>，</rt>我<rt>wǒ</rt>们<rt>men</rt>应<rt>yīng</rt>该<rt>gāi</rt>爱<rt>ài</rt>护<rt>hù</rt>公<rt>gōng</rt>园<rt>yuán</rt>里<rt>lǐ</rt>的<rt>de</rt>环<rt>huán</rt>境<rt>jìng</rt>，<rt>，</rt>不<rt>bù</rt>要<rt>yào</rt>乱<rt>luàn</rt>丢<rt>diū</rt>垃<rt>lā</rt>圾<rt>jī</rt>。<rt>。</rt>他<rt>tā</rt>做<rt>zuò</rt>的<rt>de</rt>这<rt>zhè</rt>件<rt>jiàn</rt>事<rt>shì</rt>值<rt>zhí</rt>得<rt>dé</rt>我<rt>wǒ</rt>们<rt>men</rt>学<rt>xué</rt>习<rt>xí</rt>。<rt>。</rt></ruby>
+    <button onclick="playAudio('66.mp3')">播放录音</button>
+    <button onclick="stopAudio()">停止播放</button>
+    <audio id="audio_answer_66" src="66.mp3"></audio>
+</blockquote>
+	<p>2. <ruby>如<rt>rú</rt>果<rt>guǒ</rt>你<rt>nǐ</rt>是<rt>shì</rt>录<rt>lù</rt>像<rt>xiàng</rt>中<rt>zhōng</rt>的<rt>de</rt>人<rt>rén</rt>物<rt>wù</rt>，<rt>，</rt>你<rt>nǐ</rt>看<rt>kàn</rt>到<rt>dào</rt>公<rt>gōng</rt>园<rt>yuán</rt>里<rt>lǐ</rt>有<rt>yǒu</rt>人<rt>rén</rt>乱<rt>luàn</rt>丢<rt>diū</rt>垃<rt>lā</rt>圾<rt>jī</rt>，<rt>，</rt>你<rt>nǐ</rt>会<rt>huì</rt>怎<rt>zěn</rt>么<rt>me</rt>做<rt>zuò</rt>？<rt>？</rt></ruby></p>
+
+<blockquote>
+    T:<ruby>如<rt>rú</rt>果<rt>guǒ</rt>我<rt>wǒ</rt>是<rt>shì</rt>录<rt>lù</rt>像<rt>xiàng</rt>中<rt>zhōng</rt>的<rt>de</rt>人<rt>rén</rt>物<rt>wù</rt>，<rt>，</rt>看<rt>kàn</rt>到<rt>dào</rt>公<rt>gōng</rt>园<rt>yuán</rt>里<rt>lǐ</rt>有<rt>yǒu</rt>人<rt>rén</rt>乱<rt>luàn</rt>丢<rt>diū</rt>垃<rt>lā</rt>圾<rt>jī</rt>，<rt>，</rt>我<rt>wǒ</rt>会<rt>huì</rt>上<rt>shàng</rt>前<rt>qián</rt>阻<rt>zǔ</rt>止<rt>zhǐ</rt>他<rt>tā</rt>这<rt>zhè</rt>样<rt>yàng</rt>做<rt>zuò</rt>，<rt>，</rt>接<rt>jiē</rt>着<rt>zhe</rt>，<rt>，</rt>我<rt>wǒ</rt>会<rt>huì</rt>提<rt>tí</rt>醒<rt>xǐng</rt>他<rt>tā</rt>公<rt>gōng</rt>园<rt>yuán</rt>是<rt>shì</rt>个<rt>gè</rt>公<rt>gōng</rt>共<rt>gòng</rt>场<rt>chǎng</rt>所<rt>suǒ</rt>，<rt>，</rt>我<rt>wǒ</rt>们<rt>men</rt>应<rt>yīng</rt>该<rt>gāi</rt>保<rt>bǎo</rt>护<rt>hù</rt>那<rt>nà</rt>里<rt>lǐ</rt>的<rt>de</rt>环<rt>huán</rt>境<rt>jìng</rt>，<rt>，</rt>不<rt>bù</rt>要<rt>yào</rt>乱<rt>luàn</rt>丢<rt>diū</rt>垃<rt>lā</rt>圾<rt>jī</rt>。<rt>。</rt></ruby><br><br>
+    <ruby>我<rt>wǒ</rt>也<rt>yě</rt>会<rt>huì</rt>叫<rt>jiào</rt>他<rt>tā</rt>把<rt>bǎ</rt>垃<rt>lā</rt>圾<rt>jī</rt>丢<rt>diū</rt>进<rt>jìn</rt>一<rt>yì</rt>旁<rt>páng</rt>的<rt>de</rt>垃<rt>lā</rt>圾<rt>jī</rt>筒<rt>tǒng</rt>。<rt>。</rt>如<rt>rú</rt>果<rt>guǒ</rt>他<rt>tā</rt>不<rt>bù</rt>听<rt>tīng</rt>我<rt>wǒ</rt>的<rt>de</rt>劝<rt>quàn</rt>说<rt>shuō</rt>，<rt>，</rt>我<rt>wǒ</rt>会<rt>huì</rt>告<rt>gào</rt>诉<rt>sù</rt>公<rt>gōng</rt>园<rt>yuán</rt>的<rt>de</rt>工<rt>gōng</rt>作<rt>zuò</rt>人<rt>rén</rt>员<rt>yuán</rt>，<rt>，</rt>工<rt>gōng</rt>作<rt>zuò</rt>人<rt>rén</rt>员<rt>yuán</rt>会<rt>huì</rt>对<rt>duì</rt>他<rt>tā</rt>的<rt>de</rt>行<rt>xíng</rt>为<rt>wéi</rt>给<rt>gěi</rt>与<rt>yǔ</rt>处<rt>chǔ</rt>罚<rt>fá</rt>。<rt>。</rt>他<rt>tā</rt>以<rt>yǐ</rt>后<rt>hòu</rt>就<rt>jiù</rt>不<rt>bù</rt>会<rt>huì</rt>那<rt>nà</rt>样<rt>yàng</rt>做<rt>zuò</rt>了<rt>le</rt>。<rt>。</rt></ruby>
+    <button onclick="playAudio('67.mp3')">播放录音</button>
+    <button onclick="stopAudio()">停止播放</button>
+    <audio id="audio_answer_67" src="67.mp3"></audio>
+</blockquote>
+	<p>3. <ruby>除<rt>chú</rt>了<rt>le</rt>录<rt>lù</rt>像<rt>xiàng</rt>中<rt>zhōng</rt>的<rt>de</rt>行<rt>xíng</rt>为<rt>wéi</rt>，<rt>，</rt>我<rt>wǒ</rt>们<rt>men</rt>还<rt>hái</rt>应<rt>yīng</rt>该<rt>gāi</rt>怎<rt>zěn</rt>样<rt>yàng</rt>爱<rt>ài</rt>护<rt>hù</rt>公<rt>gōng</rt>园<rt>yuán</rt>。<rt>。</rt></ruby></p>
+
+<blockquote>
+    T:<ruby>公<rt>gōng</rt>园<rt>yuán</rt>里<rt>lǐ</rt>除<rt>chú</rt>了<rt>le</rt>有<rt>yǒu</rt>很<rt>hěn</rt>多<rt>duō</rt>人<rt>rén</rt>在<rt>zài</rt>散<rt>sàn</rt>步<rt>bù</rt>，<rt>，</rt>活<rt>huó</rt>动<rt>dòng</rt>之<rt>zhī</rt>外<rt>wài</rt>，<rt>，</rt>还<rt>hái</rt>有<rt>yǒu</rt>些<rt>xiē</rt>人<rt>rén</rt>会<rt>huì</rt>带<rt>dài</rt>他<rt>tā</rt>们<rt>men</rt>的<rt>de</rt>宠<rt>chǒng</rt>物<rt>wù</rt>来<rt>lái</rt>走<rt>zǒu</rt>走<rt>zou</rt>，<rt>，</rt>我<rt>wǒ</rt>觉<rt>jué</rt>得<rt>de</rt>，<rt>，</rt>人<rt>rén</rt>们<rt>men</rt>应<rt>yīng</rt>该<rt>gāi</rt>管<rt>guǎn</rt>理<rt>lǐ</rt>好<rt>hǎo</rt>他<rt>tā</rt>们<rt>men</rt>的<rt>de</rt>宠<rt>chǒng</rt>物<rt>wù</rt>，<rt>，</rt>比<rt>bǐ</rt>如<rt>rú</rt>，<rt>，</rt>宠<rt>chǒng</rt>物<rt>wù</rt>在<rt>zài</rt>公<rt>gōng</rt>园<rt>yuán</rt>大<rt>dà</rt>便<rt>biàn</rt>后<rt>hòu</rt>，<rt>，</rt>他<rt>tā</rt>们<rt>men</rt>的<rt>de</rt>主<rt>zhǔ</rt>人<rt>rén</rt>要<rt>yào</rt>清<rt>qīng</rt>理<rt>lǐ</rt>这<rt>zhè</rt>些<rt>xiē</rt>大<rt>dà</rt>便<rt>biàn</rt>。<rt>。</rt>他<rt>tā</rt>们<rt>men</rt>也<rt>yě</rt>不<rt>bù</rt>应<rt>yīng</rt>该<rt>gāi</rt>让<rt>ràng</rt>宠<rt>chǒng</rt>物<rt>wù</rt>在<rt>zài</rt>公<rt>gōng</rt>园<rt>yuán</rt>里<rt>lǐ</rt>乱<rt>luàn</rt>跑<rt>pǎo</rt>。<rt>。</rt></ruby><br><br>
+    <ruby>另<rt>lìng</rt>外<rt>wài</rt>，<rt>，</rt>我<rt>wǒ</rt>觉<rt>jué</rt>得<rt>de</rt>人<rt>rén</rt>们<rt>men</rt>不<rt>bù</rt>应<rt>yīng</rt>该<rt>gāi</rt>在<rt>zài</rt>公<rt>gōng</rt>园<rt>yuán</rt>里<rt>lǐ</rt>吸<rt>xī</rt>烟<rt>yān</rt>，<rt>，</rt>随<rt>suí</rt>地<rt>dì</rt>吐<rt>tǔ</rt>痰<rt>tán</rt>，<rt>，</rt>破<rt>pò</rt>坏<rt>huài</rt>公<rt>gōng</rt>园<rt>yuán</rt>的<rt>de</rt>环<rt>huán</rt>境<rt>jìng</rt>。<rt>。</rt>还<rt>hái</rt>有<rt>yǒu</rt>，<rt>，</rt>我<rt>wǒ</rt>们<rt>men</rt>不<rt>bù</rt>可<rt>kě</rt>以<rt>yǐ</rt>破<rt>pò</rt>坏<rt>huài</rt>公<rt>gōng</rt>园<rt>yuán</rt>里<rt>lǐ</rt>的<rt>de</rt>公<rt>gōng</rt>共<rt>gòng</rt>设<rt>shè</rt>施<rt>shī</rt>，<rt>，</rt>比<rt>bǐ</rt>如<rt>rú</rt>不<rt>bù</rt>可<rt>kě</rt>以<rt>yǐ</rt>破<rt>pò</rt>坏<rt>huài</rt>游<rt>yóu</rt>乐<rt>lè</rt>场<rt>chǎng</rt>，<rt>，</rt>不<rt>bù</rt>可<rt>kě</rt>以<rt>yǐ</rt>爬<rt>pá</rt>到<rt>dào</rt>游<rt>yóu</rt>乐<rt>lè</rt>园<rt>yuán</rt>的<rt>de</rt>树<rt>shù</rt>上<rt>shàng</rt>，<rt>，</rt>等<rt>děng</rt>等<rt>deng</rt>。<rt>。</rt></ruby>
+    <button onclick="playAudio('68.mp3')">播放录音</button>
+    <button onclick="stopAudio()">停止播放</button>
+    <audio id="audio_answer_68" src="68.mp3"></audio>
+</blockquote>
+	<p>4. <ruby>你<rt>nǐ</rt>觉<rt>jué</rt>得<rt>de</rt>学<rt>xué</rt>校<rt>xiào</rt>应<rt>yīng</rt>该<rt>gāi</rt>怎<rt>zěn</rt>样<rt>yàng</rt>鼓<rt>gǔ</rt>励<rt>lì</rt>同<rt>tóng</rt>学<rt>xué</rt>们<rt>men</rt>爱<rt>ài</rt>护<rt>hù</rt>公<rt>gōng</rt>共<rt>gòng</rt>财<rt>cái</rt>物<rt>wù</rt>？<rt>？</rt></ruby></p>
+
+<blockquote>
+    T:<ruby>公<rt>gōng</rt>共<rt>gòng</rt>财<rt>cái</rt>物<rt>wù</rt>是<rt>shì</rt>大<rt>dà</rt>家<rt>jiā</rt>的<rt>de</rt>，<rt>，</rt>我<rt>wǒ</rt>们<rt>men</rt>都<rt>dōu</rt>应<rt>yīng</rt>该<rt>gāi</rt>爱<rt>ài</rt>护<rt>hù</rt>。<rt>。</rt>我<rt>wǒ</rt>觉<rt>jué</rt>得<rt>de</rt>对<rt>duì</rt>于<rt>yú</rt>学<rt>xué</rt>校<rt>xiào</rt>来<rt>lái</rt>说<rt>shuō</rt>，<rt>，</rt>首<rt>shǒu</rt>先<rt>xiān</rt>，<rt>，</rt>学<rt>xué</rt>校<rt>xiào</rt>可<rt>kě</rt>以<rt>yǐ</rt>把<rt>bǎ</rt>爱<rt>ài</rt>护<rt>hù</rt>公<rt>gōng</rt>共<rt>gòng</rt>财<rt>cái</rt>物<rt>wù</rt>的<rt>de</rt>观<rt>guān</rt>念<rt>niàn</rt>传<rt>chuán</rt>达<rt>dá</rt>给<rt>gěi</rt>同<rt>tóng</rt>学<rt>xué</rt>们<rt>men</rt>，<rt>，</rt>比<rt>bǐ</rt>如<rt>rú</rt>，<rt>，</rt>学<rt>xué</rt>校<rt>xiào</rt>可<rt>kě</rt>以<rt>yǐ</rt>在<rt>zài</rt>同<rt>tóng</rt>学<rt>xué</rt>们<rt>men</rt>常<rt>cháng</rt>去<rt>qù</rt>的<rt>de</rt>地<rt>dì</rt>方<rt>fāng</rt>，<rt>，</rt>好<rt>hǎo</rt>像<rt>xiàng</rt>食<rt>shí</rt>堂<rt>táng</rt>或<rt>huò</rt>者<rt>zhě</rt>走<rt>zǒu</rt>廊<rt>láng</rt>上<rt>shàng</rt>张<rt>zhāng</rt>贴<rt>tiē</rt>有<rt>yǒu</rt>关<rt>guān</rt>爱<rt>ài</rt>护<rt>hù</rt>公<rt>gōng</rt>共<rt>gòng</rt>财<rt>cái</rt>物<rt>wù</rt>的<rt>de</rt>海<rt>hǎi</rt>报<rt>bào</rt>，<rt>，</rt>告<rt>gào</rt>诉<rt>sù</rt>大<rt>dà</rt>家<rt>jiā</rt>，<rt>，</rt>我<rt>wǒ</rt>们<rt>men</rt>要<rt>yào</rt>做<rt>zuò</rt>爱<rt>ài</rt>护<rt>hù</rt>公<rt>gōng</rt>共<rt>gòng</rt>财<rt>cái</rt>物<rt>wù</rt>的<rt>de</rt>人<rt>rén</rt>。<rt>。</rt></ruby><br><br>
+    <ruby>第<rt>dì</rt>二<rt>èr</rt>，<rt>，</rt>学<rt>xué</rt>校<rt>xiào</rt>可<rt>kě</rt>以<rt>yǐ</rt>在<rt>zài</rt>上<rt>shàng</rt>好<rt>hǎo</rt>公<rt>gōng</rt>民<rt>mín</rt>课<rt>kè</rt>的<rt>de</rt>时<rt>shí</rt>候<rt>hou</rt>，<rt>，</rt>教<rt>jiào</rt>导<rt>dǎo</rt>同<rt>tóng</rt>学<rt>xué</rt>们<rt>men</rt>怎<rt>zěn</rt>样<rt>yàng</rt>做<rt>zuò</rt>才<rt>cái</rt>是<rt>shì</rt>爱<rt>ài</rt>护<rt>hù</rt>公<rt>gōng</rt>共<rt>gòng</rt>财<rt>cái</rt>物<rt>wù</rt>的<rt>de</rt>行<rt>xíng</rt>为<rt>wéi</rt>，<rt>，</rt>什<rt>shén</rt>么<rt>me</rt>样<rt>yàng</rt>的<rt>de</rt>破<rt>pò</rt>坏<rt>huài</rt>行<rt>xíng</rt>为<rt>wéi</rt>是<rt>shì</rt>不<rt>bù</rt>可<rt>kě</rt>以<rt>yǐ</rt>做<rt>zuò</rt>的<rt>de</rt>。<rt>。</rt></ruby><br><br>
+    <ruby>第<rt>dì</rt>三<rt>sān</rt>，<rt>，</rt>老<rt>lǎo</rt>师<rt>shī</rt>可<rt>kě</rt>以<rt>yǐ</rt>表<rt>biǎo</rt>扬<rt>yáng</rt>爱<rt>ài</rt>护<rt>hù</rt>公<rt>gōng</rt>共<rt>gòng</rt>财<rt>cái</rt>物<rt>wù</rt>的<rt>de</rt>同<rt>tóng</rt>学<rt>xué</rt>们<rt>men</rt>，<rt>，</rt>让<rt>ràng</rt>其<rt>qí</rt>他<rt>tā</rt>同<rt>tóng</rt>学<rt>xué</rt>们<rt>men</rt>都<rt>dōu</rt>以<rt>yǐ</rt>他<rt>tā</rt>们<rt>men</rt>为<rt>wéi</rt>榜<rt>bǎng</rt>样<rt>yàng</rt>，<rt>，</rt>向<rt>xiàng</rt>他<rt>tā</rt>们<rt>men</rt>学<rt>xué</rt>习<rt>xí</rt>。<rt>。</rt>最<rt>zuì</rt>后<rt>hòu</rt>，<rt>，</rt>对<rt>duì</rt>那<rt>nà</rt>些<rt>xiē</rt>破<rt>pò</rt>坏<rt>huài</rt>公<rt>gōng</rt>共<rt>gòng</rt>财<rt>cái</rt>物<rt>wù</rt>的<rt>de</rt>同<rt>tóng</rt>学<rt>xué</rt>，<rt>，</rt>老<rt>lǎo</rt>师<rt>shī</rt>应<rt>yīng</rt>该<rt>gāi</rt>批<rt>pī</rt>评<rt>píng</rt>，<rt>，</rt>让<rt>ràng</rt>他<rt>tā</rt>们<rt>men</rt>改<rt>gǎi</rt>变<rt>biàn</rt>破<rt>pò</rt>坏<rt>huài</rt>公<rt>gōng</rt>共<rt>gòng</rt>财<rt>cái</rt>物<rt>wù</rt>的<rt>de</rt>不<rt>bù</rt>良<rt>liáng</rt>行<rt>xíng</rt>为<rt>wéi</rt>。<rt>。</rt></ruby><br><br>
+    <ruby>通<rt>tōng</rt>过<rt>guò</rt>以<rt>yǐ</rt>上<rt>shàng</rt>，<rt>，</rt>我<rt>wǒ</rt>觉<rt>jué</rt>得<rt>de</rt>学<rt>xué</rt>校<rt>xiào</rt>就<rt>jiù</rt>可<rt>kě</rt>以<rt>yǐ</rt>鼓<rt>gǔ</rt>励<rt>lì</rt>同<rt>tóng</rt>学<rt>xué</rt>们<rt>men</rt>爱<rt>ài</rt>护<rt>hù</rt>公<rt>gōng</rt>共<rt>gòng</rt>财<rt>cái</rt>物<rt>wù</rt>。<rt>。</rt></ruby>
+    <button onclick="playAudio('69.mp3')">播放录音</button>
+    <button onclick="stopAudio()">停止播放</button>
+    <audio id="audio_answer_69" src="69.mp3"></audio>
+</blockquote>
+	
+	
+	</div>
+	
+</body>
+</html>
